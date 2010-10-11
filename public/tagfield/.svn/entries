@@ -1,0 +1,100 @@
+8
+
+dir
+109085
+http://svn.silverstripe.com/open/modules/tagfield/trunk
+http://svn.silverstripe.com
+
+
+
+2010-05-24T05:16:19.588851Z
+105492
+sharvey
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+467b73ca-7a2a-4603-9d3b-597d59a354a9
+
+lang
+dir
+
+tests
+dir
+
+LICENSE
+file
+
+
+
+
+2010-08-09T14:40:39.000000Z
+f9eeb07f56b238c5bde846fff98aab48
+2009-01-20T23:26:30.567608Z
+70482
+nlou
+
+images
+dir
+
+javascript
+dir
+
+CHANGELOG
+file
+
+
+
+
+2010-08-09T14:40:39.000000Z
+56378d992d521c0fd429e110b2633718
+2009-02-01T06:48:02.981263Z
+71144
+ischommer
+
+css
+dir
+
+code
+dir
+
+thirdparty
+dir
+
+_config.php
+file
+
+
+
+
+2010-08-09T14:40:39.000000Z
+452925d5182994846dbe3b9518db84d8
+2009-01-20T23:26:30.567608Z
+70482
+nlou
+
+README.md
+file
+
+
+
+
+2010-08-09T14:40:39.000000Z
+091d357b8b5bfe102f41fec39e671f35
+2010-05-20T22:01:19.151623Z
+105286
+ischommer
+
+templates
+dir
+

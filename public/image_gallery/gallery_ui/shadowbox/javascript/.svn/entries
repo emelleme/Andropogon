@@ -1,0 +1,52 @@
+8
+
+dir
+507
+http://carlinowebdesign.svn.beanstalkapp.com/modules/trunk/image_gallery/gallery_ui/shadowbox/javascript
+http://carlinowebdesign.svn.beanstalkapp.com/modules
+
+
+
+2010-03-22T18:32:50.101213Z
+390
+unclecheese
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1759cf2-80a2-421f-8334-f6f125b70621
+
+shadowbox.js
+file
+
+
+
+
+2010-06-01T07:26:08.000000Z
+633dd7eec4fa99c441b5afd802bba576
+2010-03-22T18:32:50.101213Z
+390
+unclecheese
+
+shadowbox_init.js
+file
+
+
+
+
+2010-06-01T07:26:08.000000Z
+fafb062741a94a353cd6ec996218fb33
+2009-09-08T02:05:26.312664Z
+268
+unclecheese
+

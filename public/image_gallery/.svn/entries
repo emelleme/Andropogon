@@ -1,0 +1,61 @@
+8
+
+dir
+507
+http://carlinowebdesign.svn.beanstalkapp.com/modules/trunk/image_gallery
+http://carlinowebdesign.svn.beanstalkapp.com/modules
+
+
+
+2010-09-09T18:12:18.760926Z
+493
+unclecheese
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1759cf2-80a2-421f-8334-f6f125b70621
+
+lang
+dir
+
+images
+dir
+
+javascript
+dir
+
+css
+dir
+
+code
+dir
+
+_config.php
+file
+
+
+
+
+2010-06-01T07:26:08.000000Z
+db254d70deadae9a6a51be2e8a150b30
+2009-09-08T02:05:26.312664Z
+268
+unclecheese
+
+gallery_ui
+dir
+
+templates
+dir
+

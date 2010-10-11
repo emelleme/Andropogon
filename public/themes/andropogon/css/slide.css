@@ -1,0 +1,28 @@
+.pikachoose{width:952px;margin:0 auto 50px auto;}
+/* This is the ul you have all your images in */
+.pikachoose ul{padding-left:0;width:952px;height:310px;margin:0;overflow:hidden;}
+.pikachoose ul li{float: left;border:1px solid black;padding:0px;margin:0 ;position:relative;overflow:hidden;}
+.pikachoose ul li div img{position:relative;cursor:pointer;}
+
+/* this is the surroundner for all your elements. This is also the fake border around the main img and room for caption */
+.pika_main{width:952px;height:310px;display:block;position:relative;}
+/*sine we give it the fake border, you need to position the image a little. */
+.pika_main_img{position:relative;}
+.pika_subdiv{position:relative;border:1px solid black;padding:0px;}
+.pika_animationDivs{top:0px;left:0px;} /*must match top/left padding for subdiv */
+.pika_subdiv img, .pika_subdiv a img{border:none;}
+.pika_caption{width:952px;height:16px;padding-top:0px;text-align:left;position:absolute;bottom:0px;left:0px;background:url('../images/black.png') top left;}
+.pika_caption a{color:white;}
+
+.pika_play{position:absolute;z-index:1;left:50%;margin-left:-25px;width:50px;top:130px;}
+.pika_play a{position:relative;margin-left:auto;cursor:pointer;display: block;width:50px;height:50px;background:url('../images/play.png') top center no-repeat;}
+.pika_play a.pika_stop_button{background:url('../images/pause.png') top center no-repeat;}
+
+.pika_navigation a{font-size: 12px; text-decoration: none;}
+.pika_navigation a:hover{text-decoration: underline;}
+.pika_navigation{padding-top:10px;clear:both;text-align:center;}
+
+/* if you want to 'hide' these jus make their height and width 1px */
+.pika_prev_hover{position:absolute;top:130px;left:5px;height:456px;width:100px;background:url('../images/rewind.png') top left no-repeat;}
+.pika_next_hover{position:absolute;top:130px;right:5px;height:456px;width:100px;background:url('../images/fastf.png') top right no-repeat;}
+

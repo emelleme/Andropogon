@@ -1,0 +1,52 @@
+8
+
+dir
+507
+http://carlinowebdesign.svn.beanstalkapp.com/modules/trunk/image_gallery/gallery_ui/lightbox/javascript
+http://carlinowebdesign.svn.beanstalkapp.com/modules
+
+
+
+2009-09-08T02:05:26.312664Z
+268
+unclecheese
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1759cf2-80a2-421f-8334-f6f125b70621
+
+jquery.lightbox-0.5.js
+file
+
+
+
+
+2010-06-01T07:26:07.000000Z
+284e72603d66108ed0a0cb700127b654
+2009-09-05T21:37:10.498988Z
+262
+unclecheese
+
+lightbox_init.js
+file
+
+
+
+
+2010-06-01T07:26:07.000000Z
+5bdd2779f9bde21bcaa165d6b0952945
+2009-09-08T02:05:26.312664Z
+268
+unclecheese
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/70180/open/modules/forum/trunk/templates/email
+END
+ForumMember_ForgotNicknameEmail.ss
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/59138/open/modules/forum/trunk/templates/email/ForumMember_ForgotNicknameEmail.ss
+END
+ForumMember_TopicNotification.ss
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/70180/open/modules/forum/trunk/templates/email/ForumMember_TopicNotification.ss
+END

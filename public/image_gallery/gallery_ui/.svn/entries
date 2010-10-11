@@ -1,0 +1,59 @@
+8
+
+dir
+507
+http://carlinowebdesign.svn.beanstalkapp.com/modules/trunk/image_gallery/gallery_ui
+http://carlinowebdesign.svn.beanstalkapp.com/modules
+
+
+
+2010-03-22T18:32:50.101213Z
+390
+unclecheese
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1759cf2-80a2-421f-8334-f6f125b70621
+
+lightbox
+dir
+
+lightbox_alt
+dir
+
+prettyphoto
+dir
+
+nyro_modal
+dir
+
+ImageGalleryUI.php
+file
+
+
+
+
+2010-06-01T07:26:08.000000Z
+edaf8883e735dee3b6c7e644613d9153
+2009-09-05T21:37:10.498988Z
+262
+unclecheese
+has-props
+
+fancybox
+dir
+
+shadowbox
+dir
+

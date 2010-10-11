@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/modules/!svn/ver/418/trunk/dataobject_manager/code/date_picker_field
+END
+DatePickerField.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/modules/!svn/ver/418/trunk/dataobject_manager/code/date_picker_field/DatePickerField.php
+END
+datepicker.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/modules/!svn/ver/148/trunk/dataobject_manager/code/date_picker_field/datepicker.js
+END
+datepicker_init.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/modules/!svn/ver/386/trunk/dataobject_manager/code/date_picker_field/datepicker_init.js
+END

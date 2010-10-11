@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/modules/!svn/ver/223/trunk/dataobject_manager/code/simple_tinymce_field/javascript/tiny_mce
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/modules/!svn/ver/223/trunk/dataobject_manager/code/simple_tinymce_field/javascript/tiny_mce/license.txt
+END
+jquery.tinymce.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/modules/!svn/ver/223/trunk/dataobject_manager/code/simple_tinymce_field/javascript/tiny_mce/jquery.tinymce.js
+END
+tiny_mce.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/modules/!svn/ver/223/trunk/dataobject_manager/code/simple_tinymce_field/javascript/tiny_mce/tiny_mce.js
+END
+tiny_mce_popup.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/modules/!svn/ver/223/trunk/dataobject_manager/code/simple_tinymce_field/javascript/tiny_mce/tiny_mce_popup.js
+END
+tiny_mce_src.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/modules/!svn/ver/223/trunk/dataobject_manager/code/simple_tinymce_field/javascript/tiny_mce/tiny_mce_src.js
+END

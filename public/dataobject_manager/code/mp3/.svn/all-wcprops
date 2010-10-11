@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/modules/!svn/ver/181/trunk/dataobject_manager/code/mp3
+END
+mp3.ss
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/modules/!svn/ver/148/trunk/dataobject_manager/code/mp3/mp3.ss
+END
+MP3.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/modules/!svn/ver/181/trunk/dataobject_manager/code/mp3/MP3.php
+END
+audio-player.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/modules/!svn/ver/148/trunk/dataobject_manager/code/mp3/audio-player.js
+END
+player.swf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/modules/!svn/ver/148/trunk/dataobject_manager/code/mp3/player.swf
+END

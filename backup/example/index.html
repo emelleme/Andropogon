@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <script src="jquery.js">//</script>
+        <!--[if IE]><script src="excanvas.js">//</script><![endif]-->
+        <script src="../jqcanvas/jquery.jqcanvas.js">//</script>
+        <script>
+            $(function () {
+                $("ul li").jqcanvas(function (canvas, width, height){
+                    var ctx = canvas.getContext("2d");
+                    ctx.clearRect(0,0,width,height);
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(0, 0, width, height);
+                },
+                {
+                    verifySize: false
+                }
+                );
+                $("#texto").jqcanvas(function (canvas, width, height) {
+                    var ctx = canvas.getContext("2d");
+                    ctx.clearRect(0,0,width,height);
+                    var lingrad = ctx.createLinearGradient(0,430,0,-100);
+                    lingrad.addColorStop(0, '#00ABEB');
+                    lingrad.addColorStop(0.5, '#fff');
+                    ctx.fillStyle = lingrad;
+                    ctx.fillRect(0, 0, width, height);
+                });
+                $(".texto2").jqcanvas(function (canvas, width, height) {
+                    var corner = 16;
+                    var ctx = canvas.getContext("2d");
+                    ctx.clearRect(0,0,width,height);
+                    ctx.fillStyle = "blue";
+                    ctx.beginPath();
+                    ctx.arc(corner,corner,corner,Math.PI+(Math.PI*0)/2,Math.PI+(Math.PI*1)/2,0);
+                    ctx.lineTo(width-corner,0);
+                    ctx.arc(width-corner,corner,corner,Math.PI+(Math.PI*1)/2,Math.PI+(Math.PI*2)/2,0);
+                    ctx.lineTo(width,height-corner);
+                    ctx.arc(width-corner,height-corner,corner,Math.PI+(Math.PI*2)/2,Math.PI+(Math.PI*3)/2,0);
+                    ctx.lineTo(corner,height);
+                    ctx.arc(corner,height-corner,corner,Math.PI+(Math.PI*3)/2,Math.PI+(Math.PI*0)/2,0);
+                    ctx.closePath();
+                    ctx.fill();
+                });
+            });
+        </script>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-size: 12pt;
+            }
+            h1{
+                font-size: 150%;
+            }
+            .menu li{
+                display: inline;
+                margin-right: 16px;
+                padding: 0.25em 0.5em;
+                font-size:.8em;
+                color:#cccccc;
+            }
+            #texto{
+                padding: 0.5em;
+                height:100%
+            }
+            .texto2{
+                margin-left: 5em;
+                margin-right: 10em;
+                padding: 0.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="menu">
+            <li>[[ andropogon associates ltd. ]]</li>
+            <li>[[ landscape architecture ecological planning & design ]]</li>
+            <li>[[215.487.0700]]</li>
+        </ul>
+        <div id="texto">
+           <img src="sample.png" />
+           <p style="font-size:1.5em">Menu Item</p>
+        </div>
+        <div class="texto2">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+8
+
+dir
+109085
+http://svn.silverstripe.com/open/modules/forum/trunk/code
+http://svn.silverstripe.com
+
+
+
+2010-07-22T22:57:25.177702Z
+108368
+wrossiter
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+467b73ca-7a2a-4603-9d3b-597d59a354a9
+
+ForumRole.php
+file
+
+
+
+
+2010-08-09T14:39:58.000000Z
+96fb981c515ccb9e48df66c1cbc33543
+2010-06-09T04:34:14.682025Z
+106308
+wrossiter
+has-props
+
+search
+dir
+
+ForumThread.php
+file
+
+
+
+
+2010-08-09T14:39:58.000000Z
+b4259a14db99a985bb54255d0425a090
+2010-06-21T00:09:03.227051Z
+106747
+wrossiter
+has-props
+
+ForumMemberProfile.php
+file
+
+
+
+
+2010-08-09T14:39:58.000000Z
+7ab6a630f8a2628fe24a86456db4d60c
+2010-06-06T02:25:56.906083Z
+106218
+wrossiter
+has-props
+
+migration
+dir
+
+formfields
+dir
+
+Post.php
+file
+
+
+
+
+2010-08-09T14:39:58.000000Z
+ea6fb4b933fc57787ef26a8fc27c4cdc
+2010-07-02T03:08:54.540091Z
+107425
+wrossiter
+has-props
+
+ForumCategory.php
+file
+
+
+
+
+2010-08-09T14:39:58.000000Z
+d5ab731573e69e9b2cd35d1cfc3860c8
+2010-06-06T02:25:56.906083Z
+106218
+wrossiter
+has-props
+
+ForumHolder.php
+file
+
+
+
+
+2010-08-09T14:39:58.000000Z
+8478751e7095038c498e1df9af64a91e
+2010-07-02T03:08:54.540091Z
+107425
+wrossiter
+has-props
+
+reports
+dir
+
+Forum.php
+file
+
+
+
+
+2010-08-09T14:39:58.000000Z
+59b83335ddea82506b4468062ed87c30
+2010-07-22T22:57:25.177702Z
+108368
+wrossiter
+has-props
+

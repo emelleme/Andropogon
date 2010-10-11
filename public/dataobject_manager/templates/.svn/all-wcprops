@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/modules/!svn/ver/377/trunk/dataobject_manager/templates
+END
+DataObjectManager.ss
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/modules/!svn/ver/356/trunk/dataobject_manager/templates/DataObjectManager.ss
+END
+FileDataObjectManager.ss
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/modules/!svn/ver/362/trunk/dataobject_manager/templates/FileDataObjectManager.ss
+END
+DataObjectManager_popup.ss
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/modules/!svn/ver/377/trunk/dataobject_manager/templates/DataObjectManager_popup.ss
+END
+ImageDataObjectManager.ss
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/modules/!svn/ver/363/trunk/dataobject_manager/templates/ImageDataObjectManager.ss
+END
+NestedDataObjectManager.ss
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/modules/!svn/ver/225/trunk/dataobject_manager/templates/NestedDataObjectManager.ss
+END
+DataObjectManager_duplicate.ss
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/modules/!svn/ver/315/trunk/dataobject_manager/templates/DataObjectManager_duplicate.ss
+END
+DataObjectManager_holder.ss
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/modules/!svn/ver/225/trunk/dataobject_manager/templates/DataObjectManager_holder.ss
+END
+PopupClose.ss
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/modules/!svn/ver/2/trunk/dataobject_manager/templates/PopupClose.ss
+END
+RelationDataObjectManager.ss
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/modules/!svn/ver/356/trunk/dataobject_manager/templates/RelationDataObjectManager.ss
+END
+RelationFileDataObjectManager.ss
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/modules/!svn/ver/364/trunk/dataobject_manager/templates/RelationFileDataObjectManager.ss
+END

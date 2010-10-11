@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/modules/!svn/ver/478/trunk/image_gallery/code
+END
+ImageGalleryManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/modules/!svn/ver/478/trunk/image_gallery/code/ImageGalleryManager.php
+END
+ImageGalleryPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/modules/!svn/ver/441/trunk/image_gallery/code/ImageGalleryPage.php
+END
+ImageGalleryItem.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/modules/!svn/ver/476/trunk/image_gallery/code/ImageGalleryItem.php
+END
+ImageGalleryAlbum.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/modules/!svn/ver/444/trunk/image_gallery/code/ImageGalleryAlbum.php
+END
+ImageGalleryImage.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/modules/!svn/ver/233/trunk/image_gallery/code/ImageGalleryImage.php
+END
+ImageGallerySiteTree.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/modules/!svn/ver/404/trunk/image_gallery/code/ImageGallerySiteTree.php
+END

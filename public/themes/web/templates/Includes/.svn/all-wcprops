@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/templates/Includes
+END
+Footer.ss
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/templates/Includes/Footer.ss
+END
+Navigation.ss
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/templates/Includes/Navigation.ss
+END
+TopImage.ss
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/templates/Includes/TopImage.ss
+END
+BreadCrumbs.ss
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/templates/Includes/BreadCrumbs.ss
+END
+MainMenu.ss
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/templates/Includes/MainMenu.ss
+END
+SearchForm.ss
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/templates/Includes/SearchForm.ss
+END
+SideBar.ss
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/templates/Includes/SideBar.ss
+END

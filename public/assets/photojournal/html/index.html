@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>A N D R O P O G O N</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easySlider1.5.js"></script>
+<script type="text/javascript" charset="utf-8">
+// <![CDATA[
+$(document).ready(function(){	
+	$("#slider").easySlider({
+		controlsBefore:	'<p id="controls">',
+		controlsAfter:	'</p>',
+		auto: true, 
+		continuous: true
+	});	
+});
+// ]]>
+</script>
+<style type="text/css">
+.gallery { width:982px; height:264px; margin:0 auto; padding:0; }
+#slider { margin:0; padding:0; list-style:none; }
+#slider ul,
+#slider li { margin:0; padding:0; list-style:none; }
+/* 
+    define width and height of list item (slide)
+    entire slider area will adjust according to the parameters provided here
+*/
+#slider li { width:982px; height:264px; overflow:hidden; }
+p#controls { margin:0; padding:0; position:relative; }
+#prevBtn { display:block; margin:0; overflow:hidden; width:56px; height:58px; position:absolute; left:0; top:-134px; }
+#nextBtn { display:block; margin:0; overflow:hidden; width:56px; height:58px; position:absolute; left: 930px; top:-134px; }
+#prevBtn a { display:block; width:56px; height:58px; background:url(images/l_nav.png) no-repeat 0 0; }
+#nextBtn a { display:block; width:56px; height:58px; background:url(images/r_nav.png) no-repeat 0 0; }
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    
+  </div>
+  <div class="top_sup">
+    <div class="top_sup_resize">
+      <div class="search">
+        <form id="form1" name="form1" method="post" action="">
+          <label><span>
+            <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
+            </span>
+            <input name="b" type="image" src="images/search.gif" class="button" />
+          </label>
+        </form>
+      </div>
+      <p><span>A N D R O P O G O N</span></p>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="slider_top">
+    <div class="header_text">
+      <div class="gallery">
+        <div id="slider">
+          <ul>
+            <li> <img src="images/simple_img_1.jpg" alt="screen 1" width="982" height="264" border="0" class="screen"  /> </li>
+            <li> <img src="images/simple_img_2.jpg" alt="screen 1" width="982" height="264" border="0" class="screen"  /> </li>
+            <li> <img src="images/simple_img_3.jpg" alt="screen 1" width="982" height="264" border="0" class="screen"  /> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="body">
+    <div class="body_resize">
+      <div class="left">
+        <ul class="menu-list">
+         <li class="active"><a href="#">work</a></li>
+         <li><a href="#">approach</a></li>
+         <li><a href="#">firm</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <h2><span style="float:left">05.30.2010</span><h2>Andropogon Awarded Darwin Prize</h2>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget bibendum tellus. Nunc vel imperdiet tellus. Mauris ornare aliquam urna, accumsan bibendum eros auctor ac.</span></p>
+        <p><strong>Suspendisse adipiscing rhoncus massa, sit amet sollicitudin quam vulputate non. In non turpis nisl. </strong></p>
+        <p>Curabitur purus mi, pharetra vitae viverra et, mattis sit amet nunc. Quisque enim ipsum, convallis sit amet molestie in, placerat vel urna. Praesent congue auctor elit, nec pretium ipsum volutpat vitae. Vivamus eget ipsum sit amet ipsum tincidunt fermentum. Sed hendrerit neque ac erat condimentum vulputate. Nulla velit massa, dictum et interdum quis, tempus at velit. </p>
+        <p>Nunc gravida luctus mauris at rhoncus. Nulla facilisi. Phasellus iaculis varius nibh a adipiscing. </p>
+        <div class="bg"></div>
+        <p><a href="#" class="bold">more &gt;&gt;</a></p>
+        
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer_resize">
+    <ul>
+      <li><a href="index.html">contact</a></li>
+      <li><a href="services.html">ftp</a></li>
+      <li><a href="portfolio.html">brochures</a></li>
+    </ul>
+    <p><img src="images/footer-logo.gif" /></p>
+    <div class="clr"></div>
+  </div>
+</div>
+</body>
+</html>

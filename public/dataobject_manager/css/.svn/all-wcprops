@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/modules/!svn/ver/464/trunk/dataobject_manager/css
+END
+dataobject_manager.css
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/modules/!svn/ver/464/trunk/dataobject_manager/css/dataobject_manager.css
+END
+dataobjectmanager_override.css
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/modules/!svn/ver/197/trunk/dataobject_manager/css/dataobjectmanager_override.css
+END
+imagedataobject_manager.css
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/modules/!svn/ver/44/trunk/dataobject_manager/css/imagedataobject_manager.css
+END
+jquery.wysiwyg.css
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/modules/!svn/ver/74/trunk/dataobject_manager/css/jquery.wysiwyg.css
+END
+facebox.css
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/modules/!svn/ver/36/trunk/dataobject_manager/css/facebox.css
+END

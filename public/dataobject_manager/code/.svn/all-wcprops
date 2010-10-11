@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/modules/!svn/ver/504/trunk/dataobject_manager/code
+END
+HasOneDataObjectManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/modules/!svn/ver/337/trunk/dataobject_manager/code/HasOneDataObjectManager.php
+END
+HasOneFileDataObjectManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/modules/!svn/ver/337/trunk/dataobject_manager/code/HasOneFileDataObjectManager.php
+END
+AssetManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/modules/!svn/ver/244/trunk/dataobject_manager/code/AssetManager.php
+END
+DataObjectManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/modules/!svn/ver/504/trunk/dataobject_manager/code/DataObjectManager.php
+END
+FileDataObjectManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/modules/!svn/ver/489/trunk/dataobject_manager/code/FileDataObjectManager.php
+END
+SortableDataObject.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/modules/!svn/ver/403/trunk/dataobject_manager/code/SortableDataObject.php
+END
+HasManyFileDataObjectManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/modules/!svn/ver/477/trunk/dataobject_manager/code/HasManyFileDataObjectManager.php
+END
+HasManyDataObjectManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/modules/!svn/ver/477/trunk/dataobject_manager/code/HasManyDataObjectManager.php
+END
+ImageAssetManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/modules/!svn/ver/315/trunk/dataobject_manager/code/ImageAssetManager.php
+END
+ImageDataObjectManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/modules/!svn/ver/477/trunk/dataobject_manager/code/ImageDataObjectManager.php
+END
+DataObjectManager_nestedurls.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/modules/!svn/ver/180/trunk/dataobject_manager/code/DataObjectManager_nestedurls.php
+END
+ManyManyDataObjectManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/modules/!svn/ver/477/trunk/dataobject_manager/code/ManyManyDataObjectManager.php
+END
+ManyManyFileDataObjectManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/modules/!svn/ver/477/trunk/dataobject_manager/code/ManyManyFileDataObjectManager.php
+END
+AssetManagerFolder.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/modules/!svn/ver/475/trunk/dataobject_manager/code/AssetManagerFolder.php
+END

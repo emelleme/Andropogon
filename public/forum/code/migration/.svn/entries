@@ -1,0 +1,41 @@
+8
+
+dir
+109085
+http://svn.silverstripe.com/open/modules/forum/trunk/code/migration
+http://svn.silverstripe.com
+
+
+
+2010-06-20T23:11:28.728092Z
+106739
+wrossiter
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+467b73ca-7a2a-4603-9d3b-597d59a354a9
+
+ForumMigrationTask.php
+file
+
+
+
+
+2010-08-09T14:39:58.000000Z
+7a762b8f0469034faf0c5169c046c886
+2010-06-20T23:11:28.728092Z
+106739
+wrossiter
+has-props
+

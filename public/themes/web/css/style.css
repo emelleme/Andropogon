@@ -1,0 +1,219 @@
+@charset "utf-8";
+*{
+margin:0;
+padding:0;
+}
+body { margin:0; padding:0; width:100%;color:#B6ABB5;font-family:'Gill Sans W01 Medium'}
+strong {color:#706570;font-family:'Gill Sans W01 Medium'}
+
+h2 {letter-spacing:2px;font-weight:normal;}
+p {letter-spacing:.11em;}
+ul { list-style: none; padding: 5px; }
+a {letter-spacing:.11em;color:#CBC3CA;font-weight:bold;}
+a:hover{color:#706570;text-decoration:none;}
+
+
+html { padding:0; margin:0;}
+
+a:link,a:visited{
+text-decoration:none;
+}
+a img{
+border:0;
+}
+/* main */
+.main {width:100%; padding-top:20px; margin:0 auto;}
+.resize { width:985px; margin:0 auto;}
+
+/********** header **********/
+.header {  padding:0; margin:0 auto; }
+
+.block_header {margin:0 auto; width:982px; padding:0; border-bottom:1px solid #3b3b3b;}
+/* logo */
+.logo { float:left; padding:0; margin:0; width:206px;}
+/* menu */	
+#menu {
+width:12em; /* set width of menu */
+padding-top:23px;
+margin-left: -8px;
+
+}
+
+#menu ul{ /* remove bullets and list indents */
+list-style: none;
+margin:0;
+padding:0;
+width: 240px;
+word-spacing:-1px;
+
+}
+
+#menu a {
+font-weight:normal;
+letter-spacing: .05em;
+font-size: 11pt;
+}
+/* style, color and size links and headings to suit */
+#menu a, #menu h2{
+display: block;
+font-family:'Gill Sans W01 Medium';
+border-width: 0px;
+margin: p;
+padding: 2px 3px;
+text-transform: lowercase;
+}
+
+#menu h2,#menu h2 a {
+color: #B5ABB5;
+font-family:'Gill Sans W01 Medium';
+text-transform: lowercase;
+font-size: 18pt;
+font-weight: normal;
+}
+
+#menu a {
+color: #D4C9D4;
+text-decoration:none;
+}
+
+#menu ul li h2 a.section,#menu ul li h2 a.current, #menu ul li ul li a.section,#menu ul li ul li a.current {
+color:#706570;
+}
+#menu ul li ul li{
+padding: 0px 5px;
+}
+#menu ul li ul li.link{
+display:none;
+}
+#menu a:hover {
+color: #706570;
+}
+
+#menu .active{
+color: #706570;
+}
+
+#menu li {
+/* make the list elements a containing block for the nested lists */
+position: relative;
+padding: 0px 10px;
+}
+
+#menu ul ul ul {
+position: absolute;
+top:0px;
+left: 100%; /* to position them to the right of their containing block */
+width: 100%; /* width is based on the containing block */
+margin-left:-20px;
+}
+
+/*top_sup*/
+.top_sup { padding:0; margin:0;}
+.top_sup_resize { width:982px; margin:0 auto; padding:0;}
+.top_sup_resize p { font:normal 11px; color:#4d4d4d; padding:5px; margin:0; line-height:1.8em;}
+.top_sup_resize span { font: normal 14px;  color:#9f9f9f;line-height:2.8em;}
+.top_sup_resize2 { width:982px; margin:0 auto; padding:20px 0;}
+.top_sup_resize2 h2 { font: normal 28pt ; color:#fff; padding:0 0 0 20px; margin:0; width:200px; float:left;}
+.top_sup_resize2 p { width:540px; float:right; text-align:left; font:normal 11px; color:#4d4d4d; padding:5px; margin:0; line-height:1.8em;}
+/* search */
+.search { padding:0px 0 0 0; margin:0; float:right;}
+.search form { display:block; float:right; padding:5px 0;}
+.search span { display:block; float:left; width:114px; padding:0 5px; height:34px; }
+.search form .button { float:left; margin:0; padding:0;}
+
+/********** slider **********/
+.gallery { width:960px; height:310px; margin:0 auto; padding:0;border:.1em solid #aaa; }
+.slider{ /* required settings */
+	position:absolute; overflow:hidden; width:960px; height:310px;}
+
+/* root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accommodate scrollable items
+	its enough that you set width and height for the root element and
+	not for this element.
+*/
+.slider .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+/*	a single item must be floated in horizontal scrolling.
+	typically this element is the one that you will style the most */
+.items div {
+	float: left;
+	width: 960px;
+}
+#slider { margin:0; padding:0; list-style:none; }
+#slider ul,
+#slider li { margin:0; padding:0; list-style:none; }
+/* 
+    define width and height of list item (slide)
+    entire slider area will adjust according to the parameters provided here
+*/
+#slider li { width:960px; height:310px; overflow:hidden; }
+p#controls { margin:0; padding:0; position:relative; }
+#prevBtn { display:block; margin:0; overflow:hidden; width:50px; height:51px; position:absolute; left:10px; top:-40px; }
+#nextBtn { display:block; margin:0; overflow:hidden; width:50px; height:51px; position:absolute; left: 920px; top:-40px; }
+#prevBtn a { display:block; width:30px; height:31px; background:url(../images/l_nav.png) no-repeat 0 0; }
+#nextBtn a { display:block; width:30px; height:31px; background:url(../images/r_nav.png) no-repeat 0 0; }
+
+.clear {
+clear: both;
+}
+/*header_text*/
+.header_text { margin:0 auto; padding:0; width:982px;}
+/********** block index **********/
+.body { }
+.body_resize { width:982px; margin:0 auto; padding:0;}
+.body h2  { font-size:14pt; padding: 5px 0px;color: #4E2624;font-family:'Gill Sans W01 Medium'; }
+.body ul { float: left; width:45em; margin:0; padding:0; list-style:none; }
+.body li {float:left; width: 15em;}
+.body li a {text-decoration:none; padding:0; margin:0; font:normal 10pt 'Gill Sans W01 Medium'}
+.active a {color: #706570;}
+.body p { font-size:10pt; padding:0px 0px; margin:0; font-family:'Gill Sans W01 Medium';}
+p.location{ font-size:12pt;color:#4E2624;padding: 0px 0px 5px 0px;font-family:'Gill Sans W01 Medium';}
+.body p span { color:#a4a4a4; font: normal 10pt;}
+.body p.bodrded { border:1px solid #ebebeb; margin:5px 0; padding:10px 0;}
+.body ul { list-style:none; margin:0px auto;padding: 0px 0px;}
+.body li { padding:0px 0px; margin:0;}
+.body dt { margine: 0px; padding:0px;text-transform:lowercase;letter-spacing:.12em;font:normal 12pt 'Gill Sans', sans-serif;}
+
+div.newscontent{font:10pt; padding:0px 0px; margin:0;font-family:'Gill Sans W01 Medium';  }
+
+.body a.bold { color:#fff; font:bold 11px; background:#000; margin:0; padding:3px 5px; float:left; text-decoration:none;}
+.body img { float:left; margin:15px 15px 15px 0; padding:0;}
+.body img.port { float:left; margin:10px 15px; padding:0;}
+.full  { width:952px; float:left; margin:0; padding:10px 15px;} 
+.left  { width:200px; float:left; margin:0; padding: 4px 0px;} 
+.right  { width:490px; float:right;  padding:28px 10px 10px 15px;} 
+.right-content-scroller  { width:490px; float:right;  padding:0px 10px 10px 15px;} 
+.right-large  { width:700px; float:right; margin:0; padding:28px 10px 10px 15px;}
+
+.body span{width:200px;margin:0;}
+.blog { width:270px; margin:10px auto; padding:10px 10px; border:8px solid #eaeaea; background:#f7f7f7;} 
+
+/********** contact form **********/
+#contactform { margin:0; padding:5px 10px;}
+#contactform * { color:#F00;}
+#contactform ol { margin:0; padding:0; list-style:none;}
+#contactform li { margin:0; padding:0; background:none; border:none; display:block;}
+#contactform li.buttons { margin:5px 0 5px 0;}
+#contactform label { margin:0; width:110px; display:block; padding:10px 0; color:#5f5f5f; font: bold 12px; text-transform:capitalize; float:left;}
+#contactform label span { color:#F00;}
+#contactform input.text { width:465px; border:1px solid #dcdcdc; margin:10px 0; padding:5px 2px; height:16px; background:#fff; float:left;}
+#contactform textarea { width:440px; border:1px solid #dcdcdc; margin:10px 0; padding:2px; background:#fff; float:left;}
+#contactform li.buttons input { padding:3px 0 3px 110px; margin:0; border:0; color:#FFF; float:left;}
+p.response { text-align:center; color:#F00; font: normal 11px; line-height:1.8em; width:auto;}
+/********** footer **********/
+.footer { margin:0; padding:10px 0 0 0; border-top:0px solid; }
+.footer_resize { margin:0 auto; padding:10px 0; width:980px;}
+.footer ul { margin:0; padding:0px 0px 0px 0px; list-style:none; float:left;}
+.footer img { display:inline; margin:0px 10px; padding:0;}
+.footer ul li { margin:0; float:left;}
+.footer p { margin:0; float:right; font:normal 14pt; line-height:1.8em;}
+.footer a { border-right:1px solid;padding-right:10px;padding-left:10px; font:10pt; text-decoration:none; line-height:1.8em;letter-spacing:.11em;}
+.footer span {padding-right:10px;padding-left:10px; font:10pt; text-decoration:none; line-height:1.8em;letter-spacing:.11em;}
+
+p.clr, .clr { clear:both; padding:0; margin:0; background:none;}
+li.bg, .bg { clear:both; border-top:1px solid #e2e2e2; padding:0; margin:10px 0; background:none; line-height:0;}

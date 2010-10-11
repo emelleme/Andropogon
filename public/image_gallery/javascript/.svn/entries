@@ -1,0 +1,52 @@
+8
+
+dir
+507
+http://carlinowebdesign.svn.beanstalkapp.com/modules/trunk/image_gallery/javascript
+http://carlinowebdesign.svn.beanstalkapp.com/modules
+
+
+
+2009-09-05T21:37:10.498988Z
+262
+unclecheese
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1759cf2-80a2-421f-8334-f6f125b70621
+
+imagegallery_init.js
+file
+
+
+
+
+2010-06-01T07:26:07.000000Z
+af5747bf83f394ec5cb89380458a2b74
+2009-08-28T13:17:10.435759Z
+252
+unclecheese
+
+imagegallerymanager_popup.js
+file
+
+
+
+
+2010-06-01T07:26:07.000000Z
+a4f290d4ff615302afb3102c59fba971
+2009-02-20T15:41:10.633214Z
+33
+unclecheese
+

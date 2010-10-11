@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easySlider1.5.js"></script>
+<script type="text/javascript" charset="utf-8">
+// <![CDATA[
+$(document).ready(function(){	
+	$("#slider").easySlider({
+		controlsBefore:	'<p id="controls">',
+		controlsAfter:	'</p>',
+		auto: true, 
+		continuous: true
+	});	
+});
+// ]]>
+</script>
+<style type="text/css">
+.gallery { width:982px; height:264px; margin:0 auto; padding:0; }
+#slider { margin:0; padding:0; list-style:none; }
+#slider ul,
+#slider li { margin:0; padding:0; list-style:none; }
+/* 
+    define width and height of list item (slide)
+    entire slider area will adjust according to the parameters provided here
+*/
+#slider li { width:982px; height:264px; overflow:hidden; }
+p#controls { margin:0; padding:0; position:relative; }
+#prevBtn { display:block; margin:0; overflow:hidden; width:33px; height:35px; position:absolute; left:0; top:-34px; }
+#nextBtn { display:block; margin:0; overflow:hidden; width:33px; height:35px; position:absolute; left: 950px; top:-34px; }
+#prevBtn a { display:block; width:33px; height:35px; background:url(images/l_arrow.gif) no-repeat 0 0; }
+#nextBtn a { display:block; width:33px; height:35px; background:url(images/r_arrow.gif) no-repeat 0 0; }
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="block_header">
+      <div class="logo"><a href="index.html"><img src="images/logo.gif" width="206" height="106" border="0" alt="logo" /></a></div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">Services</a></li>
+          <li><a href="portfolio.html">Project</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="top_sup">
+    <div class="top_sup_resize">
+      <div class="search">
+        <form id="form1" name="form1" method="post" action="">
+          <label><span>
+            <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
+            </span>
+            <input name="b" type="image" src="images/search.gif" class="button" />
+          </label>
+        </form>
+      </div>
+      <p><span>Project Name</span><br />
+        Many desktop publishing packages and web page editors now use Lorem Ipsum will uncover many web sites still in their infancy. </p>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="slider_top">
+    <div class="header_text">
+      <div class="gallery">
+        <div id="slider">
+          <ul>
+            <li> <img src="images/simple_img_1.jpg" alt="screen 1" width="982" height="264" border="0" class="screen"  /> </li>
+            <li> <img src="images/simple_img_2.jpg" alt="screen 1" width="982" height="264" border="0" class="screen"  /> </li>
+            <li> <img src="images/simple_img_3.jpg" alt="screen 1" width="982" height="264" border="0" class="screen"  /> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="body">
+    <div class="body_resize">
+      <div class="left">
+        <h2>News &amp; Events</h2>
+        <div class="blog">
+          <p><strong style="color:#006ba2;">14 / April / 09</strong><br />
+            Listuem Names ligula a blandit ornare, ligula a quis bibendum. <a href="#">&gt;&gt;</a></p>
+          <div class="bg"></div>
+          <p><strong style="color:#006ba2;">14 / April / 09</strong><br />
+            Aenean varius nulla elit porttitor tellus ligula porta vestibulum. <a href="#">&gt;&gt;</a></p>
+          <div class="bg"></div>
+          <p><strong style="color:#006ba2;">14 / April / 09</strong><br />
+            ligula a quis bibendum elit ante necmetus elit antenecme blandit ornare. <a href="#">&gt;&gt;</a></p>
+          <div class="bg"></div>
+        </div>
+        <h2>What They Say</h2>
+        <img src="images/test_img.gif" alt="picture" width="55" height="55" />
+        <p>&quot;Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&quot;</p>
+        <p><a href="#"><strong>-John Smith, webdesigner</strong></a></p>
+      </div>
+      <div class="right">
+        <h2>Welcome to design theme.</h2>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget bibendum tellus. Nunc vel imperdiet tellus. Mauris ornare aliquam urna, accumsan bibendum eros auctor ac.</span></p>
+        <p><strong>Suspendisse adipiscing rhoncus massa, sit amet sollicitudin quam vulputate non. In non turpis nisl. </strong></p>
+        <p>Curabitur purus mi, pharetra vitae viverra et, mattis sit amet nunc. Quisque enim ipsum, convallis sit amet molestie in, placerat vel urna. Praesent congue auctor elit, nec pretium ipsum volutpat vitae. Vivamus eget ipsum sit amet ipsum tincidunt fermentum. Sed hendrerit neque ac erat condimentum vulputate. Nulla velit massa, dictum et interdum quis, tempus at velit. </p>
+        <p>Nunc gravida luctus mauris at rhoncus. Nulla facilisi. Phasellus iaculis varius nibh a adipiscing. Vestibulum nec laoreet tellus. Integer aliquet lacinia justo vel congue.</p>
+        <div class="bg"></div>
+        <p><a href="#" class="bold">more &gt;&gt;</a></p>
+        <p>&nbsp;</p>
+        <h2>What We Do</h2>
+        <img src="images/img_1.gif" alt="picture" width="116" height="116" />
+        <p><strong>Vestibulum vehicula purus nec dui accumsan fermentum. </strong></p>
+        <p>Suspendisse potenti. Ut dapibus est id odio pretium blandit in eget leo. Aliquam erat volutpat. Curabitur blandit odio eget odio eleifend vel mattis augue convallis. Praesent fringilla, eros et tristique tempus, libero metus porttitor velit, at ultrices eros dolor placerat nunc. Fusce ac egestas ante.</p>
+        <div class="bg"></div>
+        <p><a href="#" class="bold">more &gt;&gt;</a></p>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer_resize">
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="services.html">services</a></li>
+      <li><a href="portfolio.html">portfolio</a></li>
+      <li><a href="services.html">about</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li><a href="portfolio.html">rss feed</a></li>
+    </ul>
+    <p>Copyright © Sitename.com. <a href="http://dreamtemplate.com/">dreamtemplate.com</a>. All Rights Reserved</p>
+    <div class="clr"></div>
+  </div>
+</div>
+</body>
+</html>

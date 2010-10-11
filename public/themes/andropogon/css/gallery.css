@@ -1,0 +1,14 @@
+.gallery { width:960px; height:310px; margin:0 auto; padding:0; }
+#slider { margin:0; padding:0; list-style:none; }
+#slider ul,
+#slider li { margin:0; padding:0; list-style:none; }
+/* 
+    define width and height of list item (slide)
+    entire slider area will adjust according to the parameters provided here
+*/
+#slider li { width:982px; height:264px; overflow:hidden; }
+p#controls { margin:0; padding:0; position:relative; }
+#prevBtn { display:block; margin:0; overflow:hidden; width:56px; height:58px; position:absolute; left:0; top:-134px; }
+#nextBtn { display:block; margin:0; overflow:hidden; width:56px; height:58px; position:absolute; left: 930px; top:-134px; }
+#prevBtn a { display:block; width:56px; height:58px; background:url(../images/l_nav.png) no-repeat 0 0; }
+#nextBtn a { display:block; width:56px; height:58px; background:url(../images/r_nav.png) no-repeat 0 0; }

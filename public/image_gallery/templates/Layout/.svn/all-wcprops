@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/modules/!svn/ver/262/trunk/image_gallery/templates/Layout
+END
+ImageGalleryPage.ss
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/modules/!svn/ver/126/trunk/image_gallery/templates/Layout/ImageGalleryPage.ss
+END
+ImageGalleryPage_album.ss
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/modules/!svn/ver/262/trunk/image_gallery/templates/Layout/ImageGalleryPage_album.ss
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/modules/!svn/ver/501/trunk/uploadify/templates
+END
+UploadifyField.ss
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/modules/!svn/ver/501/trunk/uploadify/templates/UploadifyField.ss
+END
+S3UploadBackend.ss
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/modules/!svn/ver/468/trunk/uploadify/templates/S3UploadBackend.ss
+END
+UploadifyFieldBackend.ss
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/modules/!svn/ver/478/trunk/uploadify/templates/UploadifyFieldBackend.ss
+END
+S3Upload.ss
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/modules/!svn/ver/468/trunk/uploadify/templates/S3Upload.ss
+END

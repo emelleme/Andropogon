@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/107425/open/modules/forum/trunk/templates/Layout
+END
+ForumHolder_search.ss
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/107425/open/modules/forum/trunk/templates/Layout/ForumHolder_search.ss
+END
+Forum_post.ss
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/45161/open/modules/forum/trunk/templates/Layout/Forum_post.ss
+END
+ForumMemberProfile.ss
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/45161/open/modules/forum/trunk/templates/Layout/ForumMemberProfile.ss
+END
+ForumMemberProfile_show.ss
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/100376/open/modules/forum/trunk/templates/Layout/ForumMemberProfile_show.ss
+END
+ForumHolder_popularthreads.ss
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/70207/open/modules/forum/trunk/templates/Layout/ForumHolder_popularthreads.ss
+END
+Forum_editpost.ss
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/98901/open/modules/forum/trunk/templates/Layout/Forum_editpost.ss
+END
+Forum_reply.ss
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/98901/open/modules/forum/trunk/templates/Layout/Forum_reply.ss
+END
+Forum_starttopic.ss
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/106139/open/modules/forum/trunk/templates/Layout/Forum_starttopic.ss
+END
+ForumMemberProfile_register.ss
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/70195/open/modules/forum/trunk/templates/Layout/ForumMemberProfile_register.ss
+END
+ForumHolder.ss
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/106644/open/modules/forum/trunk/templates/Layout/ForumHolder.ss
+END
+Forum.ss
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/98901/open/modules/forum/trunk/templates/Layout/Forum.ss
+END
+Forum_show.ss
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/106747/open/modules/forum/trunk/templates/Layout/Forum_show.ss
+END
+ForumHolder_memberlist.ss
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/70207/open/modules/forum/trunk/templates/Layout/ForumHolder_memberlist.ss
+END

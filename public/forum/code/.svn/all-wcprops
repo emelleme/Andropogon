@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/108368/open/modules/forum/trunk/code
+END
+ForumRole.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/106308/open/modules/forum/trunk/code/ForumRole.php
+END
+ForumThread.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/106747/open/modules/forum/trunk/code/ForumThread.php
+END
+ForumMemberProfile.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/106218/open/modules/forum/trunk/code/ForumMemberProfile.php
+END
+Post.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/107425/open/modules/forum/trunk/code/Post.php
+END
+ForumCategory.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/106218/open/modules/forum/trunk/code/ForumCategory.php
+END
+ForumHolder.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/107425/open/modules/forum/trunk/code/ForumHolder.php
+END
+Forum.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/108368/open/modules/forum/trunk/code/Forum.php
+END
