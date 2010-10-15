@@ -96,7 +96,7 @@ a.rightscroll 				{position:relative;float: right; top:270px; right: 10px; displ
 /* right mini */
 a.rightscroll_mini 				{position:relative;float:right; top:35px; left: 12px; display:block; width:30px; height:31px; background:url(../images/r_nav_mini.png) no-repeat 0 0; background-position: 0px 0px; clear:right; margin-right: 0px;} 
 
-#caption {position:relative;float:right;top:-38px; left:-50px;display:block;margin-right:0px;background-color:white;	filter:alpha(opacity=50);
+#caption {position:relative;float:right;top:-38px; left:-50px;display:block;margin-right:0px;background-color:white;font-style:italic;	filter:alpha(opacity=50);
 	-moz-opacity:0.5;
 	-khtml-opacity: 0.5;
 	opacity: 0.5;
