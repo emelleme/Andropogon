@@ -37,7 +37,7 @@
   
   <div class="slider_top">
     <div class="header_text">
-      <div class="gallery">
+      <div id="gallery" class="gallery">
        <% include HomeTopImage %>
       </div>
       <div class="clr"></div>

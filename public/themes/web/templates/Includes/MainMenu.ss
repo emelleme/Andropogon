@@ -2,7 +2,7 @@
 	<% if Menu(1) %>
 		<% control Menu(1) %>
 		<ul>
-			<li><h2 class="$URLSegment"><a class="$LinkingMode" href="$URLSegment">$MenuTitle</a></h2>
+			<li><h2 id="page_$ID"><a id="$URLSegment_link" class="$LinkingMode" href="$URLSegment">$MenuTitle</a></h2>
 			<% control Children %>
 				<ul>
 					<li class="$Parent.LinkingMode">

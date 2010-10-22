@@ -1,5 +1,5 @@
 <% require javascript(mysite/javascript/links.js) %>
-<div class="right-content-scroller">
+<div class="right-content-scroller" id="right-content-scroller">
 <% require themedCSS(Scroller) %>
 <% require javascript(mysite/javascript/scroller.js) %>
 
@@ -12,8 +12,8 @@
 	<!-- wrapper for scrollable items -->
 	<div class="newsitems">
 
-	<% if NewsItems %>
-	<% control NewsItems %>
+	<% if newsItems %>
+	<% control newsItems %>
 		<div>
 			<h2>$Title</h2>
 			<span>$Date.NiceUS </span>
