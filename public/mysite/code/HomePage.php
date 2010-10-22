@@ -55,6 +55,22 @@ class HomePage_Controller extends Page_Controller {
 		//Requirements::themedCSS('typography'); 
 		//Requirements::themedCSS('form'); 
 	}
+	
+	public function newsItems(){
+	$a = DataObject::get('NewsItem','HomePageID ='.$this->ID,'Date Desc');
+	return $a;
+	}
+	
+	public function getTopImage(){
+		$params = Director::urlParams();
+		$page = $params['ID'];
+		$id = substr(strrchr($page, "_"), 1);
+		$a = DataObject::get_one('TopImage', 'PageID = '.$id);
+		$d = array(
+			'TopImage' => $a
+		);
+		return $this->customise($d)->renderWith('TopImageAjax');
+	}
 
 	
 				
