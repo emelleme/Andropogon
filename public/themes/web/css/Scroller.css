@@ -13,7 +13,6 @@
 
 }
 .scrollable-approach {
-
 	/* required settings */
 	position:relative;
 	overflow:hidden;
@@ -39,7 +38,6 @@
 	width:20000em;
 	position:absolute;
 }
-
 .newsitems div p .details{
 color:#aaa; padding:0px 5px; margin:0; line-height:1.5em;
 }
@@ -55,7 +53,6 @@ color:#aaa; padding:0px 5px; margin:0; line-height:1.5em;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 }
-
 /* 
     define width and height of list item (slide)
     entire slider area will adjust according to the parameters provided here
@@ -71,13 +68,10 @@ color:#aaa; padding:0px 5px; margin:0; line-height:1.5em;
 	position:relative;
 	cursor:default;
 }
-
-
 /* this makes it possible to add next button beside scrollable */
 .newsitems {
 	float:left;	
 }
-
 /* prev, next, prevPage and nextPage buttons */
 a.browse {
 	background:url(http://static.flowplayer.org/tools/img/scrollable/arrow/hori_large.png) no-repeat;
@@ -89,7 +83,6 @@ a.browse {
 	cursor:pointer;
 	font-size:1px;
 }
-
 /* right */
 a.rightscroll 				{position:relative;float: right; top:270px; right: 10px; display:block; width:30px; height:31px; background:url(../images/r_nav.png) no-repeat 0 0; background-position: 0px 0px; clear:right; margin-right: 0px;} 
 
@@ -111,8 +104,6 @@ font-style:italic;
 	-khtml-opacity: 1;
 	opacity: 1;
 }
-
-
 #embedded_video {
 display:none;
 }
@@ -163,7 +154,6 @@ a.disabled {
 	/* a little styling */	
 	font-size:11px;
 }
-
 /* default close button positioned on upper right corner */
 .apple_overlay .close {
 	background-image:url(../images/close.png);

@@ -1,6 +1,4 @@
-<% require javascript(mysite/javascript/links.js) %>
 <div class="right-content-scroller" id="right-content-scroller">
-<% require themedCSS(Scroller) %>
 <% require javascript(mysite/javascript/scroller.js) %>
 
 <!-- "previous page" action --> 

@@ -1,5 +1,5 @@
 <% require javascript(mysite/javascript/links.js) %>
-<div class="right-content-scroller">
+<div class="right-content-scroller" id="right-content-scroller">
 <% require themedCSS(Scroller) %>
 <% require javascript(mysite/javascript/scroller-approach.js) %>
 

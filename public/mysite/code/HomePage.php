@@ -71,6 +71,16 @@ class HomePage_Controller extends Page_Controller {
 		);
 		return $this->customise($d)->renderWith('TopImageAjax');
 	}
+	
+	public function getPageContent(){
+		$params = Director::urlParams();
+		$page = $params['ID'];
+		$a = DataObject::get_one('SiteTree', 'URLSegment = \''.$page.'\'');
+		$d = array(
+			'Content' => $a->Content
+		);
+		return $this->customise($d)->renderWith('ContentAjax');
+	}
 
 	
 				

@@ -2,19 +2,21 @@
 	<% if Menu(1) %>
 		<% control Menu(1) %>
 		<ul>
-			<li><h2 id="page_$ID"><a id="$URLSegment_link" class="$LinkingMode" href="$URLSegment">$MenuTitle</a></h2>
+			<li><h2 id="page_$ID"><a id="$URLSegment" class="$LinkingMode abc" href="$URLSegment">$MenuTitle</a></h2>
 			<% control Children %>
 				<ul>
-					<li class="$Parent.LinkingMode">
+					<li id="page_$ID" class="$Parent.LinkingMode">
 				  	
-					<a class="$LinkingMode" href="$URLSegment">$MenuTitle</a>
+					<a id="$URLSegment" class="$LinkingMode" href="$URLSegment">$MenuTitle</a>
 					
 				  		<ul>
-							<li class ="$LinkingMode">
+				  			
+							<li id="page_$ID" class ="$LinkingMode">
 							<% control Children %>
-							<a class="$LinkingMode" href="$URLSegment">$MenuTitle</a>
+							<a id="$URLSegment" class="$LinkingMode" href="$URLSegment">$MenuTitle</a>
 							<% end_control %>
 							</li>
+							
 						</ul>
 					
 						

@@ -6,12 +6,10 @@
 		<title><% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
 		$MetaTags(false)
 		<script type="text/javascript" src="http://fast.fonts.com/jsapi/98b7e864-ea2e-45b1-ba09-43c14cbc05ca.js"></script>
-		<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.4/full/jquery.tools.min.js"></script>
+		<script type="text/javascript" src="mysite/javascript/jquery.tools.min.js"></script>
 		<% require themedCSS(style) %> 
-		<% require themedCSS(form) %>
-		<% require themedCSS(Scroller) %>
-		<% require javascript(mysite/javascript/jquery.easing.1.3.js) %>
-		<% require javascript(mysite/javascript/jquery.expander.js) %>
+		<% require javascript(mysite/javascript/jquery.easing.min.js) %>
+		<% require javascript(mysite/javascript/links.js) %>
 		<% require javascript(mysite/javascript/video.js) %>
 		<!--[if IE 6]>
 			<style type="text/css">
@@ -52,7 +50,7 @@
   
   	<div class="slider_top">
     <div class="header_text">
-      	<div class="gallery">
+      	<div id="gallery" class="gallery">
        	<% include TopImage %>
       	</div>
       	<div class="clr"></div>

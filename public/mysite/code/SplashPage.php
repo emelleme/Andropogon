@@ -24,6 +24,7 @@ class SplashPage extends Page {
 			// Join clause
 		);
 		$fields->removeFieldFromTab("Root.Content","ImageGallery");
+		$fields->removeFieldFromTab("Root.Content.Main","Content");
 	$fields->addFieldToTab("Root.Content.BackgroundImages",new HeaderField('ImageGalleryHeader','Upload Image(s) for this Page.'));
     $fields->addFieldToTab("Root.Content.BackgroundImages",$manager);
 	return $fields;

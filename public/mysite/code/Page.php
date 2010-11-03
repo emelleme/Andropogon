@@ -63,7 +63,7 @@ SSViewer::set_theme('web');
 		// included so that our older themes still work
 		//Requirements::themedCSS('layout'); 
 		//Requirements::themedCSS('typography'); 
-		//Requirements::themedCSS('form'); 
+		Requirements::javascript('mysite/javascript/jquery.url.min.js'); 
 	}
 	public function MetaTags($includeTitle = true) {
 		$tags = "";
