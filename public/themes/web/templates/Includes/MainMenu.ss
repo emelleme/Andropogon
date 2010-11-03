@@ -1,4 +1,4 @@
-<% require javascript(mysite/javascript/menu-control.js) %>
+
 	<% if Menu(1) %>
 		<% control Menu(1) %>
 		<ul>
