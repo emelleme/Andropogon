@@ -9,6 +9,7 @@
 		<script type="text/javascript" src="mysite/javascript/jquery.tools.min.js"></script>
 		<% require themedCSS(style) %> 
 		<% require javascript(mysite/javascript/jquery.easing.min.js) %>
+		<% require javascript(mysite/javascript/links.js) %>
 		<!--[if IE 6]>
 			<style type="text/css">
 			 @import url(themes/web/css/ie6.css);
