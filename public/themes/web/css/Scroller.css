@@ -84,7 +84,7 @@ a.browse {
 	font-size:1px;
 }
 /* right */
-a.rightscroll 				{position:relative;float: right; top:270px; right: 10px; display:block; width:30px; height:31px; background:url(../images/r_nav.png) no-repeat 0 0; background-position: 0px 0px; clear:right; margin-right: 0px;} 
+a.rightscroll 				{position:absolute;float: right; top:270px; right: 10px; display:block; width:30px; height:31px; background:url(../images/r_nav.png) no-repeat 0 0; background-position: 0px 0px; clear:right; margin-right: 0px;} 
 
 /* right mini */
 a.rightscroll_mini 				{position:relative;float:right; top:35px; left: 12px; display:block; width:30px; height:31px; background:url(../images/r_nav_mini.png) no-repeat 0 0; background-position: 0px 0px; clear:right; margin-right: 0px;} 
@@ -108,7 +108,7 @@ font-style:italic;
 display:none;
 }
 /* left */
-a.leftscroll				{ position:relative;float:left; top:270px; left:10px; display:block; width:30px; height:31px; background:url(../images/l_nav.png) no-repeat 0 0;z-index:50; }
+a.leftscroll 				{position:relative;float: right; top:270px; right: 920px; display:block; width:30px; height:31px; background:url(../images/l_nav.png) no-repeat 0 0; background-position: 0px 0px; clear:right; margin-right: 0px;z-index:50;} 
 
 a.leftscroll_mini				{ position:relative;float:left; top:35px; right:25px; display:block; width:30px; height:31px; background:url(../images/l_nav_mini.png) no-repeat 0 0;z-index:50; }
 	
