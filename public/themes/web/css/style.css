@@ -116,10 +116,12 @@ margin-left:-20px;
 .top_sup_resize2 h2 { font: normal 28pt ; color:#fff; padding:0 0 0 20px; margin:0; width:200px; float:left;}
 .top_sup_resize2 p { width:540px; float:right; text-align:left; font:normal 11px; color:#4d4d4d; padding:5px; margin:0; line-height:1.8em;}
 /* search */
-.search { padding:0px 0 0 0; margin:0; float:right;}
-.search form { display:block; float:right; padding:5px 0;}
+.search { padding:0px 0 0 0; margin:0; float:left;}
+.search form { display:block; float:left; padding:0px 0;}
+.search input{ padding-top:5px;border:1px solid #CBC3CA;}
 .search span { display:block; float:left; width:114px; padding:0 5px; height:34px; }
 .search form .button { float:left; margin:0; padding:0;}
+.search a { border-right:none !important}
 
 /********** slider **********/
 .gallery {position:relative; width:960px; height:310px; margin:0 auto; padding:0;border:.1em solid #aaa; }

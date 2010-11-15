@@ -104,4 +104,45 @@ SSViewer::set_theme('web');
 		
 		return $count;
 	}
+	
+	public function getVideo(){
+		$this->response->addHeader("Content-Type", "text/plain; charset=UTF-8"); 
+		    $this->response->addHeader("Expires", "Mon, 26 Jul 1997 05:00:00 GMT");
+		    $this->response->addHeader("Cache-Control", "no-cache, must-revalidate");
+		$urlsegment = Director::urlParams();
+		$vurl = rawurlencode($urlsegment['ID']) ? $urlsegment['ID'] : rawurlencode('http://vimeo.com/7100569');
+		$vwidth = "640";
+		$vheight = "472";
+		$vbyline = "false";
+		$vtitle = 'false';
+		$vportrait = 'false';
+		$vcolor = 'e6e3e3';
+		$vautoplay = 'true';
+		$vapi = 'true';
+		
+		$vimeourl = "http://vimeo.com/api/oembed.xml?url=".$vurl
+		."&width=".$vwidth
+		."&height=".$vheight
+		."&byline=".$vbyline
+		."&title=".$vtitle
+		."&portrait=".$vportrait
+		."&color=".$vcolor
+		."&autoplay=".$vautoplay
+		."&api=".$vapi
+		."&xhtml=false";
+		$r = new RestfulService($vimeourl, 3600);
+		$h = array();
+		$response = $r->request($subURL = '', $method = "GET", $data = null,$h, $curlOptions = array());
+		$status = $response->getStatusCode();
+		if ($status != 200){
+			//user_error($status.": ".$response->getStatusDescription().' Unable to load city services.', E_USER_ERROR);
+			$results[0] = 'invalid';
+			return $results;
+		}else{
+			$data = strip_tags($response->getBody());
+			$oembed = simplexml_load_string($response->getBody());
+			var_dump($oembed);
+		}
+		
+	}
 }

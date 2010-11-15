@@ -54,7 +54,11 @@
   	<div class="slider_top">
     <div class="header_text">
       	<div id="gallery" class="gallery">
-       	<% include TopImage %>
+      	<% if URLSegment = staff %>
+      		<% include StaffTopImage %>
+      	<% else %>
+       		<% include TopImage %>
+       	<% end_if %>
       	</div>
       	<div class="clr"></div>
 	</div>
