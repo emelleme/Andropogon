@@ -48,7 +48,7 @@ class TopImage extends DataObject{
 			$data = strip_tags($response->getBody());
 			$oembed = simplexml_load_string($response->getBody());
 			//$this->VideoEnabled = 1;
-			DB::query('UPDATE ' . $this->ClassName . ' SET Vimeohtml=\''.$oembed->html.'\''); 
+			DB::query('UPDATE ' . $this->ClassName . ' SET Vimeohtml=\''.$oembed->html.'\'Where VimeoID='.$this->VimeoID); 
 		}
 		
 		}
