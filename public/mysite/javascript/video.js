@@ -6,7 +6,6 @@ var ifrm = $('object');
 $.each(ifrm, function(i, v){
 	$(v).attr('id','vid_'+i);
 	$(v).children('embed').attr('id','vid_'+i);
-	console.log(v);
 });
 
 	
@@ -35,7 +34,7 @@ $(".top-image-video img[rel]").overlay({effect: 'apple',// some mask tweaks suit
 					//Play Video
 					activeframe = object;
 					//object.children('embed').eq(0).api_play();
-					console.log(object.children('embed').eq(0));
+					
 					
 				}
 			});
