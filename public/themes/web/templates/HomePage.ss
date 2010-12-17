@@ -18,6 +18,20 @@
 			 @import url(themes/web/css/ie6.css);
 			</style> 
 		<![endif]-->
+		<!--[if lt IE 7]>
+	<style> 
+	div.apple_overlay {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_IE6.gif);
+		color:#fff;
+	}
+	
+	/* default close button positioned on upper right corner */
+	div.apple_overlay div.close {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_close_IE6.gif);
+	
+	}	
+	</style>
+	<![endif]-->
 		<script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -62,6 +76,10 @@
     <% include Footer %>
     <div class="clr"></div>
   </div>
+</div>
+<div id="box" class="holiday_overlay">
+	<div id="inner-box" style="padding-top:100px;">
+	</div>
 </div>
 </body>
 </html>

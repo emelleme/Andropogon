@@ -29,6 +29,38 @@
 	width:28px;
 }
 
+
+.holiday_overlay {
+	
+	/* initially overlay is hidden */
+	display:none;
+	
+	/* growing background image */
+	background-image:url(../images/white.png);
+	
+	/* 
+		width after the growing animation finishes
+		height is automatically calculated
+	*/
+	width:900px;		
+	
+	/* some padding to layout nested elements nicely  */
+	padding:35px;
+
+	/* a little styling */	
+	font-size:11px;
+}
+
+/* default close button positioned on upper right corner */
+.holiday_overlay .close {
+	background-image:url(../images/close.png);
+	position:absolute; right:5px; top:5px;
+	cursor:pointer;
+	height:28px;
+	width:28px;
+}
+
+
 /* black version of the overlay. simply uses a different background image */
 	div.apple_overlay.black {
 		background-image:url(../images/black.png);		
