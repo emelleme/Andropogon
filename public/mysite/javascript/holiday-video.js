@@ -19,7 +19,7 @@ $(document).ready(function() {
 			fp_version:10,
 			portrait:0,
 			js_onLoad: 'vimeo_player_loaded',
-			js_swf_id: 'moogaloop',	
+			js_swf_id: 'moogaloop'
 		});
 	
 		
