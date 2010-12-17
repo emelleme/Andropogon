@@ -53,17 +53,13 @@ $(document).ready(function() {
 
  function vimeo_player_loaded() {
                        moogaloop = $('#moogaloop');
-                       console.log('loaded');
                        var m = api.getApi();
-			console.log(m);
-			var d = m.api_setLoop('true');
-			console.log(d);
+		m.api_setLoop('true');
                }
 
 function vimeo_on_finish(swf_id){
 	//Repeat Video
 	var playerframe = $(swf_id);
-	console.log('done');
 	playerframe.api("api_play");
 }
  
