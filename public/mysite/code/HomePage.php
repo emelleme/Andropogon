@@ -54,6 +54,10 @@ class HomePage_Controller extends Page_Controller {
 		//Requirements::themedCSS('layout'); 
 		//Requirements::themedCSS('typography'); 
 		//Requirements::themedCSS('form'); 
+		$h = @$_GET['holiday'];
+		if($h){
+		Requirements::javascript('mysite/javascript/holiday-video.js');
+		}
 	}
 	
 	public function newsItems(){
