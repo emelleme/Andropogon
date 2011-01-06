@@ -5,7 +5,8 @@
 		<% base_tag %>
 		<title><% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
 		$MetaTags(false)
-		<script type="text/javascript" src="http://fast.fonts.com/jsapi/98b7e864-ea2e-45b1-ba09-43c14cbc05ca.js"></script>
+		
+		<script type="text/javascript" src="http://fast.fonts.com/jsapi/b9fb7679-3b0b-4854-b781-bd594a7378b8.js"></script>
 		<script type="text/javascript" src="mysite/javascript/jquery.tools.min.js"></script>
 		<% require themedCSS(style) %> 
 		<% require themedCSS(form) %> 
