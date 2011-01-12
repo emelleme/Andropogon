@@ -173,7 +173,7 @@ class Security extends Controller {
 						'alreadyLoggedIn' => _t(
 							'Security.ALREADYLOGGEDIN', 
 							"You don't have access to this page.  If you have another account that "
-								. "can access that page, you can <a href=\"%s\">log in again</a>.",
+								. "can access that page, you can log in again below.",
 							PR_MEDIUM,
 							"%s will be replaced with a link to log in."
 						),
@@ -202,12 +202,14 @@ class Security extends Controller {
 				else
 					$message=$messageSet['default'];
 
-				// Replace %s with the log in link
-				$body = sprintf($message, 
-					Controller::join_links(Director::baseURL(), 'Security/login',
-					'?BackURL=' . urlencode($_SERVER['REQUEST_URI'])));
+				// Somewhat hackish way to render a login form with an error message.
+				$me = new Security();
+				$form = $me->LoginForm();
+				$form->sessionMessage($message, 'warning');
+				Session::set('MemberLoginForm.force_message',1);
+				$formText = $me->login();
 				
-				$response->setBody($body);
+				$response->setBody($formText);
 				return $response;
 
 			} else if(substr(Director::history(),0,15) == 'Security/logout') {
@@ -298,8 +300,6 @@ class Security extends Controller {
 	public function logout($redirect = true) {
 		$member = Member::currentUser();
 		if($member) $member->logOut();
-
-		Session::clear_all();
 
 		if($redirect) Director::redirectBack();
 	}
@@ -512,7 +512,14 @@ class Security extends Controller {
 	}
 	
 	/**
-	 * Show the "change password" page
+	 * Show the "change password" page.
+	 * This page can either be called directly by logged-in users
+	 * (in which case they need to provide their old password),
+	 * or through a link emailed through {@link lostpassword()}.
+	 * In this case no old password is required, authentication is ensured
+	 * through the Member.AutoLoginHash property.
+	 * 
+	 * @see ChangePasswordForm
 	 *
 	 * @return string Returns the "change password" page as HTML code.
 	 */
@@ -524,10 +531,15 @@ class Security extends Controller {
 		$controller = new Page_Controller($tmpPage);
 		$controller->init();
 
+		// First load with hash: Redirect to same URL without hash to avoid referer leakage
 		if(isset($_REQUEST['h']) && Member::member_from_autologinhash($_REQUEST['h'])) {
-			// The auto login hash is valid, store it for the change password form
+			// The auto login hash is valid, store it for the change password form.
+			// Temporary value, unset in ChangePasswordForm
 			Session::set('AutoLoginHash', $_REQUEST['h']);
-
+			
+			return $this->redirect($this->Link('changepassword'));
+		// Redirection target after "First load with hash"
+		} elseif(Session::get('AutoLoginHash')) {
 			$customisedController = $controller->customise(array(
 				'Content' =>
 					'<p>' . 
@@ -535,7 +547,6 @@ class Security extends Controller {
 					'</p>',
 				'Form' => $this->ChangePasswordForm(),
 			));
-
 		} elseif(Member::currentUser()) {
 			// let a logged in user change his password
 			$customisedController = $controller->customise(array(
@@ -566,7 +577,6 @@ class Security extends Controller {
 			}
 		}
 
-		//Controller::$currentController = $controller;
 		return $customisedController->renderWith(array('Security_changepassword', 'Security', $this->stat('template_main'), 'ContentController'));
 	}
 	

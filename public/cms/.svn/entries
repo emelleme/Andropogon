@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/cms/branches/2.4
 http://svn.silverstripe.com
 
 
 
-2010-08-04T02:57:38.736031Z
-108887
-jseide
+2011-01-11T23:00:59.706594Z
+115440
+sharvey
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -42,6 +42,18 @@ has-props
 lang
 dir
 
+web.config
+file
+
+
+
+
+2011-01-12T18:39:52.000000Z
+24fc439c49892c247ab09c51d99d6c14
+2010-12-09T22:51:55.485902Z
+114771
+ischommer
+
 tests
 dir
 
@@ -69,11 +81,11 @@ file
 
 
 
-2010-08-06T02:07:09.000000Z
-2450d76a33338d2596d82953d47b47ac
-2010-07-20T23:51:53.581342Z
-108246
-sharvey
+2011-01-12T18:39:52.000000Z
+6a5e7f1be5579e00f14d1894160631cd
+2010-10-11T04:56:39.733380Z
+111875
+phalkunz
 has-props
 
 .htaccess
@@ -82,10 +94,10 @@ file
 
 
 
-2010-08-06T02:07:09.000000Z
-41857fa8c27045add4f135646b13e5c1
-2010-07-20T04:48:38.956646Z
-108206
+2011-01-12T18:39:52.000000Z
+ed5443124e2ee129d0a681a78247988c
+2010-12-09T22:51:55.485902Z
+114771
 ischommer
 
 templates

@@ -1,7 +1,7 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/thirdparty/jquery-ui
 http://svn.silverstripe.com
 
@@ -250,19 +250,6 @@ file
 ischommer
 has-props
 
-jquery.ui.droppable.js
-file
-
-
-
-
-2010-05-30T18:49:08.000000Z
-2b12396a070411fdbf5233b1c6f69c29
-2010-03-11T02:29:07.321415Z
-100842
-ischommer
-has-props
-
 jquery.ui.draggable.js
 file
 
@@ -271,6 +258,19 @@ file
 
 2010-05-30T18:49:08.000000Z
 1ad55ec6a53df92ba5118495c5985eb9
+2010-03-11T02:29:07.321415Z
+100842
+ischommer
+has-props
+
+jquery.ui.droppable.js
+file
+
+
+
+
+2010-05-30T18:49:08.000000Z
+2b12396a070411fdbf5233b1c6f69c29
 2010-03-11T02:29:07.321415Z
 100842
 ischommer
@@ -292,19 +292,6 @@ has-props
 i18n
 dir
 
-jquery.ui.button.js
-file
-
-
-
-
-2010-05-30T18:49:08.000000Z
-20fac055dea2d5a6ac378857af58e69c
-2010-03-11T02:29:07.321415Z
-100842
-ischommer
-has-props
-
 GPL-LICENSE.txt
 file
 
@@ -315,6 +302,19 @@ file
 2c1778696d3ba68569a0352e709ae6b7
 2010-03-11T02:29:12.987539Z
 100843
+ischommer
+has-props
+
+jquery.ui.button.js
+file
+
+
+
+
+2010-05-30T18:49:08.000000Z
+20fac055dea2d5a6ac378857af58e69c
+2010-03-11T02:29:07.321415Z
+100842
 ischommer
 has-props
 

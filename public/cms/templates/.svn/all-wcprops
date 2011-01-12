@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/!svn/ver/108442/open/modules/cms/branches/2.4/templates
+/!svn/ver/113282/open/modules/cms/branches/2.4/templates
 END
 SSReportTableField_printable.ss
 K 25
@@ -14,12 +14,6 @@ K 25
 svn:wc:ra_dav:version-url
 V 65
 /!svn/ver/90860/open/modules/cms/branches/2.4/templates/Dialog.ss
-END
-MemberList.ss
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/!svn/ver/90860/open/modules/cms/branches/2.4/templates/MemberList.ss
 END
 PageCommentInterface_singlecomment.ss
 K 25
@@ -51,29 +45,29 @@ svn:wc:ra_dav:version-url
 V 75
 /!svn/ver/96793/open/modules/cms/branches/2.4/templates/CMSMain_versions.ss
 END
-PageCommentInterface.ss
-K 25
-svn:wc:ra_dav:version-url
-V 80
-/!svn/ver/106694/open/modules/cms/branches/2.4/templates/PageCommentInterface.ss
-END
 AssetAdmin_uploadiframe.ss
 K 25
 svn:wc:ra_dav:version-url
 V 83
 /!svn/ver/101106/open/modules/cms/branches/2.4/templates/AssetAdmin_uploadiframe.ss
 END
-LeftAndMain_printable.ss
+PageCommentInterface.ss
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/!svn/ver/90860/open/modules/cms/branches/2.4/templates/LeftAndMain_printable.ss
+/!svn/ver/106694/open/modules/cms/branches/2.4/templates/PageCommentInterface.ss
 END
 LeftAndMain.ss
 K 25
 svn:wc:ra_dav:version-url
 V 71
 /!svn/ver/104403/open/modules/cms/branches/2.4/templates/LeftAndMain.ss
+END
+LeftAndMain_printable.ss
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/90860/open/modules/cms/branches/2.4/templates/LeftAndMain_printable.ss
 END
 WidgetAreaEditor.ss
 K 25

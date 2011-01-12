@@ -83,7 +83,7 @@ class ImageGalleryManager extends ImageDataObjectManager
 
 	protected function importLinkFor($file)
 	{
-		return parent::importLinkFor($file)."?album=".$_REQUEST['album'];
+		return Controller::join_links(parent::importLinkFor($file),"?album=".$_REQUEST['album']);
 	}
 	
 	
@@ -172,7 +172,7 @@ class ImageGalleryManager extends ImageDataObjectManager
 	
 	public function UploadLink()
 	{
-		return parent::UploadLink()."?album=".$this->getSelectedAlbumID();
+		return Controller::join_links(parent::UploadLink(),"?album=".$this->getSelectedAlbumID());
 	}
 	
 		

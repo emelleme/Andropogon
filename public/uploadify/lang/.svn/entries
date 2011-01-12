@@ -1,14 +1,14 @@
 8
 
 dir
-507
+534
 http://carlinowebdesign.svn.beanstalkapp.com/modules/trunk/uploadify/lang
 http://carlinowebdesign.svn.beanstalkapp.com/modules
 
 
 
-2010-09-09T18:11:23.428661Z
-491
+2011-01-11T14:46:47.622548Z
+533
 unclecheese
 
 
@@ -36,5 +36,41 @@ file
 6cd10b9434ea5241bb27812dd78bf682
 2010-09-09T18:11:23.428661Z
 491
+unclecheese
+
+de_DE.php
+file
+
+
+
+
+2011-01-12T18:30:43.000000Z
+b69377a353077e4644b0efeabfe854c4
+2010-12-29T17:06:48.389733Z
+529
+unclecheese
+
+da_DK.php
+file
+
+
+
+
+2011-01-12T18:30:43.000000Z
+41eeea37b8b33bf557a8c3fc6eb60553
+2011-01-11T14:46:47.622548Z
+533
+unclecheese
+
+it_IT.php
+file
+
+
+
+
+2011-01-12T18:30:43.000000Z
+6ac675d71aeaacad577f1fb229d6882b
+2010-12-14T15:33:08.551991Z
+523
 unclecheese
 

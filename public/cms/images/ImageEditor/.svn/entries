@@ -1,7 +1,7 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/cms/branches/2.4/images/ImageEditor
 http://svn.silverstripe.com
 
@@ -26,19 +26,6 @@ svn:special svn:externals svn:needs-lock
 
 467b73ca-7a2a-4603-9d3b-597d59a354a9
 
-indicator.gif
-file
-
-
-
-
-2010-05-30T18:49:21.000000Z
-bdb4f89dea8de8305bcbe689f4305036
-2007-06-27T23:02:59.429003Z
-37493
-mujma
-has-props
-
 c1Exit.png
 file
 
@@ -52,6 +39,19 @@ file
 ischommer
 has-props
 
+indicator.gif
+file
+
+
+
+
+2010-05-30T18:49:21.000000Z
+bdb4f89dea8de8305bcbe689f4305036
+2007-06-27T23:02:59.429003Z
+37493
+mujma
+has-props
+
 clickBox.png
 file
 
@@ -60,19 +60,6 @@ file
 
 2010-05-30T18:49:21.000000Z
 e30261d28a102e5a37fda15de4012f5d
-2007-09-16T02:23:10.884437Z
-42046
-ischommer
-has-props
-
-back.png
-file
-
-
-
-
-2010-05-30T18:49:21.000000Z
-708272c91535da8e9b2104684cc8bdac
 2007-09-16T02:23:10.884437Z
 42046
 ischommer
@@ -91,6 +78,19 @@ e07c16d32a4c2eaf29929cd3a107b1f3
 ischommer
 has-props
 
+back.png
+file
+
+
+
+
+2010-05-30T18:49:21.000000Z
+708272c91535da8e9b2104684cc8bdac
+2007-09-16T02:23:10.884437Z
+42046
+ischommer
+has-props
+
 c1.png
 file
 
@@ -99,32 +99,6 @@ file
 
 2010-05-30T18:49:21.000000Z
 d6ae3581229b0f3781840507b474af22
-2007-09-16T02:23:10.884437Z
-42046
-ischommer
-has-props
-
-leftRuler.png
-file
-
-
-
-
-2010-05-30T18:49:21.000000Z
-a2f3af80f59dd98064f825acb4afc8bb
-2007-09-16T02:23:10.884437Z
-42046
-ischommer
-has-props
-
-c2.png
-file
-
-
-
-
-2010-05-30T18:49:21.000000Z
-8e0b944c8d651b2083b72549e7ebecf7
 2007-09-16T02:23:10.884437Z
 42046
 ischommer
@@ -141,6 +115,32 @@ a71b5ccd2d30d139a110390b9b804144
 2008-11-06T22:06:36.788886Z
 65398
 wrossiter
+has-props
+
+c2.png
+file
+
+
+
+
+2010-05-30T18:49:21.000000Z
+8e0b944c8d651b2083b72549e7ebecf7
+2007-09-16T02:23:10.884437Z
+42046
+ischommer
+has-props
+
+leftRuler.png
+file
+
+
+
+
+2010-05-30T18:49:21.000000Z
+a2f3af80f59dd98064f825acb4afc8bb
+2007-09-16T02:23:10.884437Z
+42046
+ischommer
 has-props
 
 c3.png
@@ -169,19 +169,6 @@ f2989426624780149af49ed4cf91f0ca
 wrossiter
 has-props
 
-c3Cancel.png
-file
-
-
-
-
-2010-05-30T18:49:21.000000Z
-fb4ad65fa47ebe030e6f7e82ac126031
-2007-09-16T02:23:10.884437Z
-42046
-ischommer
-has-props
-
 c3Apply.png
 file
 
@@ -190,6 +177,19 @@ file
 
 2010-05-30T18:49:21.000000Z
 0dc83f1131442b2c8498df41effe11c6
+2007-09-16T02:23:10.884437Z
+42046
+ischommer
+has-props
+
+c3Cancel.png
+file
+
+
+
+
+2010-05-30T18:49:21.000000Z
+fb4ad65fa47ebe030e6f7e82ac126031
 2007-09-16T02:23:10.884437Z
 42046
 ischommer

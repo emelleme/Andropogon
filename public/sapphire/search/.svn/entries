@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/search
 http://svn.silverstripe.com
 
 
 
-2010-05-11T21:07:50.735504Z
-104608
-wrossiter
+2010-11-01T02:50:50.224930Z
+113295
+sharvey
 
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-b375904486fabc69f807b2779985047b
-2009-11-05T03:07:17.544754Z
-90886
-ischommer
+2011-01-12T18:39:40.000000Z
+2d392c06208ad1ca17adfcae14270b58
+2010-11-01T02:50:50.224930Z
+113295
+sharvey
 has-props
 
 SearchContext.php
@@ -71,11 +71,11 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-e9f416e0365647f462c250cc656540a6
-2010-05-11T21:07:50.735504Z
-104608
-wrossiter
+2011-01-12T18:39:40.000000Z
+cc05606b07d662d03a599070ba4c8978
+2010-10-07T06:49:40.699049Z
+111789
+ischommer
 has-props
 
 FulltextSearchable.php
@@ -84,10 +84,10 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-88a783d41ab7d6ec09ff0e607c040f11
-2010-04-23T01:30:45.708216Z
-103398
+2011-01-12T18:39:40.000000Z
+c6f74054e8787010cc6e007c9d367cd1
+2010-10-07T06:49:40.699049Z
+111789
 ischommer
 has-props
 

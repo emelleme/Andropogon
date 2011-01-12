@@ -1,14 +1,14 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/lang
 http://svn.silverstripe.com
 
 
 
-2010-07-14T02:51:16.642184Z
-107878
+2010-10-10T20:03:02.153548Z
+111843
 ischommer
 
 
@@ -327,18 +327,6 @@ file
 103837
 ischommer
 
-_manifest_exclude
-file
-
-
-
-
-2010-05-30T18:49:14.000000Z
-d41d8cd98f00b204e9800998ecf8427e
-2007-10-22T01:51:02.020077Z
-43662
-ischommer
-
 sr_RS.php
 file
 
@@ -349,6 +337,18 @@ file
 5dbeb3345664dfbf8255d6b646a05b99
 2010-04-30T04:38:22.555878Z
 103837
+ischommer
+
+_manifest_exclude
+file
+
+
+
+
+2010-05-30T18:49:14.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-10-22T01:51:02.020077Z
+43662
 ischommer
 
 tr_TR.php
@@ -453,10 +453,10 @@ file
 
 
 
-2010-08-06T02:07:00.000000Z
-487e9aa8d400252c259600b4a674fab8
-2010-07-12T07:35:13.150022Z
-107789
+2011-01-12T18:39:40.000000Z
+f97bdb5c61d97312b07bca0a38d8c3c0
+2010-10-10T20:03:02.153548Z
+111843
 ischommer
 
 lc_XX.php

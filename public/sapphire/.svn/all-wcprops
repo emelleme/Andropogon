@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/!svn/ver/108961/open/modules/sapphire/branches/2.4
+/!svn/ver/115443/open/modules/sapphire/branches/2.4
 END
 cli-script.php
 K 25
@@ -27,11 +27,17 @@ svn:wc:ra_dav:version-url
 V 71
 /!svn/ver/90859/open/modules/sapphire/branches/2.4/silverstripe_version
 END
+web.config
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/114774/open/modules/sapphire/branches/2.4/web.config
+END
 sake
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/!svn/ver/104668/open/modules/sapphire/branches/2.4/sake
+/!svn/ver/111495/open/modules/sapphire/branches/2.4/sake
 END
 _config.php
 K 25
@@ -49,13 +55,13 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/!svn/ver/108207/open/modules/sapphire/branches/2.4/.htaccess
+/!svn/ver/114774/open/modules/sapphire/branches/2.4/.htaccess
 END
 _register_database.php
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/!svn/ver/104705/open/modules/sapphire/branches/2.4/_register_database.php
+/!svn/ver/109787/open/modules/sapphire/branches/2.4/_register_database.php
 END
 Makefile
 K 25

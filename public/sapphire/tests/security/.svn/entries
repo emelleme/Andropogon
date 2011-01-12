@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/tests/security
 http://svn.silverstripe.com
 
 
 
-2010-07-26T06:55:33.238833Z
-108518
-sharvey
+2010-12-09T21:28:10.482444Z
+114760
+ischommer
 
 
 svn:special svn:externals svn:needs-lock
@@ -39,18 +39,6 @@ b3d346bb4b666fe89f9573200b806b61
 muzdowski
 has-props
 
-MemberCsvBulkLoaderTest.csv
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-43f8df512fa70a2f82479554a5ccce1b
-2010-02-10T23:15:20.303236Z
-98714
-ischommer
-
 GroupTest.php
 file
 
@@ -64,6 +52,18 @@ c048b34ac5dccf42384b4e9f0d1d8a74
 gmunn
 has-props
 
+MemberCsvBulkLoaderTest.csv
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+43f8df512fa70a2f82479554a5ccce1b
+2010-02-10T23:15:20.303236Z
+98714
+ischommer
+
 MemberCsvBulkLoaderTest_cleartextpws.csv
 file
 
@@ -74,30 +74,6 @@ file
 a76a1eebe8e2ec922bd8d9c02f76b51f
 2010-02-23T00:36:03.851351Z
 99645
-ischommer
-
-MemberCsvBulkLoaderTest.yml
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-46a9abfebdf8987bc96484464d9eb512
-2010-02-10T23:15:20.303236Z
-98714
-ischommer
-
-MemberAuthenticatorTest.php
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-b2a3eb801ac318f255d7cd38636852ea
-2010-03-09T20:37:43.926423Z
-100723
 ischommer
 
 PermissionTest.yml
@@ -112,17 +88,41 @@ f15b153bdf02c912ddce9f105b4b60ff
 89187
 sminnee
 
+MemberAuthenticatorTest.php
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+b2a3eb801ac318f255d7cd38636852ea
+2010-03-09T20:37:43.926423Z
+100723
+ischommer
+
+MemberCsvBulkLoaderTest.yml
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+46a9abfebdf8987bc96484464d9eb512
+2010-02-10T23:15:20.303236Z
+98714
+ischommer
+
 BasicAuthTest.php
 file
 
 
 
 
-2010-08-06T02:06:59.000000Z
-adcad62fb4573eea40c7b456e3ab9127
-2010-07-14T01:51:55.770195Z
-107867
-ischommer
+2011-01-12T18:39:40.000000Z
+9697723bf9f00ced4628c8026d35a60a
+2010-08-20T03:47:08.658009Z
+109834
+hfried
 
 GroupTest.yml
 file
@@ -137,30 +137,43 @@ file
 sharvey
 has-props
 
-MemberTest.php
-file
-
-
-
-
-2010-08-06T02:06:59.000000Z
-7f8def5aed637c38208ed2b80a556369
-2010-07-15T00:07:22.693373Z
-107940
-jseide
-has-props
-
 SecurityTest.php
 file
 
 
 
 
-2010-08-06T02:06:59.000000Z
-9094d5a78135c24e67e5b14b9255006a
-2010-07-26T06:55:33.238833Z
-108518
-sharvey
+2011-01-12T18:39:40.000000Z
+2c38d6a9e707baf918da75937fec1698
+2010-12-09T21:28:10.482444Z
+114760
+ischommer
+has-props
+
+MemberTest.php
+file
+
+
+
+
+2011-01-12T18:39:40.000000Z
+54967720309422f556e6730b1e286eaf
+2010-10-10T21:01:32.713153Z
+111844
+ischommer
+has-props
+
+PasswordEncryptorTest.php
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+70fd97d04767e17c37b22d0b415e0534
+2009-11-15T20:40:30.323050Z
+91592
+ischommer
 has-props
 
 PasswordValidatorTest.php
@@ -175,18 +188,17 @@ file
 106687
 ischommer
 
-PasswordEncryptorTest.php
+SecurityTokenTest.php
 file
 
 
 
 
-2010-05-30T18:49:13.000000Z
-70fd97d04767e17c37b22d0b415e0534
-2009-11-15T20:40:30.323050Z
-91592
-ischommer
-has-props
+2011-01-12T18:39:40.000000Z
+ae0c15acb0017de59fd005cf01827b94
+2010-11-22T04:35:18.821325Z
+114016
+sharvey
 
 PermissionRoleTest.php
 file
@@ -256,11 +268,11 @@ file
 
 
 
-2010-07-01T18:44:18.000000Z
-aa3700fa3c4278efcbfd8048f17875fb
-2010-06-30T05:02:29.553558Z
-107326
-sharvey
+2011-01-12T18:39:40.000000Z
+134db2064a75cc85d290fcfa2d3d3b57
+2010-09-16T05:20:09.715105Z
+110856
+ischommer
 has-props
 
 PermissionRoleTest.yml
@@ -323,6 +335,18 @@ file
 5ad92b375e86b5807a76866e2d8104a7
 2010-02-10T23:15:58.311801Z
 98715
+ischommer
+
+RandomGeneratorTest.php
+file
+
+
+
+
+2011-01-12T18:39:40.000000Z
+7af6462b9ccaad032788753ccc5f2c52
+2010-12-05T00:19:57.217014Z
+114499
 ischommer
 
 MemberCsvBulkLoaderTest.php

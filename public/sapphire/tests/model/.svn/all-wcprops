@@ -1,13 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/!svn/ver/108399/open/modules/sapphire/branches/2.4/tests/model
-END
-MySQLDatabaseTest.php
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/103799/open/modules/sapphire/branches/2.4/tests/model/MySQLDatabaseTest.php
+/!svn/ver/114474/open/modules/sapphire/branches/2.4/tests/model
 END
 SiteConfigTest.php
 K 25
@@ -15,11 +9,11 @@ svn:wc:ra_dav:version-url
 V 82
 /!svn/ver/104796/open/modules/sapphire/branches/2.4/tests/model/SiteConfigTest.php
 END
-ImageTest.yml
+MySQLDatabaseTest.php
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/!svn/ver/107272/open/modules/sapphire/branches/2.4/tests/model/ImageTest.yml
+V 85
+/!svn/ver/103799/open/modules/sapphire/branches/2.4/tests/model/MySQLDatabaseTest.php
 END
 DatetimeTest.php
 K 25
@@ -27,11 +21,11 @@ svn:wc:ra_dav:version-url
 V 79
 /!svn/ver/91568/open/modules/sapphire/branches/2.4/tests/model/DatetimeTest.php
 END
-DataObjectSchemaGenerationTest.php
+ImageTest.yml
 K 25
 svn:wc:ra_dav:version-url
-V 98
-/!svn/ver/103799/open/modules/sapphire/branches/2.4/tests/model/DataObjectSchemaGenerationTest.php
+V 77
+/!svn/ver/107272/open/modules/sapphire/branches/2.4/tests/model/ImageTest.yml
 END
 VirtualPageTest.yml
 K 25
@@ -39,11 +33,17 @@ svn:wc:ra_dav:version-url
 V 82
 /!svn/ver/90859/open/modules/sapphire/branches/2.4/tests/model/VirtualPageTest.yml
 END
+DataObjectSchemaGenerationTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/103799/open/modules/sapphire/branches/2.4/tests/model/DataObjectSchemaGenerationTest.php
+END
 VersionedTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/!svn/ver/108399/open/modules/sapphire/branches/2.4/tests/model/VersionedTest.php
+/!svn/ver/110944/open/modules/sapphire/branches/2.4/tests/model/VersionedTest.php
 END
 AggregateTest.yml
 K 25
@@ -61,19 +61,19 @@ DbDatetimeTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/!svn/ver/105198/open/modules/sapphire/branches/2.4/tests/model/DbDatetimeTest.php
-END
-DatabaseTest.php
-K 25
-svn:wc:ra_dav:version-url
-V 80
-/!svn/ver/106119/open/modules/sapphire/branches/2.4/tests/model/DatabaseTest.php
+/!svn/ver/113937/open/modules/sapphire/branches/2.4/tests/model/DbDatetimeTest.php
 END
 SiteConfigTest.yml
 K 25
 svn:wc:ra_dav:version-url
 V 81
 /!svn/ver/97370/open/modules/sapphire/branches/2.4/tests/model/SiteConfigTest.yml
+END
+DatabaseTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/106119/open/modules/sapphire/branches/2.4/tests/model/DatabaseTest.php
 END
 DBLocaleTest.php
 K 25
@@ -103,7 +103,7 @@ TranslatableTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/!svn/ver/103819/open/modules/sapphire/branches/2.4/tests/model/TranslatableTest.php
+/!svn/ver/114474/open/modules/sapphire/branches/2.4/tests/model/TranslatableTest.php
 END
 HierarchyTest.php
 K 25

@@ -149,6 +149,16 @@ class FileTest extends SapphireTest {
 		$this->assertEquals(ASSETS_PATH . '/FileTest.txt', $rootfile->getFullPath(), 'File in assets/ folder');
 	}
 	
+	function testGetURL() {
+		$rootfile = $this->objFromFixture('File', 'asdf');
+		$this->assertEquals(Director::baseURL() . $rootfile->getFilename(), $rootfile->getURL());
+	}
+	
+	function testGetAbsoluteURL() {
+		$rootfile = $this->objFromFixture('File', 'asdf');
+		$this->assertEquals(Director::absoluteBaseURL() . $rootfile->getFilename(), $rootfile->getAbsoluteURL());
+	}
+	
 	function testNameAndTitleGeneration() {
 		/* If objects are loaded into the system with just a Filename, then Name is generated but Title isn't */
 		$file = $this->objFromFixture('File', 'asdf');
@@ -238,6 +248,8 @@ class FileTest extends SapphireTest {
 	} 
 	
 	function tearDown() {
+		parent::tearDown();
+
 		/* Remove the test files that we've created */
 		$fileIDs = $this->allFixtureIDs('File');
 		foreach($fileIDs as $fileID) {
@@ -251,9 +263,11 @@ class FileTest extends SapphireTest {
 			$folder = DataObject::get_by_id('Folder', $folderID);
 			if($folder && file_exists(BASE_PATH."/$folder->Filename")) Filesystem::removeFolder(BASE_PATH."/$folder->Filename");
 		}
-		
-		parent::tearDown();
+
+		// Remove left over folders and any files that may exist
+		if(file_exists('../assets/FileTest')) Filesystem::removeFolder('../assets/FileTest');
+		if(file_exists('../assets/FileTest-subfolder')) Filesystem::removeFolder('../assets/FileTest-subfolder');
+		if(file_exists('../assets/FileTest.txt')) unlink('../assets/FileTest.txt');
 	}
-	
-	
+
 }

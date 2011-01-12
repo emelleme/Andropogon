@@ -62,7 +62,7 @@ class Versioned extends DataObjectDecorator {
 	 * @var array $indexes_for_versions_table
 	 */
 	static $indexes_for_versions_table = array(
-		'RecordID_Version' => '(RecordID, Version)',
+		'RecordID_Version' => '(RecordID,Version)',
 		'RecordID' => true,
 		'Version' => true,
 		'AuthorID' => true,
@@ -287,7 +287,7 @@ class Versioned extends DataObjectDecorator {
 				
 					$versionIndexes = array_merge(
 						array(
-							'RecordID_Version' => array('type' => 'unique', 'value' => 'RecordID, Version'),
+							'RecordID_Version' => array('type' => 'unique', 'value' => 'RecordID,Version'),
 							'RecordID' => true,
 							'Version' => true,
 						),
@@ -295,9 +295,9 @@ class Versioned extends DataObjectDecorator {
 					);
 				}
 				
-				// Fix data that lacks the uniqueness constraint (since this was added later and
-				// bugs meant that the constraint was validated)
 				if(DB::getConn()->hasTable("{$table}_versions")) {
+					// Fix data that lacks the uniqueness constraint (since this was added later and
+					// bugs meant that the constraint was validated)
 					$duplications = DB::query("SELECT MIN(\"ID\") AS \"ID\", \"RecordID\", \"Version\" 
 						FROM \"{$table}_versions\" GROUP BY \"RecordID\", \"Version\" 
 						HAVING COUNT(*) > 1");
@@ -307,6 +307,41 @@ class Versioned extends DataObjectDecorator {
 							."{$dup['RecordID']}/{$dup['Version']}" ,"deleted");
 						DB::query("DELETE FROM \"{$table}_versions\" WHERE \"RecordID\" = {$dup['RecordID']}
 							AND \"Version\" = {$dup['Version']} AND \"ID\" != {$dup['ID']}");
+					}
+					
+					// Remove junk which has no data in parent classes. Only needs to run the following
+					// when versioned data is spread over multiple tables					
+					if(!$isRootClass && ($versionedTables = ClassInfo::dataClassesFor($table))) {
+						
+						foreach($versionedTables as $child) {
+							if($table == $child) break; // only need subclasses
+							
+							$count = DB::query("
+								SELECT COUNT(*) FROM \"{$table}_versions\"
+								LEFT JOIN \"{$child}_versions\" 
+									ON \"{$child}_versions\".\"RecordID\" = \"{$table}_versions\".\"RecordID\"
+									AND \"{$child}_versions\".\"Version\" = \"{$table}_versions\".\"Version\"
+								WHERE \"{$child}_versions\".\"ID\" IS NULL
+							")->value();
+
+							if($count > 0) {
+								DB::alteration_message("Removing orphaned versioned records", "deleted");
+								
+								$effectedIDs = DB::query("
+									SELECT \"{$table}_versions\".\"ID\" FROM \"{$table}_versions\"
+									LEFT JOIN \"{$child}_versions\" 
+										ON \"{$child}_versions\".\"RecordID\" = \"{$table}_versions\".\"RecordID\"
+										AND \"{$child}_versions\".\"Version\" = \"{$table}_versions\".\"Version\"
+									WHERE \"{$child}_versions\".\"ID\" IS NULL
+								")->column();
+
+								if(is_array($effectedIDs)) {
+									foreach($effectedIDs as $key => $value) {
+										DB::query("DELETE FROM \"{$table}_versions\" WHERE \"{$table}_versions\".\"ID\" = '$value'");
+									}
+								}
+							}
+						}
 					}
 				}
 
@@ -626,24 +661,27 @@ class Versioned extends DataObjectDecorator {
 	 */
 	static function choose_site_stage() {
 		if(isset($_GET['stage'])) {
-			$_GET['stage'] = ucfirst(strtolower($_GET['stage']));
-			Session::set('readingMode', 'Stage.' . $_GET['stage']);
+			$stage = ucfirst(strtolower($_GET['stage']));
+			
+			if(!in_array($stage, array('Stage', 'Live'))) $stage = 'Live';
+
+			Session::set('readingMode', 'Stage.' . $stage);
 		}
 		if(isset($_GET['archiveDate'])) {
 			Session::set('readingMode', 'Archive.' . $_GET['archiveDate']);
 		}
 		
-		if(Session::get('readingMode')) {
-			Versioned::set_reading_mode(Session::get('readingMode'));
+		if($mode = Session::get('readingMode')) {
+			Versioned::set_reading_mode($mode);
 		} else {
 			Versioned::reading_stage("Live");
 		}
 
 		if(!headers_sent()) {
 			if(Versioned::current_stage() == 'Live') {
-				Cookie::set('bypassStaticCache', null, 0);
+				Cookie::set('bypassStaticCache', null, 0, null, null, false, true /* httponly */);
 			} else {
-				Cookie::set('bypassStaticCache', '1', 0);
+				Cookie::set('bypassStaticCache', '1', 0, null, null, false, true /* httponly */);
 			}
 		}
 	}

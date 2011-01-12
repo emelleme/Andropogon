@@ -25,7 +25,7 @@
 				<div id="Layout">
 					<div class="typography">
 						<p>Thanks for choosing to use SilverStripe! Please follow the instructions below and you should be up in running in no time.<br>
-							If you get stuck, head over to the <a href="http://www.silverstripe.org/installing-silverstripe" target="_blank">installation forum</a>, or check out our <a href="http://doc.silverstripe.org/doku.php?id=suggested-web-hosts" target="_blank">list of suggested web hosts</a> known to work with SilverStripe.
+							If you get stuck, head over to the <a href="http://silverstripe.org/installing-silverstripe" target="_blank">installation forum</a>, or check out our <a href="http://doc.silverstripe.org/doku.php?id=suggested-web-hosts" target="_blank">list of suggested web hosts</a> known to work with SilverStripe.
 						</p>
 			
 						<form action="install.php" method="post">
@@ -66,6 +66,7 @@
 							
 							<h4 id="requirements"><em class="inlineBarText">Requirements</em> <span>Step: 1 of 5</span></h4>
 							<?php $req->showTable(); ?>
+							<?php $dbReq->showTable(); ?>
 							
 							<p>
 								Read more about our <a href="http://doc.silverstripe.org/doku.php?id=server-requirements" target="_blank">server requirements</a>.
@@ -159,7 +160,7 @@
 													
 													// html
 													echo "<div class=\"field\">";
-													echo "<label for=\"db_$class_$fieldName\">$fieldTitle:</label>";
+													echo "<label for=\"db_{$class}_$fieldName\">$fieldTitle:</label>";
 													echo "<span class=\"middleColumn\">";
 													echo "<input $attrHTML>";
 													echo "</span>";
@@ -282,7 +283,7 @@
 			
 			<div id="Footer">
 				<div class="footerTop"><!-- --></div>
-				<p><a href="http://www.silverstripe.org">SilverStripe Open Source CMS / Framework</a> | Copyright &copy; 2010 SilverStripe Limited</p>
+				<p><a href="http://silverstripe.org">SilverStripe Open Source CMS / Framework</a> | Copyright &copy; 2010 SilverStripe Limited</p>
 			</div>
 		</div>
 	</body>

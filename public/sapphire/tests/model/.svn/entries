@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/tests/model
 http://svn.silverstripe.com
 
 
 
-2010-07-23T03:04:13.477003Z
-108399
-cbarberis
+2010-12-03T00:50:29.815401Z
+114474
+ischommer
 
 
 svn:special svn:externals svn:needs-lock
@@ -26,19 +26,6 @@ svn:special svn:externals svn:needs-lock
 
 467b73ca-7a2a-4603-9d3b-597d59a354a9
 
-MySQLDatabaseTest.php
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-431cbe4f0d20a282874313a872f986f2
-2010-04-30T01:15:10.897570Z
-103799
-ischommer
-has-props
-
 SiteConfigTest.php
 file
 
@@ -52,17 +39,18 @@ file
 ischommer
 has-props
 
-ImageTest.yml
+MySQLDatabaseTest.php
 file
 
 
 
 
-2010-07-01T18:44:18.000000Z
-d260bf7cb2b06187516f8b865c62c049
-2010-06-29T04:59:48.231554Z
-107272
+2010-05-30T18:49:13.000000Z
+431cbe4f0d20a282874313a872f986f2
+2010-04-30T01:15:10.897570Z
+103799
 ischommer
+has-props
 
 DatetimeTest.php
 file
@@ -75,6 +63,30 @@ bf9d33a9dc355c5c66e2f95f01a7e6d2
 2009-11-13T23:10:29.044647Z
 91568
 ischommer
+
+ImageTest.yml
+file
+
+
+
+
+2010-07-01T18:44:18.000000Z
+d260bf7cb2b06187516f8b865c62c049
+2010-06-29T04:59:48.231554Z
+107272
+ischommer
+
+VirtualPageTest.yml
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+e2bfbe9e89aa8083789a90d28af5a2ec
+2009-05-14T05:26:47.051063Z
+76846
+sharvey
 
 DataObjectSchemaGenerationTest.php
 file
@@ -89,29 +101,17 @@ acdf761d284c32cf7007695c9304d3c0
 ischommer
 has-props
 
-VirtualPageTest.yml
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-e2bfbe9e89aa8083789a90d28af5a2ec
-2009-05-14T05:26:47.051063Z
-76846
-sharvey
-
 VersionedTest.php
 file
 
 
 
 
-2010-08-06T02:06:59.000000Z
-30e233e46a44547dcfdee37dcd58e671
-2010-07-23T03:04:13.477003Z
-108399
-cbarberis
+2011-01-12T18:39:40.000000Z
+76c6fa6f7876b9dd1064f102c0e87a30
+2010-09-20T01:16:52.892766Z
+110944
+sharvey
 has-props
 
 AggregateTest.yml
@@ -144,24 +144,11 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-78cd944032d7e6e68fd6b532018490e4
-2010-05-19T10:43:37.561674Z
-105198
-sharvey
-
-DatabaseTest.php
-file
-
-
-
-
-2010-07-01T18:44:18.000000Z
-7684c25c3edf3f6c0b17513b9713a605
-2010-06-03T01:09:31.267342Z
-106119
-sminnee
-has-props
+2011-01-12T18:39:40.000000Z
+a4972227a0eea070b7f9d9aad201c641
+2010-11-19T01:13:32.980174Z
+113937
+apiening
 
 SiteConfigTest.yml
 file
@@ -174,6 +161,19 @@ e09c7989e6bd5d2961d4fa7f7b90fc72
 2010-01-21T10:00:40.661214Z
 97370
 ischommer
+has-props
+
+DatabaseTest.php
+file
+
+
+
+
+2010-07-01T18:44:18.000000Z
+7684c25c3edf3f6c0b17513b9713a605
+2010-06-03T01:09:31.267342Z
+106119
+sminnee
 has-props
 
 DBLocaleTest.php
@@ -232,10 +232,10 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-74c98a147890664e94f06b5db753d1a0
-2010-04-30T03:50:53.852588Z
-103819
+2011-01-12T18:39:40.000000Z
+52b676a90f46d4cf0e55ff2a8a252050
+2010-12-03T00:50:29.815401Z
+114474
 ischommer
 has-props
 

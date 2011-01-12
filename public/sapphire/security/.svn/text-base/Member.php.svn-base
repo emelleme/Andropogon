@@ -15,7 +15,7 @@ class Member extends DataObject {
 		'NumVisit' => 'Int',
 		'LastVisited' => 'SS_Datetime',
 		'Bounced' => 'Boolean', // Note: This does not seem to be used anywhere.
-		'AutoLoginHash' => 'Varchar(30)',
+		'AutoLoginHash' => 'Varchar(50)',
 		'AutoLoginExpired' => 'SS_Datetime',
 		// This is an arbitrary code pointing to a PasswordEncryptor instance,
 		// not an actual encryption algorithm.
@@ -109,6 +109,21 @@ class Member extends DataObject {
 	 * and cleared on logout.
 	 */
 	protected static $login_marker_cookie = null;
+
+	/**
+	 * Indicates that when a {@link Member} logs in, Member:session_regenerate_id()
+	 * should be called as a security precaution.
+	 * 
+	 * This doesn't always work, especially if you're trying to set session cookies
+	 * across an entire site using the domain parameter to session_set_cookie_params()
+	 * 
+	 * @var boolean
+	 */
+	protected static $session_regenerate_id = true;
+
+	public static function set_session_regenerate_id($bool) {
+		self::$session_regenerate_id = $bool;
+	}
 
 	/**
 	 * Ensure the locale is set to something sensible by default.
@@ -229,6 +244,8 @@ class Member extends DataObject {
 	 * quirky problems (such as using the Windmill 0.3.6 proxy).
 	 */
 	static function session_regenerate_id() {
+		if(!self::$session_regenerate_id) return;
+
 		// This can be called via CLI during testing.
 		if(Director::is_cli()) return;
 		
@@ -310,7 +327,8 @@ class Member extends DataObject {
 		$this->NumVisit++;
 
 		if($remember) {
-			$token = substr(md5(uniqid(rand(), true)), 0, 49 - strlen($this->ID));
+			$generator = new RandomGenerator();
+			$token = $generator->generateHash('sha1');
 			$this->RememberLoginToken = $token;
 			Cookie::set('alc_enc', $this->ID . ':' . $token, 90, null, null, null, true);
 		} else {
@@ -378,9 +396,9 @@ class Member extends DataObject {
 				Session::set("loggedInAs", $member->ID);
 				// This lets apache rules detect whether the user has logged in
 				if(self::$login_marker_cookie) Cookie::set(self::$login_marker_cookie, 1, 0, null, null, false, true);
-
-				$token = substr(md5(uniqid(rand(), true)), 0, 49 - strlen($member->ID));
-				$member->RememberLoginToken = $token;
+				
+				$generator = new RandomGenerator();
+				$member->RememberLoginToken = $generator->generateHash('sha1');
 				Cookie::set('alc_enc', $member->ID . ':' . $token, 90, null, null, false, true);
 
 				$member->NumVisit++;
@@ -425,8 +443,8 @@ class Member extends DataObject {
 	function generateAutologinHash($lifetime = 2) {
 
 		do {
-			$hash = substr(base_convert(md5(uniqid(mt_rand(), true)), 16, 36),
-										 0, 30);
+			$generator = new RandomGenerator();
+			$hash = $generator->generateHash('sha1');
 		} while(DataObject::get_one('Member', "\"AutoLoginHash\" = '$hash'"));
 
 		$this->AutoLoginHash = $hash;
@@ -832,7 +850,7 @@ class Member extends DataObject {
 	 * @return string Returns the first- and surname of the member.
 	 */
 	public function getName() {
-		return $this->FirstName . ' ' . $this->Surname;
+		return ($this->Surname) ? trim($this->FirstName . ' ' . $this->Surname) : $this->FirstName;
 	}
 
 
@@ -958,7 +976,7 @@ class Member extends DataObject {
 			$blankMember->Surname = $blank;
 			$blankMember->ID = 0;
 
-			$ret->getItems()->shift($blankMember);
+			$ret->getItems()->unshift($blankMember);
 		}
 
 		return $ret;
@@ -1263,6 +1281,13 @@ class Member extends DataObject {
 		// No member found
 		if(!($member && $member->exists())) return false;
 		
+		// If the requesting member is not an admin, but has access to manage members,
+		// he still can't edit other members with ADMIN permission.
+		// This is a bit weak, strictly speaking he shouldn't be allowed to
+		// perform any action that could change the password on a member
+		// with "higher" permissions than himself, but thats hard to determine.		
+		if(!Permission::checkMember($member, 'ADMIN') && Permission::checkMember($this, 'ADMIN')) return false;
+
 		return $this->canView($member);
 	}
 	

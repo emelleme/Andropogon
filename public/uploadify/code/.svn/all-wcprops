@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 42
-/modules/!svn/ver/506/trunk/uploadify/code
+/modules/!svn/ver/517/trunk/uploadify/code
 END
 ImageUploadField.php
 K 25
@@ -13,13 +13,13 @@ UploadifyField.php
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/modules/!svn/ver/506/trunk/uploadify/code/UploadifyField.php
+/modules/!svn/ver/517/trunk/uploadify/code/UploadifyField.php
 END
 MultipleFileUploadField.php
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/modules/!svn/ver/486/trunk/uploadify/code/MultipleFileUploadField.php
+/modules/!svn/ver/513/trunk/uploadify/code/MultipleFileUploadField.php
 END
 MultipleImageUploadField.php
 K 25
@@ -31,5 +31,5 @@ FileUploadField.php
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/modules/!svn/ver/486/trunk/uploadify/code/FileUploadField.php
+/modules/!svn/ver/510/trunk/uploadify/code/FileUploadField.php
 END

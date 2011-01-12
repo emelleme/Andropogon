@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/tests/i18n
 http://svn.silverstripe.com
 
 
 
-2010-07-15T00:07:22.693373Z
-107940
-jseide
+2010-12-03T00:47:57.786770Z
+114473
+ischommer
 
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2010-08-06T02:06:59.000000Z
-869a94395b254307e1f965222713ba49
-2010-07-15T00:07:22.693373Z
-107940
-jseide
+2011-01-12T18:39:40.000000Z
+38f68069de2a7bf537788cc412c05316
+2010-11-18T19:03:18.070404Z
+113919
+ischommer
 has-props
 
 i18nTest.php
@@ -45,11 +45,11 @@ file
 
 
 
-2010-07-01T18:44:18.000000Z
-ed76c57b2044cc3b11af64ee0cac19b6
-2010-06-30T05:02:29.553558Z
-107326
-sharvey
+2011-01-12T18:39:40.000000Z
+348549630e580001bb91ae99c0d1e097
+2010-12-03T00:47:57.786770Z
+114473
+ischommer
 has-props
 
 _fakewebroot

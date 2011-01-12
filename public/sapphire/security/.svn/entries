@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/security
 http://svn.silverstripe.com
 
 
 
-2010-08-05T05:56:05.899651Z
-108961
-apiening
+2010-12-22T20:57:54.810946Z
+115314
+sharvey
 
 
 svn:special svn:externals svn:needs-lock
@@ -39,6 +39,32 @@ eda0a0ddfa3ffa14d0516887ca013d28
 ischommer
 has-props
 
+ChangePasswordForm.php
+file
+
+
+
+
+2011-01-12T18:39:41.000000Z
+5e721806591e2c84b1c1769ebdc7285a
+2010-12-09T21:28:10.482444Z
+114760
+ischommer
+has-props
+
+Group.php
+file
+
+
+
+
+2011-01-12T18:39:41.000000Z
+5f63afe47015bfdd61bff266bbb7aead
+2010-11-01T01:28:52.633805Z
+113273
+ischommer
+has-props
+
 LoginForm.php
 file
 
@@ -52,32 +78,6 @@ file
 sminnee
 has-props
 
-Group.php
-file
-
-
-
-
-2010-07-01T18:44:18.000000Z
-bcedd0c32c12e492168cb15061b1f25d
-2010-06-06T02:02:34.198257Z
-106217
-wrossiter
-has-props
-
-ChangePasswordForm.php
-file
-
-
-
-
-2010-05-30T18:49:15.000000Z
-5c3797ef913b8066727843e23416be9b
-2010-05-13T00:48:54.387611Z
-104745
-nlou
-has-props
-
 MemberAuthenticator.php
 file
 
@@ -88,19 +88,6 @@ file
 14bc2c520b319022041a4946cbfcb202
 2010-04-05T20:29:14.857334Z
 102072
-ischommer
-has-props
-
-BasicAuth.php
-file
-
-
-
-
-2010-08-06T02:07:00.000000Z
-f9188afcedcfff73e1af1bec09ec12e0
-2010-07-20T02:14:37.421575Z
-108193
 ischommer
 has-props
 
@@ -117,6 +104,19 @@ file
 ischommer
 has-props
 
+BasicAuth.php
+file
+
+
+
+
+2011-01-12T18:39:41.000000Z
+3991affc4865eec507505eb1b8a64ae1
+2010-11-30T05:22:13.868230Z
+114334
+ischommer
+has-props
+
 PermissionRoleCode.php
 file
 
@@ -130,17 +130,17 @@ file
 ischommer
 has-props
 
-Member.php
+Security.php
 file
 
 
 
 
-2010-08-06T02:07:00.000000Z
-b97caa60dc47ea916c307f17a0e90805
-2010-07-26T04:15:55.483984Z
-108499
-sharvey
+2011-01-12T18:39:41.000000Z
+22985af58eea7417b1ec5feca3f3e501
+2010-12-09T21:28:10.482444Z
+114760
+ischommer
 has-props
 
 LoginAttempt.php
@@ -156,17 +156,30 @@ file
 sminnee
 has-props
 
-Security.php
+Member.php
 file
 
 
 
 
-2010-08-06T02:07:00.000000Z
-a06e47d23d62c1390d28e2bed4066ba7
-2010-07-26T06:44:40.857727Z
-108515
-sharvey
+2011-01-12T18:39:41.000000Z
+b462659f137327abff2e0149c25e5e38
+2010-12-09T08:27:07.367226Z
+114749
+ischommer
+has-props
+
+PasswordEncryptor.php
+file
+
+
+
+
+2011-01-12T18:39:41.000000Z
+64191e26b5033ea7c770bfcf77f9db72
+2010-12-05T00:46:28.928701Z
+114506
+ischommer
 has-props
 
 PasswordValidator.php
@@ -182,17 +195,29 @@ fa673fff56c87211e9eee981b6e7b129
 ischommer
 has-props
 
-PasswordEncryptor.php
+SecurityToken.php
+file
+
+
+
+
+2011-01-12T18:39:41.000000Z
+c1dc17db1d8b6dca062424fb68abab9a
+2010-12-05T00:21:53.778255Z
+114500
+ischommer
+
+PermissionRole.php
 file
 
 
 
 
 2010-05-30T18:49:15.000000Z
-87ce80b08cd2d33522fade8018e6f37a
-2010-01-21T03:51:13.896445Z
-97357
-gmunn
+edc9d46f55759fcf816dd6ba71704d18
+2010-05-11T21:20:13.254210Z
+104610
+ischommer
 has-props
 
 Authenticator.php
@@ -206,19 +231,6 @@ file
 2009-06-17T23:14:40.674057Z
 79478
 sminnee
-has-props
-
-PermissionRole.php
-file
-
-
-
-
-2010-05-30T18:49:15.000000Z
-edc9d46f55759fcf816dd6ba71704d18
-2010-05-11T21:20:13.254210Z
-104610
-ischommer
 has-props
 
 GroupCsvBulkLoader.php
@@ -264,12 +276,24 @@ file
 
 
 
-2010-05-30T18:49:15.000000Z
-40a3d944144f396d7142f842635ca1dc
-2010-04-29T01:45:27.017896Z
-103710
+2011-01-12T18:39:41.000000Z
+d98e298ffc63793efee4d430f3852932
+2010-10-11T21:49:52.760414Z
+111891
 sharvey
 has-props
+
+RandomGenerator.php
+file
+
+
+
+
+2011-01-12T18:39:41.000000Z
+9b5ebc67bab22a2366673829d82a2083
+2010-12-22T20:57:54.810946Z
+115314
+sharvey
 
 Permission.php
 file

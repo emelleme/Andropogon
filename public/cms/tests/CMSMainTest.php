@@ -9,7 +9,7 @@ class CMSMainTest extends FunctionalTest {
 	protected $autoFollowRedirection = false;
 	
 	static protected $orig = array();
-	
+		
 	static function set_up_once() {
 		self::$orig['CMSBatchActionHandler_batch_actions'] = CMSBatchActionHandler::$batch_actions;
 		CMSBatchActionHandler::$batch_actions = array(
@@ -35,16 +35,22 @@ class CMSMainTest extends FunctionalTest {
 		$page2 = $this->objFromFixture('Page', "page2");
 		$this->session()->inst_set('loggedInAs', $this->idFromFixture('Member', 'admin'));
 		
-		$response = Director::test("admin/cms/publishall", array('confirm' => 1), $this->session());
+		$response = $this->get("admin/cms/publishall?confirm=1");
 		
 		$this->assertContains(
-			sprintf(_t('CMSMain.PUBPAGES',"Done: Published %d pages"), 8), 
+			sprintf(_t('CMSMain.PUBPAGES',"Done: Published %d pages"), 30), 
 			$response->getBody()
 		);
 		
 		// Some modules (e.g., cmsworkflow) will remove this action
 		if(isset(CMSBatchActionHandler::$batch_actions['publish'])) {
-			$response = Director::test("admin/cms/batchactions/publish", array('csvIDs' => implode(',', array($page1->ID, $page2->ID)), 'ajax' => 1), $this->session());
+			$response = $this->post(
+				"admin/cms/batchactions/publish", 
+				array(
+					'csvIDs' => implode(',', array($page1->ID, $page2->ID)), 
+					'ajax' => 1
+				)
+			);
 	
 			$this->assertContains(sprintf('setNodeTitle(%d, \'Page 1\');', $page1->ID), $response->getBody());
 			$this->assertContains(sprintf('setNodeTitle(%d, \'Page 2\');', $page2->ID), $response->getBody());
@@ -180,9 +186,22 @@ class CMSMainTest extends FunctionalTest {
 		$newPage = $cmsMain->getRecord('new-Page-5');
 		$this->assertType('Page', $newPage);
 		$this->assertEquals('5', $newPage->ParentID);
-
 	}
-	
+
+	function testGetVersionRecord() {
+		$cmsMain = new CMSMain();
+		$page1 = $this->objFromFixture('Page', 'page1');
+		$page1->Content = 'this is the old content';
+		$page1->write();
+		$page1->Content = 'this is new content (new version)';
+		$page1->write();
+		$versionID = DB::query('SELECT "Version" FROM "SiteTree_versions" WHERE "Content" = \'this is the old content\'')->value();
+		$_REQUEST['Version'] = $versionID;
+		$this->assertEquals($cmsMain->getRecord($page1->ID)->Version, $versionID);
+		$this->assertEquals($cmsMain->getRecord($page1->ID)->Content, 'this is the old content');
+		unset($_REQUEST['Version']);
+	}
+
 	function testDeletedPagesSiteTreeFilter() {
 		$id = $this->idFromFixture('Page', 'page3');
 		$this->logInWithPermission('ADMIN');
@@ -196,13 +215,23 @@ class CMSMainTest extends FunctionalTest {
 
 		// with insufficient permissions
 		$cmsUser->logIn();
-		$response = $this->post('admin/addpage', array('ParentID' => '0', 'PageType' => 'Page', 'Locale' => 'en_US'));
+		$response = $this->get('admin');
+		$response = $this->submitForm(
+			'Form_AddPageOptionsForm', 
+			null,
+			array('ParentID' => '0', 'PageType' => 'Page', 'Locale' => 'en_US')
+		);
 		// should redirect, which is a permission error
 		$this->assertEquals(403, $response->getStatusCode(), 'Add TopLevel page must fail for normal user');
 
 		// with correct permissions
 		$rootEditUser->logIn();
-		$response = $this->post('admin/addpage', array('ParentID' => '0', 'PageType' => 'Page', 'Locale' => 'en_US'));
+		$response = $this->get('admin');
+		$response = $this->submitForm(
+			'Form_AddPageOptionsForm', 
+			null,
+			array('ParentID' => '0', 'PageType' => 'Page', 'Locale' => 'en_US')
+		);
 		$this->assertEquals(302, $response->getStatusCode(), 'Must be a redirect on success');
 		$location=$response->getHeader('Location');
 		$this->assertContains('/show/',$location, 'Must redirect to /show/ the new page');

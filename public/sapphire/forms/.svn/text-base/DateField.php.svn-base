@@ -140,6 +140,9 @@ class DateField extends TextField {
 			$this->value = null;
 			$this->valueObj = null;
 		} else {
+			// Quick fix for overzealous Zend validation, its case sensitive on month names (see #5990)
+			if(is_string($val)) $val = ucwords(strtolower($val));
+			
 			if($this->getConfig('dmyfields')) {
 				// Setting in correct locale
 				if(is_array($val) && $this->validateArrayValue($val)) {
@@ -148,8 +151,8 @@ class DateField extends TextField {
 					$this->value = $this->valueObj->toArray();
 				}
 				// load ISO date from database (usually through Form->loadDataForm())
-				else if(!empty($val) && Zend_Date::isDate($val, $this->getConfig('datavalueformat'))) {
-					$this->valueObj = new Zend_Date($val, $this->getConfig('datavalueformat'));
+				else if(!empty($val) && Zend_Date::isDate($val, $this->getConfig('datavalueformat'), $this->locale)) {
+					$this->valueObj = new Zend_Date($val, $this->getConfig('datavalueformat'), $this->locale);
 					$this->value = $this->valueObj->toArray();
 				}
 				else {
@@ -163,12 +166,13 @@ class DateField extends TextField {
 				// (en_NZ for 3rd of April, definetly not yyyy-MM-dd)
 				if(!empty($val) && Zend_Date::isDate($val, $this->getConfig('dateformat'), $this->locale)) {
 					$this->valueObj = new Zend_Date($val, $this->getConfig('dateformat'), $this->locale);
-					$this->value = $this->valueObj->get($this->getConfig('dateformat'));
+					$this->value = $this->valueObj->get($this->getConfig('dateformat'), $this->locale);
+					
 				}
 				// load ISO date from database (usually through Form->loadDataForm())
 				else if(!empty($val) && Zend_Date::isDate($val, $this->getConfig('datavalueformat'))) {
 					$this->valueObj = new Zend_Date($val, $this->getConfig('datavalueformat'));
-					$this->value = $this->valueObj->get($this->getConfig('dateformat'));
+					$this->value = $this->valueObj->get($this->getConfig('dateformat'), $this->locale);
 				}
 				else {
 					$this->value = $val;
@@ -206,8 +210,11 @@ class DateField extends TextField {
 		if(Validator::get_javascript_validator_handler() == 'none') return true;
 
 		if($this->getConfig('dmyfields')) {
-			$error = _t('DateField.VALIDATIONJS', 'Please enter a valid date format (DD/MM/YYYY).');
-			$error = 'Please enter a valid date format (DD/MM/YYYY) from dmy.';
+			$error = _t('DateField.VALIDATIONJS', 'Please enter a valid date format.');
+			// Remove hardcoded date formats from translated strings
+			$error = preg_replace('/\(.*\)/', '', $error);
+			$error .= ' (' . $this->getConfig('dateformat') .')';
+			
 			$jsFunc =<<<JS
 Behaviour.register({
 	"#$formID": {
@@ -493,6 +500,8 @@ class DateField_View_JQuery {
 	 */
 	static $locale_map = array(
 		'en_GB' => 'en-GB',
+		'en_US' => 'en', 
+		'en_NZ' => 'en-GB', 
 		'fr_CH' => 'fr-CH',
 		'pt_BR' => 'pt-BR',
 		'sr_SR' => 'sr-SR',
@@ -538,8 +547,9 @@ class DateField_View_JQuery {
 		if($this->getField()->getConfig('showcalendar')) {
 			Requirements::javascript(THIRDPARTY_DIR . '/jquery/jquery.js');
 			Requirements::javascript(SAPPHIRE_DIR . '/javascript/jquery_improvements.js');	
-			Requirements::css('http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/smoothness/jquery-ui.css');
-			Requirements::javascript('http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js');
+			Requirements::css(THIRDPARTY_DIR . '/jquery-ui-themes/smoothness/jquery.ui.all.css');
+			Requirements::javascript(SAPPHIRE_DIR . '/thirdparty/jquery-ui/jquery.ui.core.js');
+			Requirements::javascript(SAPPHIRE_DIR . '/thirdparty/jquery-ui/jquery.ui.datepicker.js');
 			
 			// Include language files (if required)
 			$lang = $this->getLang();
@@ -547,7 +557,7 @@ class DateField_View_JQuery {
 				// TODO Check for existence of locale to avoid unnecessary 404s from the CDN
 				Requirements::javascript(
 					sprintf(
-						'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/i18n/jquery.ui.datepicker-%s.min.js',
+						THIRDPARTY_DIR . '/jquery-ui/minified/i18n/jquery.ui.datepicker-%s.min.js',
 						// can be a mix between names (e.g. 'de') and combined locales (e.g. 'zh-TW')
 						$lang
 					));
@@ -604,12 +614,18 @@ class DateField_View_JQuery {
 		  '/e/' => 'N',
 		  '/D/' => '',
 		  '/w/' => '',
+			// make single "M" lowercase
 		  '/([^M])M([^M])/' => '$1m$2',
+			// make single "M" at start of line lowercase
 		  '/^M([^M])/' => 'm$1',
+				// make single "M" at end of line lowercase
 		  '/([^M])M$/' => '$1m',
+			// match exactly three capital Ms not preceeded or followed by an M
+		  '/(?<!M)MMM(?!M)/' => 'M',
+			// match exactly two capital Ms not preceeded or followed by an M
+		  '/(?<!M)MM(?!M)/' => 'mm',
+			// match four capital Ms (maximum allowed)
 		  '/MMMM/' => 'MM',
-		  '/MMM/' => 'M',
-		  '/MM/' => 'mm',
 		  '/l/' => '',
 		  '/YYYY/' => 'yy',
 		  '/yyyy/' => 'yy',

@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/cms/branches/2.4/tests
 http://svn.silverstripe.com
 
 
 
-2010-06-08T06:47:54.045453Z
-106248
-ischommer
+2011-01-11T23:00:59.706594Z
+115440
+sharvey
 
 
 svn:special svn:externals svn:needs-lock
@@ -58,26 +58,14 @@ file
 
 
 
-2010-05-30T18:49:21.000000Z
-400de56d6fbf64a55b9e972914cb6462
-2010-02-23T01:37:15.159376Z
-99677
+2011-01-12T18:39:51.000000Z
+2dfd9941cf86cd434ac16a9ef50336cf
+2010-11-01T01:29:02.989681Z
+113282
 ischommer
 
 salad
 dir
-
-MemberImportFormTest.yml
-file
-
-
-
-
-2010-05-30T18:49:21.000000Z
-d8cf868f11adc2e398aec0aa0b67db0b
-2010-02-11T00:43:23.809107Z
-98732
-ischommer
 
 CMSMainTest.yml
 file
@@ -85,11 +73,11 @@ file
 
 
 
-2010-07-01T18:44:25.000000Z
-8abb8128473d7f043d49afb7e94580a8
-2010-06-02T23:01:41.590316Z
-106090
-sminnee
+2011-01-12T18:39:51.000000Z
+955d05f26f9926e332b07b57a9f13a63
+2010-12-14T01:32:01.902104Z
+114941
+sharvey
 
 FilesystemPublisherTest.php
 file
@@ -97,11 +85,11 @@ file
 
 
 
-2010-05-30T18:49:21.000000Z
-67e65157af607a1f2e88122823b9f499
-2010-04-29T21:41:41.227123Z
-103763
-ischommer
+2011-01-12T18:39:51.000000Z
+6a90ce67bbfc2e031a1b98749d2736b1
+2010-10-11T22:15:34.629285Z
+111899
+sharvey
 
 CMSMenuTest.php
 file
@@ -135,24 +123,11 @@ file
 
 
 
-2010-05-30T18:49:21.000000Z
-1557c2e9a4461104c634d6f5a49656ba
-2010-05-16T23:50:03.484848Z
-104968
+2011-01-12T18:39:51.000000Z
+b587acf8d6439f1a082f7818667c68f3
+2010-11-01T01:29:02.989681Z
+113282
 ischommer
-
-SecurityAdminTest.php
-file
-
-
-
-
-2010-05-30T18:49:21.000000Z
-9ff80e3a1f2ce6eaea81c168aab344f4
-2010-02-23T03:32:18.444396Z
-99686
-ischommer
-has-props
 
 SideReportTest.php
 file
@@ -167,6 +142,19 @@ file
 sminnee
 has-props
 
+SecurityAdminTest.php
+file
+
+
+
+
+2010-05-30T18:49:21.000000Z
+9ff80e3a1f2ce6eaea81c168aab344f4
+2010-02-23T03:32:18.444396Z
+99686
+ischommer
+has-props
+
 SSReportTest.php
 file
 
@@ -179,19 +167,6 @@ file
 98215
 sminnee
 
-PageCommentsTest.php
-file
-
-
-
-
-2010-05-30T18:49:21.000000Z
-21f189623598278275b1adff4035fd23
-2010-05-16T23:50:03.484848Z
-104968
-ischommer
-has-props
-
 LeftAndMainTest.php
 file
 
@@ -203,6 +178,19 @@ file
 2010-02-24T02:50:47.051732Z
 99789
 sminnee
+has-props
+
+PageCommentsTest.php
+file
+
+
+
+
+2011-01-12T18:39:51.000000Z
+34f218f0c6e14f09f9bc7bffcaa6dc83
+2010-11-01T01:29:02.989681Z
+113282
+ischommer
 has-props
 
 ModelAdminTest.yml
@@ -223,22 +211,10 @@ file
 
 
 
-2010-05-30T18:49:21.000000Z
-c5d36a5ad363210229c7d077711be9e0
-2010-02-23T01:37:15.159376Z
-99677
-ischommer
-
-MemberImportFormTest.php
-file
-
-
-
-
-2010-05-30T18:49:21.000000Z
-5985fa6f449a3647f5bd02241bf35269
-2010-02-11T00:43:23.809107Z
-98732
+2011-01-12T18:39:51.000000Z
+8592c7ee950442ccf48d280204347374
+2010-11-01T01:29:02.989681Z
+113282
 ischommer
 
 CMSMainTest.php
@@ -247,10 +223,10 @@ file
 
 
 
-2010-07-01T18:44:25.000000Z
-20e854d5122217cbc79aea3457457c2e
-2010-06-08T06:47:54.045453Z
-106248
-ischommer
+2011-01-12T18:39:51.000000Z
+b599a57c81ea2920ea58adf5299f0b63
+2011-01-11T23:00:59.706594Z
+115440
+sharvey
 has-props
 

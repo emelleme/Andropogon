@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/!svn/ver/93949/open/modules/sapphire/branches/2.4/thirdparty/greybox
+V 70
+/!svn/ver/109105/open/modules/sapphire/branches/2.4/thirdparty/greybox
 END
 indicator.gif
 K 25
@@ -66,8 +66,8 @@ END
 greybox.js
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/!svn/ver/93611/open/modules/sapphire/branches/2.4/thirdparty/greybox/greybox.js
+V 81
+/!svn/ver/109105/open/modules/sapphire/branches/2.4/thirdparty/greybox/greybox.js
 END
 blank.gif
 K 25

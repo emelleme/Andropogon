@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/tests/filesystem
 http://svn.silverstripe.com
 
 
 
-2010-07-06T03:08:57.437641Z
-107539
-ischommer
+2010-10-11T22:31:11.567866Z
+111903
+sharvey
 
 
 svn:special svn:externals svn:needs-lock
@@ -44,11 +44,11 @@ file
 
 
 
-2010-07-01T18:44:18.000000Z
-d78ffe35ebdf1a07c92f95643bc25948
-2010-06-29T04:59:50.625871Z
-107276
-ischommer
+2011-01-12T18:39:40.000000Z
+c7c4cd8fa6274910902ddf9668e3679a
+2010-10-04T20:42:57.871993Z
+111669
+mstephens
 has-props
 
 UploadTest.yml
@@ -70,11 +70,11 @@ file
 
 
 
-2010-08-06T02:06:59.000000Z
-b15cc92b8e45427a31ff2d8b5260098f
-2010-07-06T03:08:57.437641Z
-107539
-ischommer
+2011-01-12T18:39:40.000000Z
+6a75376af840c51e1de8e7b1952c0fff
+2010-10-11T22:31:11.567866Z
+111903
+sharvey
 has-props
 
 UploadTest.php

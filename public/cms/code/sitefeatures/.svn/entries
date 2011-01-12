@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/cms/branches/2.4/code/sitefeatures
 http://svn.silverstripe.com
 
 
 
-2010-05-25T02:08:17.581286Z
-105514
-wrossiter
+2011-01-10T21:55:44.924132Z
+115399
+sharvey
 
 
 svn:special svn:externals svn:needs-lock
@@ -45,10 +45,10 @@ file
 
 
 
-2010-05-30T18:49:22.000000Z
-95df2b7aebfe80f6dc623287df31b59c
-2010-05-16T23:50:03.484848Z
-104968
+2011-01-12T18:39:52.000000Z
+c6bb4720b7e863862b9230c203182e63
+2010-11-01T01:29:02.989681Z
+113282
 ischommer
 has-props
 
@@ -58,11 +58,11 @@ file
 
 
 
-2010-05-30T18:49:22.000000Z
-bd09f82d570c0fa790e565f7c0004ca8
-2010-05-25T02:08:17.581286Z
-105514
-wrossiter
+2011-01-12T18:39:52.000000Z
+ad2d72a7814e78d6eff0cc801c2fc5fa
+2011-01-10T21:55:44.924132Z
+115399
+sharvey
 has-props
 
 MathSpamProtection.php

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/!svn/ver/108351/open/modules/sapphire/branches/2.4/javascript
+/!svn/ver/113690/open/modules/sapphire/branches/2.4/javascript
 END
 HasManyFileField.js
 K 25
@@ -42,8 +42,8 @@ END
 prototype_improvements.js
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/!svn/ver/93580/open/modules/sapphire/branches/2.4/javascript/prototype_improvements.js
+V 88
+/!svn/ver/109105/open/modules/sapphire/branches/2.4/javascript/prototype_improvements.js
 END
 HtmlEditorField.js
 K 25
@@ -129,17 +129,17 @@ svn:wc:ra_dav:version-url
 V 75
 /!svn/ver/104671/open/modules/sapphire/branches/2.4/javascript/UpdateURL.js
 END
-loader.js
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/!svn/ver/93580/open/modules/sapphire/branches/2.4/javascript/loader.js
-END
 SilverStripeNavigator.js
 K 25
 svn:wc:ra_dav:version-url
 V 87
 /!svn/ver/100883/open/modules/sapphire/branches/2.4/javascript/SilverStripeNavigator.js
+END
+loader.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/93580/open/modules/sapphire/branches/2.4/javascript/loader.js
 END
 i18nx.js
 K 25
@@ -153,17 +153,17 @@ svn:wc:ra_dav:version-url
 V 83
 /!svn/ver/99360/open/modules/sapphire/branches/2.4/javascript/TimeField_dropdown.js
 END
-i18n.js
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/!svn/ver/90859/open/modules/sapphire/branches/2.4/javascript/i18n.js
-END
 tiny_mce_improvements.js
 K 25
 svn:wc:ra_dav:version-url
 V 87
 /!svn/ver/101975/open/modules/sapphire/branches/2.4/javascript/tiny_mce_improvements.js
+END
+i18n.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/90859/open/modules/sapphire/branches/2.4/javascript/i18n.js
 END
 ComplexTableField.js
 K 25
@@ -174,20 +174,20 @@ END
 Validator.js
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/!svn/ver/90859/open/modules/sapphire/branches/2.4/javascript/Validator.js
-END
-MemberDatetimeOptionsetField.js
-K 25
-svn:wc:ra_dav:version-url
-V 94
-/!svn/ver/107326/open/modules/sapphire/branches/2.4/javascript/MemberDatetimeOptionsetField.js
+V 75
+/!svn/ver/111880/open/modules/sapphire/branches/2.4/javascript/Validator.js
 END
 ConfirmedPasswordField.js
 K 25
 svn:wc:ra_dav:version-url
 V 87
 /!svn/ver/90859/open/modules/sapphire/branches/2.4/javascript/ConfirmedPasswordField.js
+END
+MemberDatetimeOptionsetField.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/107326/open/modules/sapphire/branches/2.4/javascript/MemberDatetimeOptionsetField.js
 END
 RedirectorPage.js
 K 25

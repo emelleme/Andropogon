@@ -194,8 +194,7 @@ class PageCommentInterface extends RequestHandler {
 		$fields->push(new TextareaField("Comment", _t('PageCommentInterface.YOURCOMMENT', "Comments")));
 		
 		$form = new PageCommentInterface_Form($this, "PostCommentForm", $fields, new FieldSet(
-			new FormAction("postcomment", _t('PageCommentInterface.POST', 'Post'))
-		));
+			new FormAction("postcomment", _t('PageCommentInterface.POST', 'Post'))), new RequiredFields('Name', 'Comment'));
 		
 		// Set it so the user gets redirected back down to the form upon form fail
 		$form->setRedirectToFormOnValidationError(true);
@@ -214,13 +213,18 @@ class PageCommentInterface extends RequestHandler {
 			Requirements::javascript(CMS_DIR . '/javascript/PageCommentInterface.js');
 		}
 		
-		// Load the data from Session
-		$form->loadDataFrom(array(
-			"Name" => Cookie::get("PageCommentInterface_Name"),
-			"Comment" => Cookie::get("PageCommentInterface_Comment"),
-			"CommenterURL" => Cookie::get("PageCommentInterface_CommenterURL")	
-		));
+		$this->extend('updatePageCommentForm', $form);
 		
+		// Load the users data from a cookie
+		$cookie = Cookie::get('PageCommentInterface_Data');
+		if($cookie) {
+			$visibleFields = array();
+			foreach($fields as $field) {
+				if(!$field instanceof HiddenField) $visibleFields[] = $field->Name();
+			}
+			$form->loadDataFrom(unserialize($cookie), false, $visibleFields);
+		}
+
 		return $form;
 	}
 	
@@ -255,7 +259,8 @@ class PageCommentInterface extends RequestHandler {
 	 */
 	function DeleteAllLink() {
 		if(Permission::check('CMS_ACCESS_CommentAdmin')) {
-			return Director::absoluteBaseURL() . "PageComment/deleteallcomments?pageid=" . $this->page->ID;
+			$token = SecurityToken::inst();
+			return $token->addToUrl(Director::absoluteBaseURL() . "PageComment/deleteallcomments?pageid=" . $this->page->ID);
 		}
 	}
 	
@@ -267,11 +272,9 @@ class PageCommentInterface extends RequestHandler {
  */
 class PageCommentInterface_Form extends Form {
 	function postcomment($data) {
-		// Spam filtering
-		Cookie::set("PageCommentInterface_Name", $data['Name']);
-		Cookie::set("PageCommentInterface_CommenterURL", $data['CommenterURL']);
-		Cookie::set("PageCommentInterface_Comment", $data['Comment']);
+		Cookie::set("PageCommentInterface_Data", serialize($data));
 
+		// Spam filtering
 		if(SSAkismet::isEnabled()) {
 			try {
 				$akismet = new SSAkismet();
@@ -329,7 +332,8 @@ class PageCommentInterface_Form extends Form {
 		$comment->NeedsModeration = PageComment::moderationEnabled();
 		$comment->write();
 		
-		Cookie::set("PageCommentInterface_Comment", '');
+		unset($data['Comment']);
+		Cookie::set("PageCommentInterface_Data", serialize($data));
 		
 		$moderationMsg = _t('PageCommentInterface_Form.AWAITINGMODERATION', "Your comment has been submitted and is now awaiting moderation.");
 		

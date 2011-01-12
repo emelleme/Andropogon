@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data
+V 79
+/!svn/ver/111843/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data
 END
 ro.xml
 K 25
@@ -15,11 +15,11 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ga.xml
 END
-ha_Latn_NE.xml
+rw.xml
 K 25
 svn:wc:ra_dav:version-url
-V 93
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ha_Latn_NE.xml
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/rw.xml
 END
 ar_SD.xml
 K 25
@@ -27,11 +27,11 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ar_SD.xml
 END
-rw.xml
+ha_Latn_NE.xml
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/rw.xml
+V 93
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ha_Latn_NE.xml
 END
 en_SG.xml
 K 25
@@ -51,29 +51,29 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/zu.xml
 END
-fil_PH.xml
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fil_PH.xml
-END
 ss_SZ.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ss_SZ.xml
 END
-kl.xml
+fil_PH.xml
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kl.xml
+V 89
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fil_PH.xml
 END
 ka_GE.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ka_GE.xml
+END
+kl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kl.xml
 END
 fr_SN.xml
 K 25
@@ -195,11 +195,11 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ta.xml
 END
-is_IS.xml
+sw_TZ.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/is_IS.xml
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/sw_TZ.xml
 END
 ar_LY.xml
 K 25
@@ -207,11 +207,11 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ar_LY.xml
 END
-sw_TZ.xml
+is_IS.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/sw_TZ.xml
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/is_IS.xml
 END
 te.xml
 K 25
@@ -219,17 +219,17 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/te.xml
 END
-lo.xml
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/lo.xml
-END
 mn_Mong_CN.xml
 K 25
 svn:wc:ra_dav:version-url
 V 93
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/mn_Mong_CN.xml
+END
+lo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/lo.xml
 END
 ti.xml
 K 25
@@ -273,11 +273,11 @@ svn:wc:ra_dav:version-url
 V 86
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fur.xml
 END
-ku_Latn.xml
+es_NI.xml
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ku_Latn.xml
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/es_NI.xml
 END
 am.xml
 K 25
@@ -285,23 +285,23 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/am.xml
 END
-es_NI.xml
+ku_Latn.xml
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/es_NI.xml
-END
-ig.xml
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ig.xml
+V 90
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ku_Latn.xml
 END
 ar_YE.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ar_YE.xml
+END
+ig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ig.xml
 END
 el.xml
 K 25
@@ -315,23 +315,17 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_UM.xml
 END
-et.xml
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/et.xml
-END
 en_BE.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_BE.xml
 END
-ak_GH.xml
+et.xml
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ak_GH.xml
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/et.xml
 END
 aa_ET.xml
 K 25
@@ -339,23 +333,29 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/aa_ET.xml
 END
+ak_GH.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ak_GH.xml
+END
 mn.xml
 K 25
 svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/mn.xml
 END
-is.xml
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/is.xml
-END
 wal_ET.xml
 K 25
 svn:wc:ra_dav:version-url
 V 89
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/wal_ET.xml
+END
+is.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/is.xml
 END
 de_AT.xml
 K 25
@@ -369,17 +369,17 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/mr.xml
 END
-kpe.xml
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kpe.xml
-END
 iw.xml
 K 25
 svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/iw.xml
+END
+kpe.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kpe.xml
 END
 af_ZA.xml
 K 25
@@ -771,11 +771,11 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/aa_DJ.xml
 END
-hi.xml
+ro_MD.xml
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/hi.xml
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ro_MD.xml
 END
 de_DE.xml
 K 25
@@ -783,17 +783,11 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/de_DE.xml
 END
-ro_MD.xml
+hi.xml
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ro_MD.xml
-END
-kk_Cyrl_KZ.xml
-K 25
-svn:wc:ra_dav:version-url
-V 93
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kk_Cyrl_KZ.xml
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/hi.xml
 END
 nl_NL.xml
 K 25
@@ -801,17 +795,17 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/nl_NL.xml
 END
+kk_Cyrl_KZ.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kk_Cyrl_KZ.xml
+END
 ky_KG.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ky_KG.xml
-END
-dv.xml
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/dv.xml
 END
 so_ET.xml
 K 25
@@ -819,17 +813,17 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/so_ET.xml
 END
+dv.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/dv.xml
+END
 hu.xml
 K 25
 svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/hu.xml
-END
-ar_EG.xml
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ar_EG.xml
 END
 dz.xml
 K 25
@@ -837,17 +831,11 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/dz.xml
 END
-lt.xml
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/lt.xml
-END
-ar_MA.xml
+ar_EG.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ar_MA.xml
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ar_EG.xml
 END
 en_IE.xml
 K 25
@@ -855,17 +843,29 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_IE.xml
 END
-hy.xml
+ar_MA.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ar_MA.xml
+END
+lt.xml
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/hy.xml
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/lt.xml
 END
 st_ZA.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/st_ZA.xml
+END
+hy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/hy.xml
 END
 tn.xml
 K 25
@@ -879,23 +879,17 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ps.xml
 END
-ig_NG.xml
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ig_NG.xml
-END
 ee_TG.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ee_TG.xml
 END
-kok.xml
+ig_NG.xml
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kok.xml
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ig_NG.xml
 END
 es_UY.xml
 K 25
@@ -903,11 +897,11 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/es_UY.xml
 END
-en_AS.xml
+kok.xml
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_AS.xml
+V 86
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kok.xml
 END
 tr.xml
 K 25
@@ -915,11 +909,17 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/tr.xml
 END
-fr_MC.xml
+en_AS.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fr_MC.xml
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_AS.xml
+END
+en_MH.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_MH.xml
 END
 af.xml
 K 25
@@ -927,11 +927,11 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/af.xml
 END
-en_MH.xml
+fr_MC.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_MH.xml
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fr_MC.xml
 END
 ee.xml
 K 25
@@ -975,17 +975,17 @@ svn:wc:ra_dav:version-url
 V 93
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ha_Arab_NG.xml
 END
-ar.xml
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ar.xml
-END
 en_MT.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_MT.xml
+END
+ar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ar.xml
 END
 mn_Cyrl.xml
 K 25
@@ -993,23 +993,11 @@ svn:wc:ra_dav:version-url
 V 90
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/mn_Cyrl.xml
 END
-bn_BD.xml
+uz_AF.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/bn_BD.xml
-END
-az_AZ.xml
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/az_AZ.xml
-END
-af_NA.xml
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/af_NA.xml
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/uz_AF.xml
 END
 mr_IN.xml
 K 25
@@ -1017,11 +1005,23 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/mr_IN.xml
 END
-uz_AF.xml
+af_NA.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/uz_AF.xml
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/af_NA.xml
+END
+az_AZ.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/az_AZ.xml
+END
+bn_BD.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/bn_BD.xml
 END
 sr_ME.xml
 K 25
@@ -1035,17 +1035,17 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/or_IN.xml
 END
-mk.xml
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/mk.xml
-END
 sid_ET.xml
 K 25
 svn:wc:ra_dav:version-url
 V 89
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/sid_ET.xml
+END
+mk.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/mk.xml
 END
 eu.xml
 K 25
@@ -1053,17 +1053,17 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/eu.xml
 END
-az.xml
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/az.xml
-END
 zh_Hans_CN.xml
 K 25
 svn:wc:ra_dav:version-url
 V 93
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/zh_Hans_CN.xml
+END
+az.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/az.xml
 END
 mo.xml
 K 25
@@ -1071,29 +1071,29 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/mo.xml
 END
-it.xml
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/it.xml
-END
 ur_IN.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ur_IN.xml
 END
-fr_BE.xml
+it.xml
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fr_BE.xml
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/it.xml
 END
 sr_Cyrl.xml
 K 25
 svn:wc:ra_dav:version-url
 V 90
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/sr_Cyrl.xml
+END
+fr_BE.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fr_BE.xml
 END
 hy_AM_REVISED.xml
 K 25
@@ -1107,17 +1107,17 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ms.xml
 END
-fa_IR.xml
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fa_IR.xml
-END
 ts_ZA.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ts_ZA.xml
+END
+fa_IR.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fa_IR.xml
 END
 sr_Latn_ME.xml
 K 25
@@ -1131,29 +1131,29 @@ svn:wc:ra_dav:version-url
 V 90
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_Shaw.xml
 END
-am_ET.xml
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/am_ET.xml
-END
 es_CL.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/es_CL.xml
 END
-be.xml
+am_ET.xml
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/be.xml
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/am_ET.xml
 END
 pa_IN.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/pa_IN.xml
+END
+be.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/be.xml
 END
 pa_Guru_IN.xml
 K 25
@@ -1179,17 +1179,17 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_BZ.xml
 END
-kk_Cyrl.xml
-K 25
-svn:wc:ra_dav:version-url
-V 90
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kk_Cyrl.xml
-END
 sr_Cyrl_ME.xml
 K 25
 svn:wc:ra_dav:version-url
 V 93
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/sr_Cyrl_ME.xml
+END
+kk_Cyrl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kk_Cyrl.xml
 END
 nb.xml
 K 25
@@ -1197,11 +1197,11 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/nb.xml
 END
-en_VI.xml
+tg_Cyrl_TJ.xml
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_VI.xml
+V 93
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/tg_Cyrl_TJ.xml
 END
 so_KE.xml
 K 25
@@ -1209,17 +1209,11 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/so_KE.xml
 END
-tg_Cyrl_TJ.xml
+en_VI.xml
 K 25
 svn:wc:ra_dav:version-url
-V 93
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/tg_Cyrl_TJ.xml
-END
-pa_Guru.xml
-K 25
-svn:wc:ra_dav:version-url
-V 90
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/pa_Guru.xml
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_VI.xml
 END
 sr_Latn.xml
 K 25
@@ -1227,11 +1221,11 @@ svn:wc:ra_dav:version-url
 V 90
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/sr_Latn.xml
 END
-om_ET.xml
+pa_Guru.xml
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/om_ET.xml
+V 90
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/pa_Guru.xml
 END
 zh_HK.xml
 K 25
@@ -1239,17 +1233,23 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/zh_HK.xml
 END
-en_CA.xml
+om_ET.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_CA.xml
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/om_ET.xml
 END
 zh_Hant_TW.xml
 K 25
 svn:wc:ra_dav:version-url
 V 93
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/zh_Hant_TW.xml
+END
+en_CA.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_CA.xml
 END
 th_TH.xml
 K 25
@@ -1287,23 +1287,17 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fr_CH.xml
 END
-ln_CG.xml
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ln_CG.xml
-END
 so_SO.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/so_SO.xml
 END
-gv_GB.xml
+ln_CG.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/gv_GB.xml
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ln_CG.xml
 END
 st_LS.xml
 K 25
@@ -1311,11 +1305,11 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/st_LS.xml
 END
-gez.xml
+gv_GB.xml
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/gez.xml
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/gv_GB.xml
 END
 se_FI.xml
 K 25
@@ -1323,11 +1317,11 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/se_FI.xml
 END
-pt_PT.xml
+gez.xml
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/pt_PT.xml
+V 86
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/gez.xml
 END
 ru.xml
 K 25
@@ -1335,11 +1329,11 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ru.xml
 END
-fur_IT.xml
+pt_PT.xml
 K 25
 svn:wc:ra_dav:version-url
-V 89
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fur_IT.xml
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/pt_PT.xml
 END
 sr_RS.xml
 K 25
@@ -1347,11 +1341,11 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/sr_RS.xml
 END
-es_DO.xml
+fur_IT.xml
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/es_DO.xml
+V 89
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/fur_IT.xml
 END
 ny_MW.xml
 K 25
@@ -1359,17 +1353,23 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ny_MW.xml
 END
-ha_Latn_NG.xml
+es_DO.xml
 K 25
 svn:wc:ra_dav:version-url
-V 93
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ha_Latn_NG.xml
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/es_DO.xml
 END
 mn_Mong.xml
 K 25
 svn:wc:ra_dav:version-url
 V 90
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/mn_Mong.xml
+END
+ha_Latn_NG.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ha_Latn_NG.xml
 END
 es_HN.xml
 K 25
@@ -1395,17 +1395,17 @@ svn:wc:ra_dav:version-url
 V 93
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/sr_Latn_RS.xml
 END
-ee_GH.xml
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ee_GH.xml
-END
 tg_TJ.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/tg_TJ.xml
+END
+ee_GH.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ee_GH.xml
 END
 kn.xml
 K 25
@@ -1425,17 +1425,17 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/om.xml
 END
-kpe_LR.xml
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kpe_LR.xml
-END
 sh_BA.xml
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/sh_BA.xml
+END
+kpe_LR.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kpe_LR.xml
 END
 ha_Arab.xml
 K 25
@@ -1449,23 +1449,17 @@ svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/sl.xml
 END
-kfo.xml
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kfo.xml
-END
 pa_Arab_PK.xml
 K 25
 svn:wc:ra_dav:version-url
 V 93
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/pa_Arab_PK.xml
 END
-ii_CN.xml
+kfo.xml
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ii_CN.xml
+V 86
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/kfo.xml
 END
 sr_Cyrl_RS.xml
 K 25
@@ -1473,11 +1467,11 @@ svn:wc:ra_dav:version-url
 V 93
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/sr_Cyrl_RS.xml
 END
-ha_Latn_GH.xml
+ii_CN.xml
 K 25
 svn:wc:ra_dav:version-url
-V 93
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ha_Latn_GH.xml
+V 88
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ii_CN.xml
 END
 en_HK.xml
 K 25
@@ -1485,17 +1479,23 @@ svn:wc:ra_dav:version-url
 V 88
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_HK.xml
 END
-pa_Arab.xml
+ha_Latn_GH.xml
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/pa_Arab.xml
+V 93
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/ha_Latn_GH.xml
 END
 wo.xml
 K 25
 svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/wo.xml
+END
+pa_Arab.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/pa_Arab.xml
 END
 st.xml
 K 25
@@ -1734,8 +1734,8 @@ END
 en_US.xml
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/93530/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_US.xml
+V 89
+/!svn/ver/111843/open/modules/sapphire/branches/2.4/thirdparty/Zend/Locale/Data/en_US.xml
 END
 sl_SI.xml
 K 25

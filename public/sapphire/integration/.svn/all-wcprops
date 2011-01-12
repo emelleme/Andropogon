@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/!svn/ver/104158/open/modules/sapphire/branches/2.4/integration
+/!svn/ver/113193/open/modules/sapphire/branches/2.4/integration
 END
 XML.php
 K 25
@@ -12,12 +12,12 @@ END
 HTMLValue.php
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/!svn/ver/97384/open/modules/sapphire/branches/2.4/integration/HTMLValue.php
+V 77
+/!svn/ver/111950/open/modules/sapphire/branches/2.4/integration/HTMLValue.php
 END
 Geoip.php
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/!svn/ver/100409/open/modules/sapphire/branches/2.4/integration/Geoip.php
+/!svn/ver/113193/open/modules/sapphire/branches/2.4/integration/Geoip.php
 END

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/!svn/ver/108942/open/modules/sapphire/branches/2.4/api
+/!svn/ver/114751/open/modules/sapphire/branches/2.4/api
 END
 VersionedRestfulServer.php
 K 25
@@ -13,13 +13,13 @@ RSSFeed.php
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/!svn/ver/101093/open/modules/sapphire/branches/2.4/api/RSSFeed.php
+/!svn/ver/111914/open/modules/sapphire/branches/2.4/api/RSSFeed.php
 END
 RestfulServer.php
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/!svn/ver/108427/open/modules/sapphire/branches/2.4/api/RestfulServer.php
+/!svn/ver/114751/open/modules/sapphire/branches/2.4/api/RestfulServer.php
 END
 SapphireSoapServer_wsdl.ss
 K 25

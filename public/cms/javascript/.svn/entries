@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/cms/branches/2.4/javascript
 http://svn.silverstripe.com
 
 
 
-2010-07-27T04:26:06.060347Z
-108559
-lhudson
+2010-11-23T04:19:03.514292Z
+114062
+apiening
 
 
 svn:special svn:externals svn:needs-lock
@@ -58,11 +58,11 @@ file
 
 
 
-2010-08-06T02:07:09.000000Z
-cc2f56e051774601f825b8074ace91a7
-2010-07-27T04:26:06.060347Z
-108559
-lhudson
+2011-01-12T18:39:52.000000Z
+2ffba64a8df7e60eb4a5114e40560bed
+2010-11-13T01:30:55.275110Z
+113689
+ischommer
 has-props
 
 PageCommentInterface.js
@@ -71,10 +71,10 @@ file
 
 
 
-2010-05-30T18:49:22.000000Z
-e35db93e088bdd167d27730ea8259820
-2009-11-05T01:11:40.789859Z
-90846
+2011-01-12T18:39:52.000000Z
+0aa21630881f304479636513a9939bdc
+2010-10-03T19:28:38.838391Z
+111497
 ischommer
 has-props
 
@@ -87,11 +87,11 @@ file
 
 
 
-2010-05-30T18:49:22.000000Z
-8f51c711f7ecb82ffddf9875eddd824d
-2010-02-22T02:51:11.970086Z
-99553
-sminnee
+2011-01-12T18:39:52.000000Z
+34f18755b7765f93f078dfed3b210763
+2010-11-13T01:30:55.275110Z
+113689
+ischommer
 has-props
 
 LangSelector.js
@@ -126,11 +126,11 @@ file
 
 
 
-2010-05-30T18:49:22.000000Z
-e8d700c3eb8d9871d08bea88bd2aac92
-2009-06-17T23:14:01.511210Z
-79474
-sminnee
+2011-01-12T18:39:52.000000Z
+d09c0f40f148cee3854d48efbe71fba0
+2010-11-01T01:29:02.989681Z
+113282
+ischommer
 has-props
 
 MemberImportForm.js
@@ -164,11 +164,11 @@ file
 
 
 
-2010-05-30T18:49:22.000000Z
-5d881b380fd7115ccde467537c6116c8
-2010-04-29T04:27:04.711640Z
-103734
-lhudson
+2011-01-12T18:39:52.000000Z
+28e20162130cce7a4142b47f2b80f21a
+2010-11-13T01:30:55.275110Z
+113689
+ischommer
 has-props
 
 LeftAndMain_left.js
@@ -177,11 +177,11 @@ file
 
 
 
-2010-05-30T18:49:22.000000Z
-9d0283f955bc6f1320eb40e24bb9d5f1
-2010-03-09T21:16:20.967211Z
-100724
-muzdowski
+2011-01-12T18:39:52.000000Z
+676330ce51b8f5934c07fa6715eab0f6
+2010-11-13T01:30:55.275110Z
+113689
+ischommer
 has-props
 
 ReportAdmin_left.js
@@ -216,25 +216,15 @@ file
 
 
 
-2010-05-30T18:49:22.000000Z
-94da51df6bface8ef4fc2c5f6f46e25a
-2010-02-04T04:56:16.203810Z
-98211
-sminnee
+2011-01-12T18:39:52.000000Z
+4fc72309f5844b6d305348b171915c72
+2010-10-12T00:31:59.295721Z
+111915
+jbarrois
 has-props
 
-SitetreeAccess.js
-file
-
-
-
-
-2010-05-30T18:49:22.000000Z
-3948f37ae1248e63444e4391ae6e4088
-2010-02-22T05:27:17.925703Z
-99594
-sminnee
-has-props
+lang
+dir
 
 MemberTableField_popup.js
 file
@@ -249,8 +239,18 @@ c23981cf5b507ee9aac1d3820d9d2c8c
 hsmith
 has-props
 
-lang
-dir
+SitetreeAccess.js
+file
+
+
+
+
+2011-01-12T18:39:52.000000Z
+792f67054b111003a22a0374b2b63ed3
+2010-11-23T04:19:03.514292Z
+114062
+apiening
+has-props
 
 CommentAdmin_right.js
 file
@@ -265,19 +265,6 @@ file
 sminnee
 has-props
 
-ThumbnailStripField.js
-file
-
-
-
-
-2010-07-01T18:44:25.000000Z
-e49ae5ea2d9cfa9c55e7eb9e20aa67ee
-2010-06-02T22:17:53.533728Z
-106086
-mstephens
-has-props
-
 ModelAdmin.js
 file
 
@@ -289,6 +276,19 @@ file
 2010-05-24T22:23:33.088437Z
 105505
 cbarberis
+has-props
+
+ThumbnailStripField.js
+file
+
+
+
+
+2010-07-01T18:44:25.000000Z
+e49ae5ea2d9cfa9c55e7eb9e20aa67ee
+2010-06-02T22:17:53.533728Z
+106086
+mstephens
 has-props
 
 SecurityAdmin_right.js
@@ -310,23 +310,10 @@ file
 
 
 
-2010-07-01T18:44:25.000000Z
-6849b898bbf4b8c2b348c5c2352c8b25
-2010-06-03T01:12:26.599912Z
-106121
-sminnee
-has-props
-
-hover.js
-file
-
-
-
-
-2010-05-30T18:49:22.000000Z
-fdcf6c26d55237c72d0a7ceaa3080614
-2009-11-26T03:37:54.578210Z
-93582
+2011-01-12T18:39:52.000000Z
+0b5e2c339242db9266a67b2f554a74a8
+2010-11-13T01:30:55.275110Z
+113689
 ischommer
 has-props
 
@@ -343,16 +330,29 @@ file
 ischommer
 has-props
 
-CMSMain_right.js
+hover.js
 file
 
 
 
 
 2010-05-30T18:49:22.000000Z
-cb77b232b929b40c079581ec235aaaba
-2010-02-16T04:02:53.787863Z
-99120
+fdcf6c26d55237c72d0a7ceaa3080614
+2009-11-26T03:37:54.578210Z
+93582
+ischommer
+has-props
+
+CMSMain_right.js
+file
+
+
+
+
+2011-01-12T18:39:52.000000Z
+21cf934747243e0c3b1801b4f334743c
+2010-10-31T02:22:15.437952Z
+113248
 ischommer
 has-props
 
@@ -362,11 +362,11 @@ file
 
 
 
-2010-05-30T18:49:22.000000Z
-b0e0839408561cf780d6f1619e9077c5
-2010-03-31T05:00:02.933553Z
-101969
-ischommer
+2011-01-12T18:39:52.000000Z
+6caecbe240ea4962360c8e9ea5fd0c86
+2010-11-17T05:21:03.847774Z
+113871
+phalkunz
 has-props
 
 SecurityAdmin_left.js

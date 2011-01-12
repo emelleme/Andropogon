@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/tests
 http://svn.silverstripe.com
 
 
 
-2010-08-05T03:49:49.490890Z
-108942
-muzdowski
+2011-01-11T23:00:59.706594Z
+115440
+sharvey
 
 
 svn:special svn:externals svn:needs-lock
@@ -26,20 +26,20 @@ svn:special svn:externals svn:needs-lock
 
 467b73ca-7a2a-4603-9d3b-597d59a354a9
 
-control
-dir
-
 SiteTreePermissionsTest.yml
 file
 
 
 
 
-2010-05-30T18:49:13.000000Z
-5d0217b378b1b3d7a6bfe5ec0b88839f
-2009-10-15T21:53:15.664431Z
-89164
-sminnee
+2011-01-12T18:39:40.000000Z
+a2347059df5b4986a911478bb99ed371
+2010-09-14T22:16:26.645433Z
+110759
+wrossiter
+
+control
+dir
 
 ControllerTest.yml
 file
@@ -54,9 +54,6 @@ d31b89668764f31c7e1f907d620eef15
 ischommer
 has-props
 
-salad
-dir
-
 SiteTreeTest.yml
 file
 
@@ -70,6 +67,9 @@ file
 sminnee
 has-props
 
+salad
+dir
+
 ModelAsControllerTest.yml
 file
 
@@ -82,19 +82,6 @@ d41d8cd98f00b204e9800998ecf8427e
 104468
 sminnee
 
-ObjectTest.php
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-07b1166aee6a77154668f7c4e405274c
-2010-03-16T02:16:59.873188Z
-101105
-sminnee
-has-props
-
 SiteTreeBacklinksTest.php
 file
 
@@ -105,6 +92,19 @@ file
 b710a27ce5ba846fb937a332d1772557
 2010-03-16T03:38:45.492612Z
 101127
+sminnee
+has-props
+
+ObjectTest.php
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+07b1166aee6a77154668f7c4e405274c
+2010-03-16T02:16:59.873188Z
+101105
 sminnee
 has-props
 
@@ -121,6 +121,18 @@ f5b487efa2193f1af64403f90d7e135a
 wrossiter
 has-props
 
+FullTestSuite.php
+file
+
+
+
+
+2011-01-12T18:39:40.000000Z
+b650ace8a10b003c05dfaeb202cdcfda
+2010-10-02T03:27:30.611484Z
+111489
+ischommer
+
 ManifestBuilderTest.php
 file
 
@@ -132,6 +144,19 @@ file
 2010-03-16T05:15:28.429638Z
 101138
 sminnee
+has-props
+
+bootstrap.php
+file
+
+
+
+
+2011-01-12T18:39:40.000000Z
+e9bb868c85a5e8c677a97c76a3e979cf
+2010-09-21T20:29:13.623208Z
+111051
+ischommer
 has-props
 
 ObjectStaticTest.php
@@ -156,11 +181,11 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-0eead472fb066719d47de501d3e4c4a3
-2010-05-13T06:57:17.289376Z
-104798
-ischommer
+2011-01-12T18:39:40.000000Z
+fe9c607b209061e3ed8ecd81f0c5dec8
+2010-09-14T22:16:26.645433Z
+110759
+wrossiter
 has-props
 
 ControllerTest.php
@@ -195,11 +220,11 @@ file
 
 
 
-2010-08-06T02:06:59.000000Z
-98ccfd0c2a91aa49bbc2994cf70d7bb3
-2010-07-02T03:39:59.567939Z
-107429
-cbarberis
+2011-01-12T18:39:40.000000Z
+7dad75ef3ae125b95c78f75f312a14dc
+2011-01-11T23:00:59.706594Z
+115440
+sharvey
 has-props
 
 testing
@@ -211,11 +236,11 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-cdab3608da92534cce44f54e3ce1b191
-2010-01-28T05:52:38.260574Z
-97731
-sminnee
+2011-01-12T18:39:40.000000Z
+3d78786464240bb18038d7c78718f077
+2010-10-06T03:44:10.955239Z
+111748
+sharvey
 
 RequestHandlingTest.php
 file
@@ -223,11 +248,11 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-0bbd1c6406f132474a5643159d1649b2
-2010-05-28T04:17:36.695467Z
-105890
-cbarberis
+2011-01-12T18:39:40.000000Z
+02711144d92cb04913049de5154b5c19
+2010-12-20T00:15:28.466337Z
+115188
+ischommer
 has-props
 
 integration
@@ -279,11 +304,11 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-dc1d0fb5f82ecb3f756fb02b0585cdfe
-2010-04-30T00:06:08.834659Z
-103792
-wrossiter
+2011-01-12T18:39:40.000000Z
+b69e3903bea3e741274cef539bd41140
+2010-08-10T05:42:33.682075Z
+109156
+sharvey
 has-props
 
 DataObjectDecoratorTest.yml
@@ -351,6 +376,9 @@ has-props
 widgets
 dir
 
+security
+dir
+
 ClassInfoTest.php
 file
 
@@ -363,9 +391,6 @@ file
 101138
 sminnee
 has-props
-
-security
-dir
 
 SQLQueryTest.php
 file
@@ -425,11 +450,11 @@ file
 
 
 
-2010-08-06T02:06:59.000000Z
-985d64b1dcba4ad30fadd5664f943da8
-2010-07-15T22:52:21.273966Z
-108025
-sminnee
+2011-01-12T18:39:40.000000Z
+3bd1f50796844bab330d4e90f01d7fc1
+2010-12-09T05:51:11.271554Z
+114745
+ischommer
 has-props
 
 HtmlEditorConfigTest.php
@@ -458,6 +483,19 @@ file
 sminnee
 has-props
 
+SiteTreeActionsTest.php
+file
+
+
+
+
+2011-01-12T18:39:40.000000Z
+eb5605b3c06b7eba7da962d90e88e52e
+2011-01-11T23:00:59.706594Z
+115440
+sharvey
+has-props
+
 SoapModelAccessTest.php
 file
 
@@ -471,17 +509,17 @@ file
 sminnee
 has-props
 
-SiteTreeActionsTest.php
+MemoryLimitTest.php
 file
 
 
 
 
-2010-05-30T18:49:13.000000Z
-996ce17c1538d62bf800dd6acc96c2bb
-2010-02-21T21:35:06.020949Z
-99491
-ischommer
+2010-07-01T18:44:18.000000Z
+5816a5dcdfb77de8713e2c1d15eccaef
+2010-06-04T00:41:14.849218Z
+106187
+sminnee
 has-props
 
 ShortcodeParserTest.php
@@ -494,19 +532,6 @@ file
 8bdc77e5623d096e2243b26191e8d1f4
 2009-10-11T00:06:57.286116Z
 88472
-sminnee
-has-props
-
-MemoryLimitTest.php
-file
-
-
-
-
-2010-07-01T18:44:18.000000Z
-5816a5dcdfb77de8713e2c1d15eccaef
-2010-06-04T00:41:14.849218Z
-106187
 sminnee
 has-props
 
@@ -531,18 +556,6 @@ dir
 fieldtypes
 dir
 
-Bare.yml
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-ec1e9727164ef106bff2b2f4eee8dbad
-2009-12-06T02:35:07.118951Z
-94429
-sminnee
-
 SQLFormatterTest.php
 file
 
@@ -556,6 +569,18 @@ file
 sharvey
 has-props
 
+Bare.yml
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+ec1e9727164ef106bff2b2f4eee8dbad
+2009-12-06T02:35:07.118951Z
+94429
+sminnee
+
 SearchContextTest.yml
 file
 
@@ -567,6 +592,9 @@ df72388caf80525dbe283e5f16b81ec9
 2009-05-24T21:27:48.759953Z
 77672
 ischommer
+
+dev
+dir
 
 ViewableDataTest.php
 file
@@ -580,9 +608,6 @@ da57143a11893e9d787e5de4c78eaaf2
 104063
 ischommer
 has-props
-
-dev
-dir
 
 i18n
 dir
@@ -599,21 +624,21 @@ file
 89208
 sminnee
 
+filesystem
+dir
+
 PhpSyntaxTest.php
 file
 
 
 
 
-2010-05-30T18:49:13.000000Z
-cce5d9bf2523967bb463a510acd55d47
-2010-01-28T05:10:32.113028Z
-97728
-sminnee
+2011-01-12T18:39:40.000000Z
+187178a63b650efa1544bc41bc22721e
+2010-09-22T05:05:49.630168Z
+111116
+ischommer
 has-props
-
-filesystem
-dir
 
 RedirectorPageTest.php
 file
@@ -628,6 +653,9 @@ ad5b5986be9aea2827e508390385d96a
 sharvey
 has-props
 
+forms
+dir
+
 SiteTreeBrokenLinksTest.yml
 file
 
@@ -639,9 +667,6 @@ file
 2009-10-15T22:39:26.180668Z
 89207
 sminnee
-
-forms
-dir
 
 CacheTest.php
 file
@@ -673,11 +698,11 @@ file
 
 
 
-2010-08-06T02:06:59.000000Z
-43e9d926258597b5c1ba6f33e66ebc7b
-2010-07-23T04:38:01.675069Z
-108421
-sharvey
+2011-01-12T18:39:40.000000Z
+cdc1880a11f4c1ea363ba5778fa2378e
+2010-09-21T20:29:10.877197Z
+111047
+ischommer
 has-props
 
 templates
@@ -744,11 +769,11 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-c4609a03c122d2df18f3990dc03f1975
-2010-05-27T02:12:32.021845Z
-105756
-wrossiter
+2011-01-12T18:39:40.000000Z
+e874c0d2d109faf9f0cb7c9cae7c2484
+2010-09-21T20:29:10.305811Z
+111046
+ischommer
 has-props
 
 TransactionTest.php

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 48
-/modules/!svn/ver/502/trunk/uploadify/javascript
+/modules/!svn/ver/534/trunk/uploadify/javascript
 END
 swfobject.js
 K 25
@@ -25,5 +25,11 @@ uploadify_init.js
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/modules/!svn/ver/502/trunk/uploadify/javascript/uploadify_init.js
+/modules/!svn/ver/533/trunk/uploadify/javascript/uploadify_init.js
+END
+uploadify.src.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/modules/!svn/ver/534/trunk/uploadify/javascript/uploadify.src.js
 END

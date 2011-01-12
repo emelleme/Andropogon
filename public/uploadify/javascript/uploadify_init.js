@@ -1,14 +1,20 @@
+jQuery.noConflict();
 (function($) {
 $(function() {
 	$('.UploadifyField').livequery(function() {
 		$(this).each(function() {
 			$t = $(this);
-			var $input = $('input.uploadify',$t);
-			name = $input.attr('name');
-			id = $input.attr('id');
-			klass = $input.attr('class');
-			var $uploader = $('<input type="hidden" class="'+klass+'" name="'+name+'" id="'+id+'" disabled="disabled"/>');
-			$input.replaceWith($uploader);			
+			if(!$t.hasClass('backend')) {
+				var $input = $('input.uploadify',$t);
+				name = $input.attr('name');
+				id = $input.attr('id');
+				klass = $input.attr('class');
+				var $uploader = $('<input type="hidden" class="'+klass+'" name="'+name+'" id="'+id+'" disabled="disabled"/>');
+				$input.replaceWith($uploader);
+			}
+			else {
+				$uploader = $('input.uploadify', $t);
+			}			
 			/**
 			 Build a set of options to pass to the uploadify object
 			 														**/			
@@ -99,7 +105,6 @@ $(function() {
 
 				});
 			}
-
 			$uploader.uploadify(opts);
 
 			// Build the "fake" CSS button
@@ -186,7 +191,7 @@ $(function() {
 	});
 
 	
-	$('.import_dropdown select').live("change", function() {
+	$('.import_dropdown select').livequery("change", function() {
 		$t = $(this);
 		$target = $t.parents('.import_dropdown').find('.import_list');
 		$t.parents('.import_dropdown').find('button').hide();

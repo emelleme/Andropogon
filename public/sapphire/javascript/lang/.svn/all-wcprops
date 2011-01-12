@@ -1,13 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/!svn/ver/104162/open/modules/sapphire/branches/2.4/javascript/lang
+/!svn/ver/113690/open/modules/sapphire/branches/2.4/javascript/lang
 END
 en_US.js
 K 25
 svn:wc:ra_dav:version-url
 V 75
 /!svn/ver/90859/open/modules/sapphire/branches/2.4/javascript/lang/en_US.js
+END
+sk_SK.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/113690/open/modules/sapphire/branches/2.4/javascript/lang/sk_SK.js
 END
 fr_FR.js
 K 25
@@ -25,7 +31,7 @@ cs_CZ.js
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/!svn/ver/104162/open/modules/sapphire/branches/2.4/javascript/lang/cs_CZ.js
+/!svn/ver/113690/open/modules/sapphire/branches/2.4/javascript/lang/cs_CZ.js
 END
 nl_NL.js
 K 25

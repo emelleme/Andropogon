@@ -1,14 +1,14 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/cms/branches/2.4/templates
 http://svn.silverstripe.com
 
 
 
-2010-07-25T22:16:01.426064Z
-108442
+2010-11-01T01:29:02.989681Z
+113282
 ischommer
 
 
@@ -49,19 +49,6 @@ file
 2008-11-07T00:41:11.099642Z
 65424
 sminnee
-has-props
-
-MemberList.ss
-file
-
-
-
-
-2010-05-30T18:49:22.000000Z
-0def3e45a14e51918ded474fbcd42a1f
-2007-09-16T16:37:15.105180Z
-42137
-ischommer
 has-props
 
 email
@@ -131,6 +118,19 @@ file
 sminnee
 has-props
 
+AssetAdmin_uploadiframe.ss
+file
+
+
+
+
+2010-05-30T18:49:22.000000Z
+abadbe12902985ee6f7d550c97f7dc69
+2010-03-16T02:28:29.008842Z
+101106
+ischommer
+has-props
+
 PageCommentInterface.ss
 file
 
@@ -144,16 +144,19 @@ c0a81e4e2c69070fe54944ec21f3edff
 ischommer
 has-props
 
-AssetAdmin_uploadiframe.ss
+Includes
+dir
+
+LeftAndMain.ss
 file
 
 
 
 
 2010-05-30T18:49:22.000000Z
-abadbe12902985ee6f7d550c97f7dc69
-2010-03-16T02:28:29.008842Z
-101106
+ee6857ab7076959202aa408d9a8da963
+2010-05-09T20:11:21.117222Z
+104403
 ischommer
 has-props
 
@@ -169,22 +172,6 @@ file
 65424
 sminnee
 has-props
-
-LeftAndMain.ss
-file
-
-
-
-
-2010-05-30T18:49:22.000000Z
-ee6857ab7076959202aa408d9a8da963
-2010-05-09T20:11:21.117222Z
-104403
-ischommer
-has-props
-
-Includes
-dir
 
 WidgetAreaEditor.ss
 file

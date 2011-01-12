@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/cms/branches/2.4/images/mainmenu
 http://svn.silverstripe.com
 
 
 
-2007-11-01T23:35:23.003320Z
-44134
-wrossiter
+2010-12-09T22:31:02.079024Z
+114765
+ischommer
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -45,11 +45,11 @@ file
 
 
 
-2010-05-30T18:49:21.000000Z
-bc7b5598e28debe26bbdcb05feea7567
-2007-11-01T21:48:16.609341Z
-44108
-wrossiter
+2011-01-12T18:39:52.000000Z
+e3a21b93e5689535f3d115a565b27552
+2010-12-09T22:31:02.079024Z
+114765
+ischommer
 has-props
 
 current.gif

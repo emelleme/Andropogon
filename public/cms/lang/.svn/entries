@@ -1,7 +1,7 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/cms/branches/2.4/lang
 http://svn.silverstripe.com
 
@@ -194,18 +194,6 @@ file
 103836
 ischommer
 
-sk_SK.php
-file
-
-
-
-
-2010-08-06T02:07:09.000000Z
-6b4eccc6bc5256c1d64aa89700c29e30
-2010-07-14T02:51:11.414997Z
-107876
-ischommer
-
 en_GB.php
 file
 
@@ -214,6 +202,18 @@ file
 
 2010-08-06T02:07:09.000000Z
 4cdc9d266a75e037f16ff771b41094a6
+2010-07-14T02:51:11.414997Z
+107876
+ischommer
+
+sk_SK.php
+file
+
+
+
+
+2010-08-06T02:07:09.000000Z
+6b4eccc6bc5256c1d64aa89700c29e30
 2010-07-14T02:51:11.414997Z
 107876
 ischommer
@@ -339,6 +339,18 @@ a11314dd71db3b38b81069cb4fee9015
 103836
 ischommer
 
+sr_RS.php
+file
+
+
+
+
+2010-05-30T18:49:21.000000Z
+2820bd40d7bd625538d0fed4e5e84a16
+2010-04-30T04:38:06.559698Z
+103836
+ischommer
+
 _manifest_exclude
 file
 
@@ -351,18 +363,6 @@ d41d8cd98f00b204e9800998ecf8427e
 42577
 ischommer
 has-props
-
-sr_RS.php
-file
-
-
-
-
-2010-05-30T18:49:21.000000Z
-2820bd40d7bd625538d0fed4e5e84a16
-2010-04-30T04:38:06.559698Z
-103836
-ischommer
 
 tr_TR.php
 file

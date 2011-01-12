@@ -1,14 +1,14 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/forms
 http://svn.silverstripe.com
 
 
 
-2010-08-03T01:40:53.377339Z
-108811
+2011-01-10T03:39:19.609173Z
+115379
 sharvey
 
 
@@ -26,19 +26,6 @@ svn:special svn:externals svn:needs-lock
 
 467b73ca-7a2a-4603-9d3b-597d59a354a9
 
-CheckboxField.php
-file
-
-
-
-
-2010-05-30T18:49:15.000000Z
-90c3b80d199fd3dc987d7ba28f006f3c
-2009-07-08T23:04:43.191471Z
-81381
-sminnee
-has-props
-
 FormTransformation.php
 file
 
@@ -52,17 +39,17 @@ dd32f93f486db89c37edb9f29f8fa974
 sharvey
 has-props
 
-TableField.php
+CheckboxField.php
 file
 
 
 
 
-2010-05-30T18:49:15.000000Z
-5da6fefb263c49968c263f438618a1e8
-2010-01-06T22:50:54.889456Z
-96427
-sminnee
+2011-01-12T18:39:41.000000Z
+1a0c5adc6593fc9a58de43a3013c7eee
+2010-09-15T20:54:16.466460Z
+110808
+ischommer
 has-props
 
 MoneyField.php
@@ -71,11 +58,24 @@ file
 
 
 
-2010-05-30T18:49:15.000000Z
-0c3ee63ffa7b82a3724b8b2239e3993e
-2010-03-12T03:23:19.728156Z
-100975
-sharvey
+2011-01-12T18:39:41.000000Z
+6233cb148b459648f108d13a2a77a75f
+2010-09-16T02:17:38.187541Z
+110835
+ischommer
+has-props
+
+TableField.php
+file
+
+
+
+
+2011-01-12T18:39:41.000000Z
+e3aabe6c1e7d30f51da3cbaf3fae3694
+2010-10-03T09:28:42.595234Z
+111492
+ischommer
 has-props
 
 HtmlEditorConfig.php
@@ -110,10 +110,23 @@ file
 
 
 
-2010-07-01T18:44:18.000000Z
-360fe9f221f9707b177d78225c25529c
-2010-05-30T22:21:25.918832Z
-105912
+2011-01-12T18:39:41.000000Z
+678652cd7d7c548e9e8cf22d44e9b349
+2010-12-20T00:15:28.466337Z
+115188
+ischommer
+has-props
+
+CompositeField.php
+file
+
+
+
+
+2010-05-30T18:49:15.000000Z
+04d3ff13991cb5a703ffb83e64b8925f
+2009-07-06T21:48:12.934091Z
+81127
 ischommer
 has-props
 
@@ -128,19 +141,6 @@ file
 2010-07-28T05:48:39.871639Z
 108633
 sharvey
-has-props
-
-CompositeField.php
-file
-
-
-
-
-2010-05-30T18:49:15.000000Z
-04d3ff13991cb5a703ffb83e64b8925f
-2009-07-06T21:48:12.934091Z
-81127
-ischommer
 has-props
 
 FormField.php
@@ -169,6 +169,19 @@ file
 ischommer
 has-props
 
+ComplexTableField.php
+file
+
+
+
+
+2011-01-12T18:39:41.000000Z
+a55d160497c7ca3db7e5d361642aff0f
+2010-11-01T01:28:54.166716Z
+113276
+ischommer
+has-props
+
 LabelField.php
 file
 
@@ -182,30 +195,17 @@ file
 wrossiter
 has-props
 
-ComplexTableField.php
-file
-
-
-
-
-2010-07-01T18:44:18.000000Z
-1c11745a4dc189fffeee4a5d2da4ff3c
-2010-06-21T01:58:33.902017Z
-106755
-sharvey
-has-props
-
 Validator.php
 file
 
 
 
 
-2010-08-06T02:07:00.000000Z
-64ca0af6a90dc9f0a07925f0b50c35fa
-2010-07-26T06:25:59.091284Z
-108512
-sharvey
+2011-01-12T18:39:41.000000Z
+84e5367fe8b32c80e61012c654dce002
+2010-08-10T05:34:13.504896Z
+109155
+nlou
 has-props
 
 HeaderField.php
@@ -240,11 +240,11 @@ file
 
 
 
-2010-05-30T18:49:15.000000Z
-4aadac28ce015967de5fd4315778c7b1
-2009-11-26T05:08:08.087790Z
-93611
-ischommer
+2011-01-12T18:39:41.000000Z
+8fb050203ee14db1f17d03c1b8d0aef1
+2010-12-08T22:07:37.722077Z
+114720
+sharvey
 has-props
 
 HiddenField.php
@@ -292,11 +292,11 @@ file
 
 
 
-2010-08-06T02:07:00.000000Z
-730efff1ca9474cc3250e783ea621608
-2010-07-12T23:26:26.549409Z
-107811
-sharvey
+2011-01-12T18:39:41.000000Z
+22b389e4edd6b292fc44b94d6a42e69f
+2010-09-17T00:01:48.560274Z
+110889
+ischommer
 
 FormAction.php
 file
@@ -381,10 +381,10 @@ file
 
 
 
-2010-05-30T18:49:15.000000Z
-8a6d90d43d04a36e8a473f8a0a20caf3
-2010-05-09T20:29:39.180682Z
-104404
+2011-01-12T18:39:41.000000Z
+2c672a1d87c60791e12d35b62ea38408
+2010-10-07T05:51:32.544666Z
+111788
 ischommer
 has-props
 
@@ -407,11 +407,11 @@ file
 
 
 
-2010-08-06T02:07:00.000000Z
-241194aa59b4f68700a3bf4a81b1ff7c
-2010-07-02T04:54:50.765141Z
-107440
-ischommer
+2011-01-12T18:39:41.000000Z
+3e6d4be2608b9c3796d6adfd27740212
+2010-10-14T01:08:55.914723Z
+112254
+muzdowski
 has-props
 
 CreditCardField.php
@@ -424,19 +424,6 @@ file
 0afbdc5bc17c36fba9ddc733c48e3410
 2008-06-15T13:33:53.229218Z
 56212
-ischommer
-has-props
-
-DateField.php
-file
-
-
-
-
-2010-08-06T02:07:00.000000Z
-f79aa5d9badb8d8368ddf637b80e30bb
-2010-07-12T07:35:13.150022Z
-107789
 ischommer
 has-props
 
@@ -453,17 +440,17 @@ file
 ischommer
 has-props
 
-ScaffoldingComplexTableField.php
+DateField.php
 file
 
 
 
 
-2010-05-30T18:49:15.000000Z
-a200f49aade4c87564e12f26618064ce
-2009-10-26T03:06:31.878539Z
-90075
-sminnee
+2011-01-12T18:39:41.000000Z
+51d21b611140428033abeb0d5b165c01
+2010-11-14T19:57:50.835614Z
+113696
+ischommer
 has-props
 
 FileField.php
@@ -477,6 +464,19 @@ file
 2010-07-11T10:44:59.355603Z
 107725
 ischommer
+has-props
+
+ScaffoldingComplexTableField.php
+file
+
+
+
+
+2010-05-30T18:49:15.000000Z
+a200f49aade4c87564e12f26618064ce
+2009-10-26T03:06:31.878539Z
+90075
+sminnee
 has-props
 
 CountryDropdownField.php
@@ -505,19 +505,6 @@ file
 ischommer
 has-props
 
-PhoneNumberField.php
-file
-
-
-
-
-2010-05-30T18:49:15.000000Z
-1d21a7412429a4a3934649ee66448a89
-2009-02-01T23:49:53.264752Z
-71172
-aoneil
-has-props
-
 GroupedDropdownField.php
 file
 
@@ -531,30 +518,30 @@ file
 ischommer
 has-props
 
-TableListField.php
-file
-
-
-
-
-2010-08-06T02:07:00.000000Z
-31c0256ea2b45dc618f8f011ad0c1d45
-2010-07-02T02:30:06.664281Z
-107417
-cbarberis
-has-props
-
-TextField.php
+PhoneNumberField.php
 file
 
 
 
 
 2010-05-30T18:49:15.000000Z
-d68c44b8c066122572248970f23ef669
-2010-02-16T23:10:09.722540Z
-99360
-ischommer
+1d21a7412429a4a3934649ee66448a89
+2009-02-01T23:49:53.264752Z
+71172
+aoneil
+has-props
+
+TableListField.php
+file
+
+
+
+
+2011-01-12T18:39:41.000000Z
+2cc86898a035c2b6d21263f454ea155b
+2011-01-10T03:39:19.609173Z
+115379
+sharvey
 has-props
 
 ListboxField.php
@@ -570,29 +557,29 @@ file
 ischommer
 has-props
 
-ManyManyComplexTableField.php
-file
-
-
-
-
-2010-08-06T02:07:00.000000Z
-2c66f89ef9083435df45894a123cf518
-2010-07-11T10:44:59.355603Z
-107725
-ischommer
-has-props
-
-DisabledTransformation.php
+TextField.php
 file
 
 
 
 
 2010-05-30T18:49:15.000000Z
-de090da525f3df2bf4ae6d353b3b5978
-2008-06-15T13:33:53.229218Z
-56212
+d68c44b8c066122572248970f23ef669
+2010-02-16T23:10:09.722540Z
+99360
+ischommer
+has-props
+
+ManyManyComplexTableField.php
+file
+
+
+
+
+2011-01-12T18:39:41.000000Z
+b0c2aadbe793763a55bee8022df3dacd
+2010-09-24T02:19:07.134411Z
+111202
 ischommer
 has-props
 
@@ -606,6 +593,19 @@ file
 aa742cd8af90679ce99981984cce307b
 2010-07-23T04:38:16.990221Z
 108422
+ischommer
+has-props
+
+DisabledTransformation.php
+file
+
+
+
+
+2010-05-30T18:49:15.000000Z
+de090da525f3df2bf4ae6d353b3b5978
+2008-06-15T13:33:53.229218Z
+56212
 ischommer
 has-props
 
@@ -635,19 +635,6 @@ file
 ischommer
 has-props
 
-LanguageDropdownField.php
-file
-
-
-
-
-2010-05-30T18:49:15.000000Z
-120c090737f50822cfaa68a093908a84
-2009-10-05T20:40:22.829392Z
-88138
-ischommer
-has-props
-
 ImageFormAction.php
 file
 
@@ -661,16 +648,42 @@ file
 ischommer
 has-props
 
+LanguageDropdownField.php
+file
+
+
+
+
+2010-05-30T18:49:15.000000Z
+120c090737f50822cfaa68a093908a84
+2009-10-05T20:40:22.829392Z
+88138
+ischommer
+has-props
+
 RequiredFields.php
 file
 
 
 
 
-2010-08-06T02:07:00.000000Z
-854e98f9d261e02ce7b2287bfe92f2ba
-2010-08-03T01:40:53.377339Z
-108811
+2011-01-12T18:39:41.000000Z
+a8461e13e97d741f4f8ce0288ac5a673
+2010-11-04T00:58:34.234016Z
+113419
+jbarrois
+has-props
+
+UniqueRestrictedTextField.php
+file
+
+
+
+
+2010-05-30T18:49:15.000000Z
+211027e420e3264800ee594af89e9c3b
+2010-03-04T04:12:00.160143Z
+100486
 sharvey
 has-props
 
@@ -685,19 +698,6 @@ file
 2009-11-26T05:08:08.087790Z
 93611
 ischommer
-has-props
-
-UniqueRestrictedTextField.php
-file
-
-
-
-
-2010-05-30T18:49:15.000000Z
-211027e420e3264800ee594af89e9c3b
-2010-03-04T04:12:00.160143Z
-100486
-sharvey
 has-props
 
 AutocompleteTextField.php
@@ -771,24 +771,11 @@ file
 
 
 
-2010-05-30T18:49:15.000000Z
-50a2c15f5fb52ecc02a4b74d96932be2
-2010-03-12T00:30:48.368911Z
-100950
-mstephens
-has-props
-
-InlineFormAction.php
-file
-
-
-
-
-2010-05-30T18:49:15.000000Z
-33ad48e286fd712d26f7606af4ed8593
-2009-04-28T23:52:15.837704Z
-75579
-sharvey
+2011-01-12T18:39:41.000000Z
+dd32b818e579947ac003e23813b1e209
+2010-10-10T05:38:29.281363Z
+111841
+ischommer
 has-props
 
 FieldGroup.php
@@ -804,17 +791,17 @@ file
 ischommer
 has-props
 
-SelectionGroup.php
+InlineFormAction.php
 file
 
 
 
 
 2010-05-30T18:49:15.000000Z
-8d6e607898ca02416daa65a56eba6920
-2010-03-11T04:37:21.613896Z
-100884
-ischommer
+33ad48e286fd712d26f7606af4ed8593
+2009-04-28T23:52:15.837704Z
+75579
+sharvey
 has-props
 
 CustomRequiredFields.php
@@ -828,6 +815,19 @@ file
 2010-07-26T06:25:59.091284Z
 108512
 sharvey
+has-props
+
+SelectionGroup.php
+file
+
+
+
+
+2010-05-30T18:49:15.000000Z
+8d6e607898ca02416daa65a56eba6920
+2010-03-11T04:37:21.613896Z
+100884
+ischommer
 has-props
 
 HasManyComplexTableField.php
@@ -914,10 +914,10 @@ file
 
 
 
-2010-08-06T02:07:00.000000Z
-cb44e8c258fcfe73ced6d5f58809d9b0
-2010-07-01T21:12:33.888679Z
-107390
+2011-01-12T18:39:41.000000Z
+0e478e5b69c12b60d13d1465b0b91c7d
+2010-09-15T21:14:20.575305Z
+110809
 ischommer
 has-props
 

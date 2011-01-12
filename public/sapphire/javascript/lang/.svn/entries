@@ -1,14 +1,14 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/javascript/lang
 http://svn.silverstripe.com
 
 
 
-2010-05-05T21:20:34.121912Z
-104162
+2010-11-13T01:31:44.917932Z
+113690
 ischommer
 
 
@@ -36,6 +36,18 @@ file
 0c63fbc94e03b87256a05a8b1ea9c99d
 2009-05-18T20:57:23.216915Z
 77095
+ischommer
+
+sk_SK.js
+file
+
+
+
+
+2011-01-12T18:39:40.000000Z
+cfb45e2f4b766501c0cc005b5cea94c3
+2010-11-13T01:31:44.917932Z
+113690
 ischommer
 
 fr_FR.js
@@ -68,10 +80,10 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-127cafb6c0fc11f69c53d530a094a841
-2010-05-05T21:20:34.121912Z
-104162
+2011-01-12T18:39:40.000000Z
+4603c8f37e971ce2057879265d20a43d
+2010-11-13T01:31:44.917932Z
+113690
 ischommer
 has-props
 

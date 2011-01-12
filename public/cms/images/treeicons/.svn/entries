@@ -1,7 +1,7 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/cms/branches/2.4/images/treeicons
 http://svn.silverstripe.com
 
@@ -208,17 +208,17 @@ f2e8aecef409bf6ad6373eb909c4f544
 sgow
 has-props
 
-folder-openfolder.gif
+multi-user.gif
 file
 
 
 
 
 2010-05-30T18:49:21.000000Z
-a9a01bbd1b780357e083daea1e342039
-2006-08-02T01:55:19.000000Z
-12015
-hsmith
+edd90ca294f17ae6f4dd6e4c19a8ffb8
+2006-02-22T14:08:59.000000Z
+11734
+sminnee
 has-props
 
 element-file.gif
@@ -234,17 +234,17 @@ file
 sminnee
 has-props
 
-multi-user.gif
+folder-openfolder.gif
 file
 
 
 
 
 2010-05-30T18:49:21.000000Z
-edd90ca294f17ae6f4dd6e4c19a8ffb8
-2006-02-22T14:08:59.000000Z
-11734
-sminnee
+a9a01bbd1b780357e083daea1e342039
+2006-08-02T01:55:19.000000Z
+12015
+hsmith
 has-props
 
 brokenlink-file.gif
@@ -312,19 +312,6 @@ file
 sminnee
 has-props
 
-draft-folder.png
-file
-
-
-
-
-2010-05-30T18:49:21.000000Z
-febb93190fe4dafaddabe3e7a564938b
-2006-02-22T14:08:59.000000Z
-11734
-sminnee
-has-props
-
 folder-file.gif
 file
 
@@ -336,6 +323,19 @@ file
 2006-08-02T01:55:19.000000Z
 12015
 hsmith
+has-props
+
+draft-folder.png
+file
+
+
+
+
+2010-05-30T18:49:21.000000Z
+febb93190fe4dafaddabe3e7a564938b
+2006-02-22T14:08:59.000000Z
+11734
+sminnee
 has-props
 
 reports-file.png
@@ -364,17 +364,17 @@ file
 sgow
 has-props
 
-preferences-openfolder.gif
+element-closedfolder.gif
 file
 
 
 
 
 2010-05-30T18:49:21.000000Z
-f2e8aecef409bf6ad6373eb909c4f544
-2006-06-12T05:45:34.000000Z
-11851
-sgow
+d0c8f29f9b9715d3c3f2e5c0235b71bd
+2006-01-26T23:14:04.000000Z
+11697
+sminnee
 has-props
 
 draft-file.png
@@ -390,17 +390,17 @@ file
 sminnee
 has-props
 
-element-closedfolder.gif
+preferences-openfolder.gif
 file
 
 
 
 
 2010-05-30T18:49:21.000000Z
-d0c8f29f9b9715d3c3f2e5c0235b71bd
-2006-01-26T23:14:04.000000Z
-11697
-sminnee
+f2e8aecef409bf6ad6373eb909c4f544
+2006-06-12T05:45:34.000000Z
+11851
+sgow
 has-props
 
 brokenlink-closedfolder.gif

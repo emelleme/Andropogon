@@ -1,7 +1,7 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/thirdparty/tinymce/plugins/template/langs
 http://svn.silverstripe.com
 
@@ -247,19 +247,6 @@ d98aea277e5cd614893e3b96176e0e87
 sharvey
 has-props
 
-et_dlg.js
-file
-
-
-
-
-2010-05-30T18:49:11.000000Z
-7b6596ff9e5a00e5b1ed8fd8e0df5551
-2009-06-15T01:18:58.327203Z
-79131
-sharvey
-has-props
-
 ml_dlg.js
 file
 
@@ -273,27 +260,14 @@ a84a45793f4e36952158bbb85f2e8369
 sharvey
 has-props
 
-hr_dlg.js
+et_dlg.js
 file
 
 
 
 
 2010-05-30T18:49:11.000000Z
-d161330ce1e9ece7b52e105ebbc5afc2
-2009-06-15T01:18:58.327203Z
-79131
-sharvey
-has-props
-
-dv_dlg.js
-file
-
-
-
-
-2010-05-30T18:49:11.000000Z
-a86161d392e2c49a0891052f4be7ff91
+7b6596ff9e5a00e5b1ed8fd8e0df5551
 2009-06-15T01:18:58.327203Z
 79131
 sharvey
@@ -312,14 +286,27 @@ e72e562e7c156b5fa09b0d7729a2e09f
 sharvey
 has-props
 
-az_dlg.js
+dv_dlg.js
 file
 
 
 
 
 2010-05-30T18:49:11.000000Z
-0e7a77851d10ba669fc71816d31504d8
+a86161d392e2c49a0891052f4be7ff91
+2009-06-15T01:18:58.327203Z
+79131
+sharvey
+has-props
+
+hr_dlg.js
+file
+
+
+
+
+2010-05-30T18:49:11.000000Z
+d161330ce1e9ece7b52e105ebbc5afc2
 2009-06-15T01:18:58.327203Z
 79131
 sharvey
@@ -338,14 +325,27 @@ aca0c7ac452c865e589bf104c8762250
 sharvey
 has-props
 
-nn_dlg.js
+az_dlg.js
 file
 
 
 
 
 2010-05-30T18:49:11.000000Z
-dcde247bd23ed265f888e010f65e3b0b
+0e7a77851d10ba669fc71816d31504d8
+2009-06-15T01:18:58.327203Z
+79131
+sharvey
+has-props
+
+th_dlg.js
+file
+
+
+
+
+2010-05-30T18:49:11.000000Z
+ddacaee7b107920b8aea10350f8b537e
 2009-06-15T01:18:58.327203Z
 79131
 sharvey
@@ -364,14 +364,14 @@ file
 sharvey
 has-props
 
-th_dlg.js
+nn_dlg.js
 file
 
 
 
 
 2010-05-30T18:49:11.000000Z
-ddacaee7b107920b8aea10350f8b537e
+dcde247bd23ed265f888e010f65e3b0b
 2009-06-15T01:18:58.327203Z
 79131
 sharvey

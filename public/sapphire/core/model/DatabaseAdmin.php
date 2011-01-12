@@ -29,12 +29,13 @@ class DatabaseAdmin extends Controller {
 		// if on CLI or with the database not ready. The latter makes it less errorprone to do an
 		// initial schema build without requiring a default-admin login.
 		// Access to this controller is always allowed in "dev-mode", or of the user is ADMIN.
+		$isRunningTests = (class_exists('SapphireTest', false) && SapphireTest::is_running_test());
 		$canAccess = (
 			Director::isDev() 
 			|| !Security::database_is_ready() 
 			// We need to ensure that DevelopmentAdminTest can simulate permission failures when running
 			// "dev/tests" from CLI. 
-			|| (Director::is_cli() && !SapphireTest::is_running_test())
+			|| (Director::is_cli() && !$isRunningTests)
 			|| Permission::check("ADMIN")
 		);
 		if(!$canAccess) {
@@ -161,10 +162,13 @@ class DatabaseAdmin extends Controller {
 			DB::quiet();
 		} else {
 			$conn = DB::getConn();
+			// Assumes database class is like "MySQLDatabase" or "MSSQLDatabase" (suffixed with "Database")
+			$dbType = substr(get_class($conn), 0, -8);
+			$dbVersion = $conn->getVersion();
 			$databaseName = (method_exists($conn, 'currentDatabase')) ? $conn->currentDatabase() : "";
 			
-			if(Director::is_cli()) echo "\n\nBuilding Database $databaseName\n\n";
-			else echo "<h2>Building Database $databaseName</h2>";
+			if(Director::is_cli()) echo sprintf("\n\nBuilding database %s using %s %s\n\n", $databaseName, $dbType, $dbVersion);
+			else echo sprintf("<h2>Building database %s using %s %s</h2>", $databaseName, $dbType, $dbVersion);
 		}
 
 		// Set up the initial database

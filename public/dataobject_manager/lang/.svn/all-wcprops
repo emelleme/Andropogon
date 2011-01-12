@@ -1,13 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/modules/!svn/ver/500/trunk/dataobject_manager/lang
+/modules/!svn/ver/525/trunk/dataobject_manager/lang
 END
 en_US.php
 K 25
 svn:wc:ra_dav:version-url
 V 61
 /modules/!svn/ver/195/trunk/dataobject_manager/lang/en_US.php
+END
+sk_SK.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/modules/!svn/ver/525/trunk/dataobject_manager/lang/sk_SK.php
 END
 nb_NO.php
 K 25
@@ -21,11 +27,23 @@ svn:wc:ra_dav:version-url
 V 61
 /modules/!svn/ver/275/trunk/dataobject_manager/lang/es_ES.php
 END
+cs_CZ.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/modules/!svn/ver/521/trunk/dataobject_manager/lang/cs_CZ.php
+END
 nl_NL.php
 K 25
 svn:wc:ra_dav:version-url
 V 61
 /modules/!svn/ver/218/trunk/dataobject_manager/lang/nl_NL.php
+END
+hr_HR.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/modules/!svn/ver/521/trunk/dataobject_manager/lang/hr_HR.php
 END
 ja_JP.php
 K 25

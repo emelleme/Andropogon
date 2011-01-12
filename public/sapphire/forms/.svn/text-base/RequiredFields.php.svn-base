@@ -10,7 +10,7 @@
  * @subpackage validators
  */
 class RequiredFields extends Validator {
-	
+
 	protected $required;
 	protected $useLabels = true;
 
@@ -98,16 +98,22 @@ JS;
 			$valid = ($field->validate($this) && $valid);
 		}
 		if($this->required) {
-			foreach($this->required as $fieldName) { 
+			foreach($this->required as $fieldName) {
 				$formField = $fields->dataFieldByName($fieldName);
 
 				$error = true;
 				// submitted data for file upload fields come back as an array
-				if(is_array($data[$fieldName])) {
-					$error = ($data[$fieldName]) ? false : true;
+				$value = isset($data[$fieldName]) ? $data[$fieldName] : null;
+				if(is_array($value)) {
+					if ($formField instanceof FileField && isset($value['error']) && $value['error']) {
+						$error = true;
+					}
+					else {
+						$error = (count($value)) ? false : true;
+					}
 				} else {
 					// assume a string or integer
-					$error = (strlen($data[$fieldName])) ? false : true;
+					$error = (strlen($value)) ? false : true;
 				}
 
 				if($formField && $error) {

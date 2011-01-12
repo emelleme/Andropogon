@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/modules/!svn/ver/479/trunk/uploadify/templates/Includes
+/modules/!svn/ver/513/trunk/uploadify/templates/Includes
 END
 AttachedFiles.ss
 K 25
@@ -19,5 +19,5 @@ ImportList.ss
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/modules/!svn/ver/427/trunk/uploadify/templates/Includes/ImportList.ss
+/modules/!svn/ver/513/trunk/uploadify/templates/Includes/ImportList.ss
 END

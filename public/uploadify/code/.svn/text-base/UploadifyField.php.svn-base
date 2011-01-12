@@ -272,9 +272,6 @@ abstract class UploadifyField extends FormField
 	 * @return int
 	 */
 	public function upload() {
-		if(self::$debug) {
-			echo "<<<";
-		}
 		if(isset($_FILES["Filedata"]) && is_uploaded_file($_FILES["Filedata"]["tmp_name"])) {
 			$upload_folder = $this->getUploadFolder();
 			if($this->Backend()) {
@@ -289,7 +286,7 @@ abstract class UploadifyField extends FormField
 			$file = new $class();
 			$u = new Upload();
 			$u->loadIntoFile($_FILES['Filedata'], $file, $upload_folder);
-			$file->write();			
+			$file->write();
 			echo $file->ID;
 		} 
 		else {
@@ -419,7 +416,13 @@ abstract class UploadifyField extends FormField
 		if($this->form) {
 			if(!$this->getSetting('script')) {
 				$this->setVar('script',urlencode(Director::baseURL().Director::makeRelative($this->Link('upload'))));		
-
+				// long script strings cause IO error on Apple/Mac Flash platforms\
+				// so parse out complextablefield
+				$script = urlencode(Director::baseURL().Director::makeRelative($this->Link('upload')));
+				if($pos = strpos($script,'%3Fctf')) {
+					$script = substr($script,0,$pos);
+				}
+				$this->setVar('script',$script);				
 			}
 			if(!$this->getSetting('refreshlink')) {
 				$this->setVar('refreshlink', Director::baseURL().Director::makeRelative($this->Link('refresh')));

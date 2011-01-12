@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/tests/api
 http://svn.silverstripe.com
 
 
 
-2010-08-05T03:49:49.490890Z
-108942
-muzdowski
+2010-11-04T03:34:17.194459Z
+113430
+sharvey
 
 
 svn:special svn:externals svn:needs-lock
@@ -32,10 +32,10 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-f702e1ed4c1d6d3199529ec516629c26
-2010-03-03T02:59:34.808393Z
-100400
+2011-01-12T18:39:40.000000Z
+4c3559a41ec6be60478f559894ab8e37
+2010-11-04T03:34:17.194459Z
+113430
 sharvey
 has-props
 
@@ -70,10 +70,10 @@ file
 
 
 
-2010-08-06T02:06:59.000000Z
-eae05bd437f4fb18647e7ad21c298809
-2010-08-05T03:49:49.490890Z
-108942
+2011-01-12T18:39:40.000000Z
+db46cb030e94e9df66f259ba7bd98654
+2010-08-18T22:39:58.931924Z
+109714
 muzdowski
 has-props
 

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/!svn/ver/108665/open/modules/sapphire/branches/2.4/tests/control
+/!svn/ver/114083/open/modules/sapphire/branches/2.4/tests/control
 END
 RootURLControllerTest.php
 K 25
@@ -20,6 +20,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 91
 /!svn/ver/101302/open/modules/sapphire/branches/2.4/tests/control/ContentControllerTest.php
+END
+HTTPResponseTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/114083/open/modules/sapphire/branches/2.4/tests/control/HTTPResponseTest.php
 END
 RootURLControllerTest.yml
 K 25

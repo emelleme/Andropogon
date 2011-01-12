@@ -1,14 +1,14 @@
 8
 
 dir
-507
+534
 http://carlinowebdesign.svn.beanstalkapp.com/modules/trunk/dataobject_manager/lang
 http://carlinowebdesign.svn.beanstalkapp.com/modules
 
 
 
-2010-09-20T18:31:04.438376Z
-500
+2010-12-15T22:48:56.481997Z
+525
 unclecheese
 
 
@@ -38,6 +38,18 @@ file
 195
 unclecheese
 
+sk_SK.php
+file
+
+
+
+
+2011-01-12T18:30:56.000000Z
+4931d82736e59d7fc22fdd26f0bf80d9
+2010-12-15T22:48:56.481997Z
+525
+unclecheese
+
 nb_NO.php
 file
 
@@ -63,6 +75,18 @@ file
 unclecheese
 has-props
 
+cs_CZ.php
+file
+
+
+
+
+2011-01-12T18:30:56.000000Z
+2e3af4af718cc4ecccd8345ba55c9eed
+2010-11-24T03:27:37.926230Z
+521
+unclecheese
+
 nl_NL.php
 file
 
@@ -75,6 +99,18 @@ a85d56c0d396a7c7a6cb986b7fcc3281
 218
 unclecheese
 has-props
+
+hr_HR.php
+file
+
+
+
+
+2011-01-12T18:30:56.000000Z
+fc18a26072337f5d667a14000c4ee0fe
+2010-11-24T03:27:37.926230Z
+521
+unclecheese
 
 ja_JP.php
 file

@@ -1,7 +1,7 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/thirdparty/calendar
 http://svn.silverstripe.com
 
@@ -42,19 +42,6 @@ has-props
 lang
 dir
 
-calendar-system.css
-file
-
-
-
-
-2010-05-30T18:49:12.000000Z
-9b446e2ee0e9e4420fce20922405cec7
-2006-02-20T00:47:16.000000Z
-17348
-sminnee
-has-props
-
 calendar-setup.js
 file
 
@@ -66,6 +53,19 @@ file
 2010-01-12T03:02:07.527195Z
 96679
 lhudson
+has-props
+
+calendar-system.css
+file
+
+
+
+
+2010-05-30T18:49:12.000000Z
+9b446e2ee0e9e4420fce20922405cec7
+2006-02-20T00:47:16.000000Z
+17348
+sminnee
 has-props
 
 menuarrow.gif
@@ -94,14 +94,14 @@ file
 sminnee
 has-props
 
-calendar-tas.css
+calendar-blue.css
 file
 
 
 
 
 2010-05-30T18:49:12.000000Z
-fa3baa9367504954ef03c1f05d44f1a6
+b8bb29e3c1573d0d2917cd3112b5052d
 2006-02-20T00:47:16.000000Z
 17348
 sminnee
@@ -120,14 +120,14 @@ f326a6a84037e549a9cd71a92346f210
 sminnee
 has-props
 
-calendar-blue.css
+calendar-tas.css
 file
 
 
 
 
 2010-05-30T18:49:12.000000Z
-b8bb29e3c1573d0d2917cd3112b5052d
+fa3baa9367504954ef03c1f05d44f1a6
 2006-02-20T00:47:16.000000Z
 17348
 sminnee
@@ -146,6 +146,9 @@ file
 sharvey
 has-props
 
+skins
+dir
+
 calendar-win2k-2.css
 file
 
@@ -158,9 +161,6 @@ file
 17348
 sminnee
 has-props
-
-skins
-dir
 
 calendar-setup_stripped.js
 file
@@ -175,19 +175,6 @@ file
 sminnee
 has-props
 
-calendar_stripped.js
-file
-
-
-
-
-2010-05-30T18:49:12.000000Z
-4be3246dfc1ab2c452403852832f9f84
-2006-02-20T00:47:16.000000Z
-17348
-sminnee
-has-props
-
 calendar-green.css
 file
 
@@ -196,6 +183,19 @@ file
 
 2010-05-30T18:49:12.000000Z
 b44e2c25ff56efaa6e37d84df202e5d5
+2006-02-20T00:47:16.000000Z
+17348
+sminnee
+has-props
+
+calendar_stripped.js
+file
+
+
+
+
+2010-05-30T18:49:12.000000Z
+4be3246dfc1ab2c452403852832f9f84
 2006-02-20T00:47:16.000000Z
 17348
 sminnee

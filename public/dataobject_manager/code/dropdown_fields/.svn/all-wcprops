@@ -1,19 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/modules/!svn/ver/498/trunk/dataobject_manager/code/dropdown_fields
+/modules/!svn/ver/532/trunk/dataobject_manager/code/dropdown_fields
 END
 SimpleTreeDropdownField.php
 K 25
 svn:wc:ra_dav:version-url
 V 95
-/modules/!svn/ver/498/trunk/dataobject_manager/code/dropdown_fields/SimpleTreeDropdownField.php
+/modules/!svn/ver/532/trunk/dataobject_manager/code/dropdown_fields/SimpleTreeDropdownField.php
 END
 StateDropdownField.php
 K 25
 svn:wc:ra_dav:version-url
 V 90
-/modules/!svn/ver/340/trunk/dataobject_manager/code/dropdown_fields/StateDropdownField.php
+/modules/!svn/ver/530/trunk/dataobject_manager/code/dropdown_fields/StateDropdownField.php
 END
 HTMLDropdownField.php
 K 25

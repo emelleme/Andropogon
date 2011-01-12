@@ -1,7 +1,7 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/thirdparty/jquery-ui/minified
 http://svn.silverstripe.com
 
@@ -26,19 +26,6 @@ svn:special svn:externals svn:needs-lock
 
 467b73ca-7a2a-4603-9d3b-597d59a354a9
 
-jquery.ui.core.min.js
-file
-
-
-
-
-2010-05-30T18:49:07.000000Z
-6c89c48b1344f8ad8153883fff23301d
-2010-03-11T02:29:07.321415Z
-100842
-ischommer
-has-props
-
 jquery.ui.mouse.min.js
 file
 
@@ -52,40 +39,14 @@ file
 ischommer
 has-props
 
-jquery.effects.scale.min.js
+jquery.ui.core.min.js
 file
 
 
 
 
 2010-05-30T18:49:07.000000Z
-e9120a7c69912479f53688922615e45b
-2010-03-11T02:29:07.321415Z
-100842
-ischommer
-has-props
-
-jquery.effects.clip.min.js
-file
-
-
-
-
-2010-05-30T18:49:07.000000Z
-beb644ffdda07b0bee0f54538193c718
-2010-03-11T02:29:07.321415Z
-100842
-ischommer
-has-props
-
-jquery.ui.progressbar.min.js
-file
-
-
-
-
-2010-05-30T18:49:07.000000Z
-8964ca0c5fe4b843757a9391612d1fcd
+6c89c48b1344f8ad8153883fff23301d
 2010-03-11T02:29:07.321415Z
 100842
 ischommer
@@ -104,14 +65,40 @@ b7272acf910ad710d7e18b454a34f61b
 ischommer
 has-props
 
-jquery.effects.core.min.js
+jquery.ui.progressbar.min.js
 file
 
 
 
 
 2010-05-30T18:49:07.000000Z
-a3692d9830128b025de00642fe33dee4
+8964ca0c5fe4b843757a9391612d1fcd
+2010-03-11T02:29:07.321415Z
+100842
+ischommer
+has-props
+
+jquery.effects.clip.min.js
+file
+
+
+
+
+2010-05-30T18:49:07.000000Z
+beb644ffdda07b0bee0f54538193c718
+2010-03-11T02:29:07.321415Z
+100842
+ischommer
+has-props
+
+jquery.effects.scale.min.js
+file
+
+
+
+
+2010-05-30T18:49:07.000000Z
+e9120a7c69912479f53688922615e45b
 2010-03-11T02:29:07.321415Z
 100842
 ischommer
@@ -125,6 +112,19 @@ file
 
 2010-05-30T18:49:07.000000Z
 bc3ba1cba8fcd424b959ffbadbbf665b
+2010-03-11T02:29:07.321415Z
+100842
+ischommer
+has-props
+
+jquery.effects.core.min.js
+file
+
+
+
+
+2010-05-30T18:49:07.000000Z
+a3692d9830128b025de00642fe33dee4
 2010-03-11T02:29:07.321415Z
 100842
 ischommer
@@ -156,19 +156,6 @@ file
 ischommer
 has-props
 
-jquery.ui.autocomplete.min.js
-file
-
-
-
-
-2010-05-30T18:49:07.000000Z
-3c36bfaff49339222ed417e680ae3461
-2010-03-11T02:29:07.321415Z
-100842
-ischommer
-has-props
-
 jquery.ui.accordion.min.js
 file
 
@@ -182,14 +169,14 @@ file
 ischommer
 has-props
 
-jquery.effects.slide.min.js
+jquery.ui.autocomplete.min.js
 file
 
 
 
 
 2010-05-30T18:49:07.000000Z
-dbb4e1c4715861ad0817a6b96bc78f82
+3c36bfaff49339222ed417e680ae3461
 2010-03-11T02:29:07.321415Z
 100842
 ischommer
@@ -203,6 +190,19 @@ file
 
 2010-05-30T18:49:07.000000Z
 66606b3d6e364467f848a2e626dd9366
+2010-03-11T02:29:07.321415Z
+100842
+ischommer
+has-props
+
+jquery.effects.slide.min.js
+file
+
+
+
+
+2010-05-30T18:49:07.000000Z
+dbb4e1c4715861ad0817a6b96bc78f82
 2010-03-11T02:29:07.321415Z
 100842
 ischommer

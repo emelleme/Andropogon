@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/api
 http://svn.silverstripe.com
 
 
 
-2010-08-05T03:49:49.490890Z
-108942
-muzdowski
+2010-12-09T08:41:10.683191Z
+114751
+ischommer
 
 
 svn:special svn:externals svn:needs-lock
@@ -45,11 +45,11 @@ file
 
 
 
-2010-05-30T18:49:15.000000Z
-772d78536c9ece35add652beea1dc28b
-2010-03-16T00:36:36.090229Z
-101093
-sminnee
+2011-01-12T18:39:41.000000Z
+975ddef094e96acb21a0cd7b8dd7ac2a
+2010-10-12T00:29:12.491575Z
+111914
+sharvey
 has-props
 
 RestfulServer.php
@@ -58,11 +58,11 @@ file
 
 
 
-2010-08-06T02:07:00.000000Z
-ef4d93d36c9a9ce79dd3a44cfbf21596
-2010-07-23T05:25:54.988288Z
-108427
-lhudson
+2011-01-12T18:39:41.000000Z
+fe1c988ceb3fcdc82b0089dd470a39bf
+2010-12-09T08:41:10.683191Z
+114751
+ischommer
 has-props
 
 SapphireSoapServer_wsdl.ss

@@ -1,11 +1,29 @@
 K 25
 svn:wc:ra_dav:version-url
 V 42
-/modules/!svn/ver/491/trunk/uploadify/lang
+/modules/!svn/ver/533/trunk/uploadify/lang
 END
 nb_NO.php
 K 25
 svn:wc:ra_dav:version-url
 V 52
 /modules/!svn/ver/491/trunk/uploadify/lang/nb_NO.php
+END
+de_DE.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/modules/!svn/ver/529/trunk/uploadify/lang/de_DE.php
+END
+da_DK.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/modules/!svn/ver/533/trunk/uploadify/lang/da_DK.php
+END
+it_IT.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/modules/!svn/ver/523/trunk/uploadify/lang/it_IT.php
 END

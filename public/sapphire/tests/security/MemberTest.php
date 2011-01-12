@@ -8,6 +8,15 @@ class MemberTest extends FunctionalTest {
 	
 	protected $orig = array();
 	protected $local = null; 
+	
+	protected $illegalExtensions = array(
+		'Member' => array(
+			// TODO Coupling with modules, this should be resolved by automatically
+			// removing all applied extensions before a unit test
+			'ForumRole',
+			'OpenIDAuthenticatedRole'
+		)
+	);
 
 	function __construct() {
 		parent::__construct();
@@ -288,19 +297,19 @@ class MemberTest extends FunctionalTest {
 		$this->assertFalse($member->isPasswordExpired());
 		
 	}
-
+	
 	function testMemberWithNoDateFormatFallsbackToGlobalLocaleDefaultFormat() {
 		$member = $this->objFromFixture('Member', 'noformatmember');
-		$this->assertEquals('MMM d, yyyy', $member->DateFormat);
-		$this->assertEquals('h:mm:ss a', $member->TimeFormat);
+		$this->assertEquals('MM/dd/yyyy', $member->DateFormat);
+		$this->assertEquals('hh:mm a', $member->TimeFormat);
 	}
-
+	
 	function testMemberWithNoDateFormatFallsbackToTheirLocaleDefaultFormat() {
 		$member = $this->objFromFixture('Member', 'delocalemember');
 		$this->assertEquals('dd.MM.yyyy', $member->DateFormat);
 		$this->assertEquals('HH:mm:ss', $member->TimeFormat);
 	}
-
+	
 	function testInGroups() {
 		$staffmember = $this->objFromFixture('Member', 'staffmember');
 		$managementmember = $this->objFromFixture('Member', 'managementmember');
@@ -332,9 +341,9 @@ class MemberTest extends FunctionalTest {
 		
 		$this->assertFalse($grouplessMember->Groups()->exists());
 		$this->assertFalse($memberlessGroup->Members()->exists());
-
+	
 		$grouplessMember->addToGroupByCode('memberless');
-
+	
 		$this->assertEquals($memberlessGroup->Members()->Count(), 1);
 		$this->assertEquals($grouplessMember->Groups()->Count(), 1);
 		
@@ -400,7 +409,7 @@ class MemberTest extends FunctionalTest {
 			'Non-existant group returns false'
 		);
 	}
-
+	
 	/**
 	 * Tests that the user is able to view their own record, and in turn, they can
 	 * edit and delete their own record too.
@@ -428,11 +437,11 @@ class MemberTest extends FunctionalTest {
 		$this->assertFalse($member->canView());
 		$this->assertFalse($member->canDelete());
 		$this->assertFalse($member->canEdit());
-
+	
 		$this->addExtensions($extensions);
 		$this->session()->inst_set('loggedInAs', null);
 	}
-
+	
 	public function testAuthorisedMembersCanManipulateOthersRecords() {
 		$extensions = $this->removeExtensions(Object::get_extensions('Member'));
 		$member = $this->objFromFixture('Member', 'test');
@@ -447,7 +456,7 @@ class MemberTest extends FunctionalTest {
 		$this->addExtensions($extensions);
 		$this->session()->inst_set('loggedInAs', null);
 	}
-
+	
 	public function testDecoratedCan() {
 		$extensions = $this->removeExtensions(Object::get_extensions('Member'));
 		$member = $this->objFromFixture('Member', 'test');
@@ -464,7 +473,7 @@ class MemberTest extends FunctionalTest {
 		$this->assertTrue($member2->canView());
 		$this->assertFalse($member2->canDelete());
 		$this->assertFalse($member2->canEdit());
-
+	
 		/* Apply a decorator that denies viewing of the Member */
 		Object::remove_extension('Member', 'MemberTest_ViewingAllowedExtension');
 		Object::add_extension('Member', 'MemberTest_ViewingDeniedExtension');
@@ -473,7 +482,7 @@ class MemberTest extends FunctionalTest {
 		$this->assertFalse($member3->canView());
 		$this->assertFalse($member3->canDelete());
 		$this->assertFalse($member3->canEdit());
-
+	
 		/* Apply a decorator that allows viewing and editing but denies deletion */
 		Object::remove_extension('Member', 'MemberTest_ViewingDeniedExtension');
 		Object::add_extension('Member', 'MemberTest_EditingAllowedDeletingDeniedExtension');
@@ -485,6 +494,38 @@ class MemberTest extends FunctionalTest {
 		
 		Object::remove_extension('Member', 'MemberTest_EditingAllowedDeletingDeniedExtension');
 		$this->addExtensions($extensions);
+	}
+	
+	/**
+	 * Tests for {@link Member::getName()} and {@link Member::setName()}
+	 */
+	function testName() {
+		$member = $this->objFromFixture('Member', 'test');
+		$member->setName('Test Some User');
+		$this->assertEquals('Test Some User', $member->getName());
+		$member->setName('Test');
+		$this->assertEquals('Test', $member->getName());
+		$member->FirstName = 'Test';
+		$member->Surname = '';
+		$this->assertEquals('Test', $member->getName());
+	}
+	
+	function testMembersWithSecurityAdminAccessCantEditAdminsUnlessTheyreAdminsThemselves() {
+		$adminMember = $this->objFromFixture('Member', 'admin');
+		$otherAdminMember = $this->objFromFixture('Member', 'other-admin');
+		$securityAdminMember = $this->objFromFixture('Member', 'test');
+		$ceoMember = $this->objFromFixture('Member', 'ceomember');
+		
+		// Careful: Don't read as english language.
+		// More precisely this should read canBeEditedBy()
+		
+		$this->assertTrue($adminMember->canEdit($adminMember), 'Admins can edit themselves');
+		$this->assertTrue($otherAdminMember->canEdit($adminMember), 'Admins can edit other admins');
+		$this->assertTrue($securityAdminMember->canEdit($adminMember), 'Admins can edit other members');
+		
+		$this->assertTrue($securityAdminMember->canEdit($securityAdminMember), 'Security-Admins can edit themselves');
+		$this->assertFalse($adminMember->canEdit($securityAdminMember), 'Security-Admins can not edit other admins');
+		$this->assertTrue($ceoMember->canEdit($securityAdminMember), 'Security-Admins can edit other members');
 	}
 
 	/**

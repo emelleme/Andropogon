@@ -62,6 +62,29 @@ class MultipleFileUploadField extends UploadifyField
     	}	
 	}
 	
+	public function importlist(SS_HTTPRequest $request) {
+		if($id = $request->requestVar('FolderID')) {
+			if(is_numeric($id)) {
+				$files = DataObject::get("File", "ParentID = $id AND ClassName != 'Folder'");
+				if($files && $this->form) {
+					if($record = $this->form->getRecord()) {
+						if($relation_name = $this->getForeignRelationName($record)) {
+							foreach($files as $f) {
+								if($f->$relation_name) {
+									$f->Disabled = true;
+								}						
+							}
+						}
+					}
+				}
+				return $this->customise(array(
+					'Files' => $files
+				))->renderWith('ImportList');
+			}
+		}
+	}
+	
+	
 
 	/**
 	 * Refresh the list of attached files

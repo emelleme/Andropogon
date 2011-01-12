@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/parsers/HTML
 http://svn.silverstripe.com
 
 
 
-2010-04-23T00:25:47.389588Z
-103388
-ischommer
+2010-08-10T00:14:21.247179Z
+109105
+sminnee
 
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2010-05-30T18:49:06.000000Z
-6d7657d05a1081f8a22f7f682f519770
-2010-04-23T00:25:47.389588Z
-103388
-ischommer
+2011-01-12T18:39:32.000000Z
+d6dfc1971c6967dceecd026c559ca92a
+2010-08-10T00:14:21.247179Z
+109105
+sminnee
 has-props
 
 BBCodeParser

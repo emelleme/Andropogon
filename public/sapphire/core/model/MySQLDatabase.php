@@ -51,7 +51,7 @@ class MySQLDatabase extends SS_Database {
 	 *  - username: The username to log on with
 	 *  - password: The password to log on with
 	 *  - database: The database to connect to
-	 *  - timezone: (optional) the timezone offset, eg: +12:00 for NZ time 
+	 *  - timezone: (optional) The timezone offset. For example: +12:00, "Pacific/Auckland", or "SYSTEM"
 	 */
 	public function __construct($parameters) {
 		$this->dbConn = mysql_connect($parameters['server'], $parameters['username'], $parameters['password'], true);
@@ -63,13 +63,12 @@ class MySQLDatabase extends SS_Database {
 
 		$this->active = mysql_select_db($parameters['database'], $this->dbConn);
 		$this->database = $parameters['database'];
-		if(isset($parameters['timezone'])) {	//set timezone to custom parameter 
-			mysql_query("SET SESSION time_zone='" . $parameters['timezone'] . "'"); 
-		}
+
 		if(!$this->dbConn) {
 			$this->databaseError("Couldn't connect to MySQL database");
 		}
-		
+
+		if(isset($parameters['timezone'])) $this->query(sprintf("SET SESSION time_zone = '%s'", $parameters['timezone']));
 		$this->query("SET sql_mode = 'ANSI'");
 	}
 	
@@ -89,20 +88,11 @@ class MySQLDatabase extends SS_Database {
 	}
 	
 	/**
-	 * The version of MySQL.
-	 * @var float
-	 */
-	private $mysqlVersion;
-	
-	/**
 	 * Get the version of MySQL.
-	 * @return float
+	 * @return string
 	 */
 	public function getVersion() {
-		if(!$this->mysqlVersion) {
-			$this->mysqlVersion = (float)substr(trim(ereg_replace("([A-Za-z-])", "", $this->query("SELECT VERSION()")->value())), 0, 3);
-		}
-		return $this->mysqlVersion;
+		return mysql_get_server_info($this->dbConn);
 	}
 	
 	/**
@@ -127,8 +117,7 @@ class MySQLDatabase extends SS_Database {
 		
 		if(isset($_REQUEST['showqueries'])) {
 			$endtime = round(microtime(true) - $starttime,4);
-			if (!isset($_REQUEST['ajax'])) Debug::message("\n$sql\n{$endtime}ms\n", false);
-			else echo "\n$sql\n{$endtime}ms\n";
+			Debug::message("\n$sql\n{$endtime}ms\n", false);
 		}
 		
 		if(!$handle && $errorLevel) $this->databaseError("Couldn't run query: $sql | " . mysql_error($this->dbConn), $errorLevel);
@@ -331,9 +320,9 @@ class MySQLDatabase extends SS_Database {
 	 * @param string $newName The new name of the field
 	 */
 	public function renameField($tableName, $oldName, $newName) {
-		$fieldList = $this->fieldList($tableName);
-		if(array_key_exists($oldName, $fieldList)) {
-			$this->query("ALTER TABLE \"$tableName\" CHANGE \"$oldName\" \"$newName\" " . $fieldList[$oldName]);
+		$fieldList = $this->fieldList($tableName); 
+		if(array_key_exists($oldName, $fieldList)) { 
+			$this->query("ALTER TABLE \"$tableName\" CHANGE \"$oldName\" \"$newName\" " . $fieldList[$oldName]); 
 		}
 	}
 	
@@ -834,7 +823,8 @@ class MySQLDatabase extends SS_Database {
 
 		foreach($records as $record)
 			$objects[] = new $record['ClassName']($record);
-		
+
+
 		if(isset($objects)) $doSet = new DataObjectSet($objects);
 		else $doSet = new DataObjectSet();
 		
@@ -1068,8 +1058,8 @@ class MySQLQuery extends SS_Query {
 		$this->handle = $handle;
 	}
 	
-	public function __destroy() {
-		mysql_free_result($this->handle);
+	public function __destruct() {
+		if(is_resource($this->handle)) mysql_free_result($this->handle);
 	}
 	
 	public function seek($row) {

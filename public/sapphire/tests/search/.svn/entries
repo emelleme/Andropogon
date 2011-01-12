@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/tests/search
 http://svn.silverstripe.com
 
 
 
-2010-07-23T04:27:29.083879Z
-108417
-cbarberis
+2010-12-08T03:12:04.855061Z
+114683
+jbarrois
 
 
 svn:special svn:externals svn:needs-lock
@@ -44,11 +44,11 @@ file
 
 
 
-2010-08-06T02:06:59.000000Z
-49c0b08e62eac8a1f5a1696576e498b2
-2010-07-23T04:27:29.083879Z
-108417
-cbarberis
+2011-01-12T18:39:40.000000Z
+36b72466dcc220b5ac589ecf795a0a9f
+2010-08-26T20:57:53.041082Z
+110130
+muzdowski
 has-props
 
 SearchFilterApplyRelationTest.php
@@ -75,6 +75,30 @@ c819d244814e4be32137d777838a0924
 88124
 ischommer
 
+ContentControllerSearchExtensionTest.php
+file
+
+
+
+
+2011-01-12T18:39:40.000000Z
+310664dc9e6ce4296f74728c97a38a1d
+2010-12-08T03:12:04.855061Z
+114683
+jbarrois
+
+FulltextSearchableTest.php
+file
+
+
+
+
+2011-01-12T18:39:40.000000Z
+b8950a512d07a9fbaac8413a29bffdd4
+2010-10-07T06:49:40.699049Z
+111789
+ischommer
+
 SearchFormTest.yml
 file
 
@@ -93,10 +117,10 @@ file
 
 
 
-2010-05-30T18:49:12.000000Z
-26b363c53a53e0848d20856d5c2d231e
-2010-04-30T04:11:55.830591Z
-103821
-ischommer
+2011-01-12T18:39:40.000000Z
+59c79a709684560b3753d1b541a9807f
+2010-08-31T05:52:48.533730Z
+110262
+muzdowski
 has-props
 

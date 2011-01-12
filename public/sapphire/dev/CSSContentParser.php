@@ -28,6 +28,7 @@ class CSSContentParser extends Object {
 				array(
 					'output-xhtml' => true,
 					'numeric-entities' => true,
+					'wrap' => 99999, // We need this to be consistent for functional test string comparisons
 				), 
 				'utf8'
 			);
@@ -46,7 +47,10 @@ class CSSContentParser extends Object {
 			$tidy = $content;
 		}
 		
-		$this->simpleXML = simplexml_load_string($tidy, 'SimpleXMLElement', LIBXML_NOWARNING);
+		$this->simpleXML = @simplexml_load_string($tidy, 'SimpleXMLElement', LIBXML_NOWARNING);
+		if(!$this->simpleXML) {
+			throw new Exception('CSSContentParser::__construct(): Could not parse content. Please check the PHP extension tidy is installed.');
+		}
 		
 		parent::__construct();
 	}

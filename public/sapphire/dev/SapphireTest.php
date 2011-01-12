@@ -1,8 +1,5 @@
 <?php
 require_once 'TestRunner.php';
-if(hasPhpUnit()) {
-require_once 'PHPUnit/Framework.php';
-}
 
 /**
  * Test case class for the Sapphire framework.
@@ -60,7 +57,12 @@ class SapphireTest extends PHPUnit_Framework_TestCase {
 	 * not applied, they will be temporarily added and a database migration called.
 	 * 
 	 * The keys of the are the classes to apply the extensions to, and the values are an array
-	 * of illegal required extensions on that class.
+	 * of required extensions on that class.
+	 * 
+	 * Example:
+	 * <code>
+	 * array("MyTreeDataObject" => array("Versioned", "Hierarchy"))
+	 * </code>
 	 */
 	protected $requiredExtensions = array(
 	);
@@ -124,7 +126,7 @@ class SapphireTest extends PHPUnit_Framework_TestCase {
 		Versioned::reset();
 		DataObject::reset();
 		SiteTree::reset();
-		Controller::curr()->setSession(new Session(array()));
+		if(Controller::has_curr()) Controller::curr()->setSession(new Session(array()));
 		
 		$this->originalTheme = SSViewer::current_theme();
 		
@@ -391,7 +393,7 @@ class SapphireTest extends PHPUnit_Framework_TestCase {
 		// Stop the redirection that might have been requested in the test.
 		// Note: Ideally a clean Controller should be created for each test. 
 		// Now all tests executed in a batch share the same controller.
-		$controller = Controller::curr();
+		$controller = Controller::has_curr() ? Controller::curr() : null;
 		if ( $controller && $controller->response && $controller->response->getHeader('Location') ) {
 			$controller->response->setStatusCode(200);
 			$controller->response->removeHeader('Location');
@@ -668,7 +670,11 @@ class SapphireTest extends PHPUnit_Framework_TestCase {
 		foreach(DB::getConn()->allDatabaseNames() as $dbName) {
 			if(preg_match('/^tmpdb[0-9]+$/', $dbName)) {
 				DB::getConn()->dropDatabaseByName($dbName);
-				echo "<li>Dropped databse \"$dbName\"\n";
+				if(Director::is_cli()) {
+					echo "Dropped database \"$dbName\"" . PHP_EOL;
+				} else {
+					echo "<li>Dropped database \"$dbName\"</li>" . PHP_EOL;
+				}
 				flush();
 			}
 		}

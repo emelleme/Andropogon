@@ -49,10 +49,6 @@ class i18nTest extends SapphireTest {
 		$_TEMPLATE_MANIFEST['i18nTestModuleInclude.ss'] = array(
 			'Includes' => $this->alternateBasePath . '/i18ntestmodule/templates/Includes/i18nTestModuleInclude.ss',
 		);
-		$_TEMPLATE_MANIFEST['i18nTestModule.ss'] = array(
-			'main' => $this->alternateBasePath . '/i18ntestmodule/templates/i18nTestModule.ss',
-			'Layout' => $this->alternateBasePath . '/i18ntestmodule/templates/Layout/i18nTestModule.ss',
-		);
 		
 		$this->originalLocale = i18n::get_locale();
 	}
@@ -75,7 +71,7 @@ class i18nTest extends SapphireTest {
 	
 	function testDateFormatFromLocale() {
 		i18n::set_locale('en_US');
-		$this->assertEquals('MMM d, yyyy', i18n::get_date_format());
+		$this->assertEquals('MM/dd/yyyy', i18n::get_date_format());
 		i18n::set_locale('en_NZ');
 		$this->assertEquals('d/MM/yyyy', i18n::get_date_format());
 		i18n::set_locale('en_US');
@@ -83,7 +79,7 @@ class i18nTest extends SapphireTest {
 	
 	function testTimeFormatFromLocale() {
 		i18n::set_locale('en_US');
-		$this->assertEquals('h:mm:ss a', i18n::get_time_format());
+		$this->assertEquals('hh:mm a', i18n::get_time_format());
 		i18n::set_locale('de_DE');
 		$this->assertEquals('HH:mm:ss', i18n::get_time_format());
 		i18n::set_locale('en_US');
@@ -91,14 +87,14 @@ class i18nTest extends SapphireTest {
 	
 	function testDateFormatCustom() {
 		i18n::set_locale('en_US');
-		$this->assertEquals('MMM d, yyyy', i18n::get_date_format());
+		$this->assertEquals('MM/dd/yyyy', i18n::get_date_format());
 		i18n::set_date_format('d/MM/yyyy');
 		$this->assertEquals('d/MM/yyyy', i18n::get_date_format());
 	}
 	
 	function testTimeFormatCustom() {
 		i18n::set_locale('en_US');
-		$this->assertEquals('h:mm:ss a', i18n::get_time_format());
+		$this->assertEquals('hh:mm a', i18n::get_time_format());
 		i18n::set_time_format('HH:mm:ss');
 		$this->assertEquals('HH:mm:ss', i18n::get_time_format());
 	}
@@ -263,6 +259,14 @@ class i18nTest extends SapphireTest {
 		i18n::unregister_plugin("testTranslator");
 
 		$lang = $oldLang;
+	}
+	
+	function testValidateLocale() {
+		$this->assertTrue(i18n::validate_locale('en_US'), 'Known locale in underscore format is valid');
+		$this->assertTrue(i18n::validate_locale('en-US'), 'Known locale in dash format is valid');
+		$this->assertFalse(i18n::validate_locale('en'), 'Short lang format is not valid');
+		$this->assertFalse(i18n::validate_locale('xx_XX'), 'Unknown locale in correct format is not valid');
+		$this->assertFalse(i18n::validate_locale(''), 'Empty string is not valid');
 	}
 
 	static function translationTestPlugin($locale) {

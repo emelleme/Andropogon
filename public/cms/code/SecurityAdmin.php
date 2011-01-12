@@ -18,12 +18,10 @@ class SecurityAdmin extends LeftAndMain implements PermissionProvider {
 	
 	static $allowed_actions = array(
 		'addgroup',
-		'addmember',
 		'autocomplete',
 		'removememberfromgroup',
 		'savemember',
 		'AddRecordForm',
-		'MemberForm',
 		'EditForm',
 		'MemberImportForm',
 		'memberimport',
@@ -283,7 +281,9 @@ class SecurityAdmin extends LeftAndMain implements PermissionProvider {
 		if($matches) {
 			$result .= "<ul>";
 			foreach($matches as $match) {
-				if(!$match->canView()) continue;
+				// If the current user doesnt have permissions on the target user,
+				// he's not allowed to add it to a group either: Don't include it in the suggestions.
+				if(!$match->canView() || !$match->canEdit()) continue;
 
 				$data = $match->FirstName;
 				$data .= ",$match->Surname";
@@ -293,108 +293,6 @@ class SecurityAdmin extends LeftAndMain implements PermissionProvider {
 			$result .= "</ul>";
 			return $result;
 		}
-	}
-
-	public function MemberForm() {
-		$id = $_REQUEST['ID'] ? $_REQUEST['ID'] : Session::get('currentMember');
-		if($id) return $this->getMemberForm($id);
-	}
-
-	public function getMemberForm($id) {
-		if($id && $id != 'new') $record = DataObject::get_by_id('Member', (int) $id);
-		if($record || $id == 'new') {
-			$fields = new FieldSet(
-				new HiddenField('MemberListBaseGroup', '', $this->currentPageID() )
-			);
-
-			if($extraFields = $record->getCMSFields()) {
-				foreach($extraFields as $extra) {
-					$fields->push( $extra );
-				}
-			}
-
-			$fields->push($idField = new HiddenField('ID'));
-			$fields->push($groupIDField = new HiddenField('GroupID'));
-
-			$actions = new FieldSet();
-			$actions->push(new FormAction('savemember', _t('SecurityAdmin.SAVE', 'Save')));
-
-			$form = new Form($this, 'MemberForm', $fields, $actions);
-			if($record) $form->loadDataFrom($record);
-
-			$idField->setValue($id);
-			$groupIDField->setValue($this->currentPageID());
-			
-			if($record && !$record->canEdit()) {
-				$readonlyFields = $form->Fields()->makeReadonly();
-				$form->setFields($readonlyFields);
-			}
-
-			return $form;
-		}
-	}
-
-	function savemember() {
-		$data = $_REQUEST;
-		$className = $this->stat('subitem_class');
-
-		$id = $_REQUEST['ID'];
-		if($id == 'new') $id = null;
-
-		if($id) {
-			$record = DataObject::get_by_id($className, $id);
-			if($record && !$record->canEdit()) return Security::permissionFailure($this);
-		} else {
-			if(!singleton($this->stat('subitem_class'))->canCreate()) return Security::permissionFailure($this);
-			$record = new $className();
-		}
-
-		$record->update($data);
-		$record->ID = $id;
-		$record->write();
-
-		$record->Groups()->add($data['GroupID']);
-
-		FormResponse::add("reloadMemberTableField();");
-
-		return FormResponse::respond();
-	}
-
-	function addmember($className=null) {
-		$data = $_REQUEST;
-		unset($data['ID']);
-		if($className == null) $className = $this->stat('subitem_class');
-
-		if(!singleton($this->stat('subitem_class'))->canCreate()) return Security::permissionFailure($this);
-
-		$record = new $className();
-
-		$record->update($data);
-		$record->write();
-		
-		if($data['GroupID']) $record->Groups()->add((int)$data['GroupID']);
-
-		FormResponse::add("reloadMemberTableField();");
-
-		return FormResponse::respond();
-	}
-
-	public function removememberfromgroup() {
-		$groupID = $this->urlParams['ID'];
-		$memberID = $this->urlParams['OtherID'];
-		if(is_numeric($groupID) && is_numeric($memberID)) {
-			$member = DataObject::get_by_id('Member', (int) $memberID);
-
-			if(!$member->canDelete()) return Security::permissionFailure($this);
-
-			$member->Groups()->remove((int)$groupID);
-
-			FormResponse::add("reloadMemberTableField();");
-		} else {
-			user_error("SecurityAdmin::removememberfromgroup: Bad parameters: Group=$groupID, Member=$memberID", E_USER_ERROR);
-		}
-
-		return FormResponse::respond();
 	}
 
 	/**
@@ -427,7 +325,10 @@ class SecurityAdmin extends LeftAndMain implements PermissionProvider {
 		return $siteTree;
 	}
 
-	public function addgroup() {
+	public function addgroup($request) {
+		// Protect against CSRF on destructive action
+		if(!SecurityToken::inst()->checkRequest($request)) return $this->httpError(400);
+		
 		if(!singleton($this->stat('tree_class'))->canCreate()) return Security::permissionFailure($this);
 		
 		$newGroup = Object::create($this->stat('tree_class'));

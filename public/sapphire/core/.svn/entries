@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/core
 http://svn.silverstripe.com
 
 
 
-2010-08-05T05:56:05.899651Z
-108961
-apiening
+2011-01-11T23:10:36.113384Z
+115443
+sharvey
 
 
 svn:special svn:externals svn:needs-lock
@@ -48,10 +48,10 @@ file
 
 
 
-2010-05-30T18:49:07.000000Z
-3cd71df69c74118aa41d15d15b08c532
-2010-05-17T03:17:09.634289Z
-104992
+2011-01-12T18:39:32.000000Z
+ef45820fbdd9918423943eeb4e65e618
+2010-11-18T19:03:18.070404Z
+113919
 ischommer
 has-props
 
@@ -87,10 +87,10 @@ file
 
 
 
-2010-08-06T02:06:59.000000Z
-a8d53deff4de6896b4dff942843749a5
-2010-07-23T04:10:41.098293Z
-108413
+2011-01-12T18:39:32.000000Z
+48459ffa1a0ecff9b41e845341dc95bb
+2010-09-22T01:43:43.829088Z
+111086
 sharvey
 has-props
 
@@ -107,19 +107,6 @@ file
 wrossiter
 has-props
 
-ValidationException.php
-file
-
-
-
-
-2010-05-30T18:49:07.000000Z
-103714ac104b743cc35a6f811784cf08
-2009-06-17T23:14:40.674057Z
-79478
-sminnee
-has-props
-
 Cookie.php
 file
 
@@ -131,6 +118,19 @@ file
 2010-03-15T05:28:40.950327Z
 101046
 sharvey
+has-props
+
+ValidationException.php
+file
+
+
+
+
+2010-05-30T18:49:07.000000Z
+103714ac104b743cc35a6f811784cf08
+2009-06-17T23:14:40.674057Z
+79478
+sminnee
 has-props
 
 model
@@ -175,6 +175,19 @@ efd37de96796fadcb36f9f819ada6b1a
 ischommer
 has-props
 
+i18n.php
+file
+
+
+
+
+2011-01-12T18:39:32.000000Z
+5840a059dda8420282fea45f5312143c
+2010-12-03T00:47:57.786770Z
+114473
+ischommer
+has-props
+
 HTTP.php
 file
 
@@ -186,19 +199,6 @@ file
 2010-04-16T05:22:12.656158Z
 103012
 cbarberis
-has-props
-
-i18n.php
-file
-
-
-
-
-2010-08-06T02:06:59.000000Z
-cc17051900b7ee3412d854b82344a6b0
-2010-07-26T04:15:55.483984Z
-108499
-sharvey
 has-props
 
 Convert.php
@@ -220,11 +220,11 @@ file
 
 
 
-2010-05-30T18:49:07.000000Z
-7a56841d882c2d49bd35ddb2f9b7d4b3
-2010-04-27T23:45:19.213171Z
-103606
-apiening
+2011-01-12T18:39:32.000000Z
+1781acf60bd1e8cd6f1be7a3f3ce7124
+2010-09-06T04:19:44.580203Z
+110467
+sharvey
 has-props
 
 Session.php
@@ -233,11 +233,11 @@ file
 
 
 
-2010-08-06T02:06:59.000000Z
-5cfb4d4071fb00bb93a4ec2214d75dc9
-2010-07-11T10:44:59.355603Z
-107725
-ischommer
+2011-01-12T18:39:32.000000Z
+554dbed5d3b28347b0cb00cb7d4de78d
+2010-12-13T22:33:04.945320Z
+114901
+sharvey
 has-props
 
 Requirements.php
@@ -285,11 +285,11 @@ file
 
 
 
-2010-08-06T02:06:59.000000Z
-977f212850af15bb2a76b3ea9ed1fe83
-2010-07-07T01:34:48.207675Z
-107586
-wrossiter
+2011-01-12T18:39:32.000000Z
+d6e07b0b80919305e88f5412bc8c8a82
+2010-11-21T22:39:29.940046Z
+113976
+sharvey
 has-props
 
 ViewableData.php
@@ -298,10 +298,10 @@ file
 
 
 
-2010-05-30T18:49:07.000000Z
-52fde9400a49d6d3d32a02172480d6d9
-2010-05-20T20:57:35.749866Z
-105278
+2011-01-12T18:39:32.000000Z
+00ba8980b389b6f0177ff8840991de4b
+2010-11-01T01:28:53.227811Z
+113274
 ischommer
 has-props
 

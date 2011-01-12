@@ -1,19 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/!svn/ver/107940/open/modules/sapphire/branches/2.4/tests/i18n
+/!svn/ver/114473/open/modules/sapphire/branches/2.4/tests/i18n
 END
 i18nTextCollectorTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/!svn/ver/107940/open/modules/sapphire/branches/2.4/tests/i18n/i18nTextCollectorTest.php
+/!svn/ver/113919/open/modules/sapphire/branches/2.4/tests/i18n/i18nTextCollectorTest.php
 END
 i18nTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/!svn/ver/107326/open/modules/sapphire/branches/2.4/tests/i18n/i18nTest.php
+/!svn/ver/114473/open/modules/sapphire/branches/2.4/tests/i18n/i18nTest.php
 END
 i18nTextCollectorTestMySubObject.php
 K 25

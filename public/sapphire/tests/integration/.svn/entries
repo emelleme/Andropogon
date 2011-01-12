@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/tests/integration
 http://svn.silverstripe.com
 
 
 
-2009-10-13T01:44:41.679918Z
-88773
-sminnee
+2010-10-12T10:02:21.633717Z
+111949
+sharvey
 
 
 svn:special svn:externals svn:needs-lock
@@ -32,10 +32,10 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-389e8c04c4ad880f2638c458f2bd51b4
-2009-10-13T01:44:41.679918Z
-88773
-sminnee
+2011-01-12T18:39:40.000000Z
+f0664f1ce57d72110978798fa88746a0
+2010-10-12T10:02:21.633717Z
+111949
+sharvey
 has-props
 

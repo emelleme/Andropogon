@@ -58,7 +58,7 @@ TreeAPI.prototype = {
 	},
 	
 	reload: function(options) {
-		this.innerHTML = 'Loading...';
+		this.innerHTML =  ss.i18n._t('LOADING', 'loading...'); 
 
 		var args = {ajax:1, ID:0};
 		if ($('LangSelector')) args.locale = $('LangSelector').value;
@@ -227,7 +227,7 @@ TreeNodeAPI.prototype = {
 	ajaxExpansion : function() {
 		this.addNodeClass('loading');
 		var ul = this.treeNodeHolder(false);
-		ul.innerHTML = 'loading...';
+		ul.innerHTML = ss.i18n._t('LOADING', 'loading...'); 
 		
 		// Any attempts to add children to this page should, in fact, cue them up for insertion later
 		ul.cuedNewNodes = [];
@@ -281,8 +281,10 @@ TreeNodeAPI.prototype = {
 		if(this.parentTreeNode && this.parentTreeNode.getIdx) {
 			parentClause = "&parentID=" + this.parentTreeNode.getIdx();
 		}
+		var token = $$('input[name=SecurityID]')[0].value;
+		var url = baseHref() + 'admin/duplicate/' + this.getIdx() + '?ajax=1' + parentClause + '&SecurityID=' + token;
 
-		new Ajax.Request(baseHref() + 'admin/duplicate/' + this.getIdx() + '?ajax=1' + parentClause, {
+		new Ajax.Request(url, {
 			method : 'get',
 			onSuccess : Ajax.Evaluator,
 			onFailure : function(response) {
@@ -291,7 +293,9 @@ TreeNodeAPI.prototype = {
 		}); 
 	},
 	duplicatePageWithChildren: function() {  
-		new Ajax.Request(baseHref() + 'admin/duplicatewithchildren/' + this.getIdx() + '?ajax=1', {
+		var token = $$('input[name=SecurityID]')[0].value;
+		var url = baseHref() + 'admin/duplicatewithchildren/' + this.getIdx() + '?ajax=1&SecurityID=' + token;
+		new Ajax.Request(url, {
 			method : 'get',
 			onSuccess : Ajax.Evaluator,
 			onFailure : function(response) {
@@ -423,9 +427,10 @@ SiteTreeNode.prototype = {
 		if($('Form_EditForm').elements.ID) currentlyOpenPageID = $('Form_EditForm').elements.ID.value;
 
 		statusMessage(ss.i18n._t('CMSMAIN.SAVING'), '', true);
+		var token = $$('input[name=SecurityID]')[0].value;
 		new Ajax.Request(SiteTreeHandlers.parentChanged_url, {
 			method : 'post', 
-			postBody : 'ID=' + node.getIdx() + '&ParentID=' + newParent.getIdx() + '&CurrentlyOpenPageID=' + currentlyOpenPageID,
+			postBody : 'ID=' + node.getIdx() + '&ParentID=' + newParent.getIdx() + '&CurrentlyOpenPageID=' + currentlyOpenPageID + '&SecurityID=' + token,
 			onSuccess : Ajax.Evaluator,
 			onFailure : function(response) {
 				errorMessage('error saving parent', response);
@@ -466,9 +471,10 @@ SiteTreeNode.prototype = {
 		if($('Form_EditForm').elements.ID) currentlyOpenPageID = $('Form_EditForm').elements.ID.value;
 
 		if(parts) {
+			var token = $$('input[name=SecurityID]')[0].value;
 			new Ajax.Request(SiteTreeHandlers.orderChanged_url, {
 				method : 'post', 
-				postBody : parts.join('&') + '&CurrentlyOpenPageID=' + currentlyOpenPageID,
+				postBody : parts.join('&') + '&CurrentlyOpenPageID=' + currentlyOpenPageID + '&SecurityID=' + token,
 				onSuccess : function(response) {
 					movedNode.removeNodeClass('loading');
 					if( $('sitetree').selected && $('sitetree').selected[0]){

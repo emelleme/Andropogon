@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/!svn/ver/108942/open/modules/sapphire/branches/2.4/tests
+/!svn/ver/115440/open/modules/sapphire/branches/2.4/tests
 END
 SiteTreePermissionsTest.yml
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/!svn/ver/90859/open/modules/sapphire/branches/2.4/tests/SiteTreePermissionsTest.yml
+V 85
+/!svn/ver/110759/open/modules/sapphire/branches/2.4/tests/SiteTreePermissionsTest.yml
 END
 ControllerTest.yml
 K 25
@@ -25,7 +25,7 @@ DataObjectTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/!svn/ver/108025/open/modules/sapphire/branches/2.4/tests/DataObjectTest.php
+/!svn/ver/114745/open/modules/sapphire/branches/2.4/tests/DataObjectTest.php
 END
 HtmlEditorConfigTest.php
 K 25
@@ -48,8 +48,8 @@ END
 SiteTreeActionsTest.php
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/!svn/ver/99491/open/modules/sapphire/branches/2.4/tests/SiteTreeActionsTest.php
+V 81
+/!svn/ver/115440/open/modules/sapphire/branches/2.4/tests/SiteTreeActionsTest.php
 END
 SoapModelAccessTest.php
 K 25
@@ -93,11 +93,23 @@ svn:wc:ra_dav:version-url
 V 80
 /!svn/ver/101668/open/modules/sapphire/branches/2.4/tests/RedirectorPageTest.yml
 END
+FullTestSuite.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/111489/open/modules/sapphire/branches/2.4/tests/FullTestSuite.php
+END
 ManifestBuilderTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 81
 /!svn/ver/101138/open/modules/sapphire/branches/2.4/tests/ManifestBuilderTest.php
+END
+bootstrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/111051/open/modules/sapphire/branches/2.4/tests/bootstrap.php
 END
 ObjectStaticTest.php
 K 25
@@ -109,19 +121,7 @@ SiteTreePermissionsTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/!svn/ver/104798/open/modules/sapphire/branches/2.4/tests/SiteTreePermissionsTest.php
-END
-ControllerTest.php
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/!svn/ver/105889/open/modules/sapphire/branches/2.4/tests/ControllerTest.php
-END
-SQLFormatterTest.php
-K 25
-svn:wc:ra_dav:version-url
-V 77
-/!svn/ver/92220/open/modules/sapphire/branches/2.4/tests/SQLFormatterTest.php
+/!svn/ver/110759/open/modules/sapphire/branches/2.4/tests/SiteTreePermissionsTest.php
 END
 Bare.yml
 K 25
@@ -129,17 +129,17 @@ svn:wc:ra_dav:version-url
 V 65
 /!svn/ver/94429/open/modules/sapphire/branches/2.4/tests/Bare.yml
 END
-ManifestBuilderTest.fixture.inc
+SQLFormatterTest.php
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/!svn/ver/90859/open/modules/sapphire/branches/2.4/tests/ManifestBuilderTest.fixture.inc
+V 77
+/!svn/ver/92220/open/modules/sapphire/branches/2.4/tests/SQLFormatterTest.php
 END
-SiteTreeTest.php
+ControllerTest.php
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/!svn/ver/107429/open/modules/sapphire/branches/2.4/tests/SiteTreeTest.php
+V 76
+/!svn/ver/105889/open/modules/sapphire/branches/2.4/tests/ControllerTest.php
 END
 SearchContextTest.yml
 K 25
@@ -147,17 +147,29 @@ svn:wc:ra_dav:version-url
 V 78
 /!svn/ver/90859/open/modules/sapphire/branches/2.4/tests/SearchContextTest.yml
 END
-CoreTest.php
+SiteTreeTest.php
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/!svn/ver/97731/open/modules/sapphire/branches/2.4/tests/CoreTest.php
+V 74
+/!svn/ver/115440/open/modules/sapphire/branches/2.4/tests/SiteTreeTest.php
+END
+ManifestBuilderTest.fixture.inc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/90859/open/modules/sapphire/branches/2.4/tests/ManifestBuilderTest.fixture.inc
 END
 ViewableDataTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 78
 /!svn/ver/104063/open/modules/sapphire/branches/2.4/tests/ViewableDataTest.php
+END
+CoreTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/111748/open/modules/sapphire/branches/2.4/tests/CoreTest.php
 END
 FileLinkTrackingTest.yml
 K 25
@@ -169,13 +181,13 @@ RequestHandlingTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/!svn/ver/105890/open/modules/sapphire/branches/2.4/tests/RequestHandlingTest.php
+/!svn/ver/115188/open/modules/sapphire/branches/2.4/tests/RequestHandlingTest.php
 END
 PhpSyntaxTest.php
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/!svn/ver/97728/open/modules/sapphire/branches/2.4/tests/PhpSyntaxTest.php
+V 75
+/!svn/ver/111116/open/modules/sapphire/branches/2.4/tests/PhpSyntaxTest.php
 END
 RedirectorPageTest.php
 K 25
@@ -217,7 +229,7 @@ SSViewerTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/!svn/ver/108421/open/modules/sapphire/branches/2.4/tests/SSViewerTest.php
+/!svn/ver/111047/open/modules/sapphire/branches/2.4/tests/SSViewerTest.php
 END
 DataObjectTest.yml
 K 25
@@ -235,7 +247,7 @@ DataObjectSetTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/!svn/ver/103792/open/modules/sapphire/branches/2.4/tests/DataObjectSetTest.php
+/!svn/ver/109156/open/modules/sapphire/branches/2.4/tests/DataObjectSetTest.php
 END
 WebserverRoutingTest.php
 K 25
@@ -295,7 +307,7 @@ SessionTest.php
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/!svn/ver/105756/open/modules/sapphire/branches/2.4/tests/SessionTest.php
+/!svn/ver/111046/open/modules/sapphire/branches/2.4/tests/SessionTest.php
 END
 SQLQueryTest.php
 K 25

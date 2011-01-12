@@ -5,10 +5,27 @@
  * It takes care of:
  *  - Including _ss_environment.php
  *  - Normalisation of $_SERVER values
- *  - Initialisation of TEMP_FOLDER, BASE_URL, BASE_PATH, and other SilverStripe defines
+ *  - Initialisation of necessary constants (mostly paths)
  *  - Checking of PHP memory limit
  *  - Including all the files needed to get the manifest built
  *  - Building and including the manifest
+ * 
+ * Initialized constants:
+ * - BASE_URL: Full URL to the webroot, e.g. "http://my-host.com/my-webroot" (no trailing slash).
+ * - BASE_PATH: Absolute path to the webroot, e.g. "/var/www/my-webroot" (no trailing slash).
+ *   See Director::baseFolder(). Can be overwritten by Director::setBaseFolder().
+ * - TEMP_FOLDER: Absolute path to temporary folder, used for manifest and template caches. Example: "/var/tmp"
+ *   See getTempFolder(). No trailing slash.
+ * - MODULES_DIR: Not used at the moment
+ * - MODULES_PATH: Not used at the moment
+ * - THEMES_DIR: Path relative to webroot, e.g. "themes"
+ * - THEMES_PATH: Absolute filepath, e.g. "/var/www/my-webroot/themes"
+ * - CMS_DIR: Path relative to webroot, e.g. "cms"
+ * - CMS_PATH: Absolute filepath, e.g. "/var/www/my-webroot/cms"
+ * - SAPPHIRE_DIR: Path relative to webroot, e.g. "sapphire"
+ * - SAPPHIRE_PATH:Absolute filepath, e.g. "/var/www/my-webroot/sapphire"
+ * - THIRDPARTY_DIR: Path relative to webroot, e.g. "sapphire/thirdparty"
+ * - THIRDPARTY_PATH: Absolute filepath, e.g. "/var/www/my-webroot/sapphire/thirdparty"
  * 
  * @todo This file currently contains a lot of bits and pieces, and its various responsibilities should probably be
  * moved into different subsystems.
@@ -170,24 +187,34 @@ define('PR_LOW',10);
 /**
  * Ensure we have enough memory
  */
-
 increase_memory_limit_to('64M');
 
 ///////////////////////////////////////////////////////////////////////////////
 // INCLUDES
 
-/**
- * Add sapphire/parsers and sapphire/thirdparty include paths, as well as adding a fixed reference
- * to BASEPATH/sapphrie in case we chdir()
- */
-
-// Add after the "." path but before other paths (so that they take precedence over the PEAR 
-// include paths)
-set_include_path(str_replace('.' . PATH_SEPARATOR, '.' . PATH_SEPARATOR 
-	. BASE_PATH . '/sapphire' . PATH_SEPARATOR
+set_include_path(BASE_PATH . '/sapphire' . PATH_SEPARATOR
 	. BASE_PATH . '/sapphire/parsers' . PATH_SEPARATOR
 	. BASE_PATH . '/sapphire/thirdparty' . PATH_SEPARATOR
-	, get_include_path())); 
+	. get_include_path());
+
+/**
+ * Sapphire class autoloader.  Requires the ManifestBuilder to work.
+ * $_CLASS_MANIFEST must have been loaded up by ManifestBuilder for this to successfully load
+ * classes.  Classes will be loaded from any PHP file within the application.
+ * If your class contains an underscore, for example, Page_Controller, then the filename is
+ * expected to be the stuff before the underscore.  In this case, Page.php.
+ * 
+ * Class names are converted to lowercase for lookup to adhere to PHP's case-insensitive
+ * way of dealing with them.
+ */
+function sapphire_autoload($className) {
+	global $_CLASS_MANIFEST;
+	$lClassName = strtolower($className);
+	if(isset($_CLASS_MANIFEST[$lClassName])) include_once($_CLASS_MANIFEST[$lClassName]);
+	else if(isset($_CLASS_MANIFEST[$className])) include_once($_CLASS_MANIFEST[$className]);
+}
+
+spl_autoload_register('sapphire_autoload');
 
 require_once("core/ManifestBuilder.php");
 require_once("core/ClassInfo.php");
@@ -228,15 +255,15 @@ Debug::loadErrorHandlers();
 // HELPER FUNCTIONS
 
 function getSysTempDir() {
-    if(function_exists('sys_get_temp_dir')) {
-        $sysTmp = sys_get_temp_dir();
-    } elseif(isset($_ENV['TMP'])) {
+	if(function_exists('sys_get_temp_dir')) {
+		$sysTmp = sys_get_temp_dir();
+	} elseif(isset($_ENV['TMP'])) {
 		$sysTmp = $_ENV['TMP'];    	
-    } else {
-        $tmpFile = tempnam('adfadsfdas','');
-        unlink($tmpFile);
-        $sysTmp = dirname($tmpFile);
-    }
+	} else {
+		$tmpFile = tempnam('adfadsfdas','');
+		unlink($tmpFile);
+		$sysTmp = dirname($tmpFile);
+	}
 	return $sysTmp;
 }
 
@@ -249,56 +276,41 @@ function getSysTempDir() {
  */
 function getTempFolder($base = null) {
 	if(!$base) $base = BASE_PATH;
-	
+
 	if($base) {
 		$cachefolder = "silverstripe-cache" . str_replace(array(' ', "/", ":", "\\"), "-", $base);
 	} else {
 		$cachefolder = "silverstripe-cache";
 	}
-	
+
 	$ssTmp = BASE_PATH . "/silverstripe-cache";
-    if(@file_exists($ssTmp)) {
-    	return $ssTmp;
-    }
-	
-    $sysTmp = getSysTempDir();
+	if(@file_exists($ssTmp)) {
+		return $ssTmp;
+	}
 
-    $worked = true;
-    $ssTmp = "$sysTmp/$cachefolder";
-    if(!@file_exists($ssTmp)) {
-    	@$worked = mkdir($ssTmp);
-    }
-    if(!$worked) {
-    	$ssTmp = BASE_PATH . "/silverstripe-cache";
-    	$worked = true;
-    	if(!@file_exists($ssTmp)) {
-    		@$worked = mkdir($ssTmp);
-    	}
-    }
-    if(!$worked) {
-    	user_error("Permission problem gaining access to a temp folder. " .
-    		"Please create a folder named silverstripe-cache in the base folder "  .
-    		"of the installation and ensure it has the correct permissions", E_USER_ERROR);
-    }
-    
-    return $ssTmp;
-}
+	$sysTmp = getSysTempDir();
+	$worked = true;
+	$ssTmp = "$sysTmp/$cachefolder";
 
-/**
- * Sapphire class autoloader.  Requires the ManifestBuilder to work.
- * $_CLASS_MANIFEST must have been loaded up by ManifestBuilder for this to successfully load
- * classes.  Classes will be loaded from any PHP file within the application.
- * If your class contains an underscore, for example, Page_Controller, then the filename is
- * expected to be the stuff before the underscore.  In this case, Page.php.
- * 
- * Class names are converted to lowercase for lookup to adhere to PHP's case-insensitive
- * way of dealing with them.
- */
-function __autoload($className) {
-	global $_CLASS_MANIFEST;
-	$lClassName = strtolower($className);
-	if(isset($_CLASS_MANIFEST[$lClassName])) include_once($_CLASS_MANIFEST[$lClassName]);
-	else if(isset($_CLASS_MANIFEST[$className])) include_once($_CLASS_MANIFEST[$className]);
+	if(!@file_exists($ssTmp)) {
+		@$worked = mkdir($ssTmp);
+	}
+
+	if(!$worked) {
+		$ssTmp = BASE_PATH . "/silverstripe-cache";
+		$worked = true;
+		if(!@file_exists($ssTmp)) {
+			@$worked = mkdir($ssTmp);
+		}
+	}
+
+	if(!$worked) {
+		user_error("Permission problem gaining access to a temp folder. " .
+			"Please create a folder named silverstripe-cache in the base folder "  .
+			"of the installation and ensure it has the correct permissions", E_USER_ERROR);
+	}
+
+	return $ssTmp;
 }
 
 /**
@@ -331,7 +343,7 @@ function singleton($className) {
 	if(!isset($className)) user_error("singleton() Called without a class", E_USER_ERROR);
 	if(!is_string($className)) user_error("singleton() passed bad class_name: " . var_export($className,true), E_USER_ERROR);
 	if(!isset($_SINGLETONS[$className])) {
-	    if(!class_exists($className)) user_error("Bad class to singleton() - $className", E_USER_ERROR);
+		if(!class_exists($className)) user_error("Bad class to singleton() - $className", E_USER_ERROR);
 		$_SINGLETONS[$className] = Object::strong_create($className,null, true);
 		if(!$_SINGLETONS[$className]) user_error("singleton() Unknown class '$className'", E_USER_ERROR);
 	}
@@ -402,5 +414,3 @@ function increase_time_limit_to($timeLimit = null) {
 		}
 	}
 }
-
-?>

@@ -120,6 +120,11 @@ class Form extends RequestHandler {
 	protected $security = true;
 	
 	/**
+	 * @var SecurityToken
+	 */
+	protected $securityToken = null;
+	
+	/**
 	 * HACK This is a temporary hack to allow multiple calls to includeJavascriptValidation on
 	 * the validator (if one is present).
 	 *
@@ -167,11 +172,13 @@ class Form extends RequestHandler {
 		
 		// Check if CSRF protection is enabled, either on the parent controller or from the default setting. Note that
 		// method_exists() is used as some controllers (e.g. GroupTest) do not always extend from Object.
-		if(method_exists($controller, 'securityTokenEnabled')) {
-			$this->security = $controller->securityTokenEnabled();
+		if(method_exists($controller, 'securityTokenEnabled') || (method_exists($controller, 'hasMethod') && $controller->hasMethod('securityTokenEnabled'))) {
+			$securityEnabled = $controller->securityTokenEnabled();
 		} else {
-			$this->security = self::$default_security;
+			$securityEnabled = SecurityToken::is_enabled();
 		}
+		
+		$this->securityToken = ($securityEnabled) ? new SecurityToken() : new NullSecurityToken();
 	}
 	
 	static $url_handlers = array(
@@ -225,12 +232,9 @@ class Form extends RequestHandler {
 		$this->loadDataFrom($vars, true);
 		
 		// Protection against CSRF attacks
-		if($this->securityTokenEnabled()) {
-			$securityID = Session::get('SecurityID');
-
-			if(!$securityID || !isset($vars['SecurityID']) || $securityID != $vars['SecurityID']) {
-				$this->httpError(400, "SecurityID doesn't match, possible CSRF attack.");
-			}
+		$token = $this->getSecurityToken();
+		if(!$token->checkRequest($request)) {
+			$this->httpError(400, "Security token doesn't match, possible CSRF attack.");
 		}
 		
 		// Determine the action button clicked
@@ -258,6 +262,31 @@ class Form extends RequestHandler {
 			
 		if(isset($funcName)) {
 			$this->setButtonClicked($funcName);
+		}
+		
+		// Permission checks (first on controller, then falling back to form)
+		if(
+			// Ensure that the action is actually a button or method on the form,
+			// and not just a method on the controller.
+			$this->controller->hasMethod($funcName)
+			&& !$this->controller->checkAccessAction($funcName)
+			// If a button exists, allow it on the controller
+			&& !$this->Actions()->fieldByName('action_' . $funcName)
+		) {
+			return $this->httpError(
+				403, 
+				sprintf('Action "%s" not allowed on controller (Class: %s)', $funcName, get_class($this->controller))
+			);
+		} elseif(
+			$this->hasMethod($funcName)
+			&& !$this->checkAccessAction($funcName)
+			// No checks for button existence or $allowed_actions is performed -
+			// all form methods are callable (e.g. the legacy "callfieldmethod()")
+		) {
+			return $this->httpError(
+				403, 
+				sprintf('Action "%s" not allowed on form (Name: "%s")', $funcName, $this->Name())
+			);
 		}
 		
 		// Validate the form
@@ -295,16 +324,15 @@ class Form extends RequestHandler {
 			}
 		}
 		
-		// First, try a handler method on the controller
+		// First, try a handler method on the controller (has been checked for allowed_actions above already)
 		if($this->controller->hasMethod($funcName)) {
 			return $this->controller->$funcName($vars, $this, $request);
-
-		// Otherwise, try a handler method on the form object
-		} else {
-			if($this->hasMethod($funcName)) {
-				return $this->$funcName($vars, $this, $request);
-			}
+		// Otherwise, try a handler method on the form object.
+		} elseif($this->hasMethod($funcName)) {
+			return $this->$funcName($vars, $this, $request);
 		}
+		
+		return $this->httpError(404);
 	}
 	
 	/**
@@ -430,26 +458,17 @@ class Form extends RequestHandler {
 
 		
 	/**
-	 * Generate extra special fields - namely the SecurityID field
+	 * Generate extra special fields - namely the security token field (if required).
 	 * 
 	 * @return FieldSet
 	 */
 	public function getExtraFields() {
 		$extraFields = new FieldSet();
 		
-		if(!$this->fields->fieldByName('SecurityID') && $this->securityTokenEnabled()) {
-			if(Session::get('SecurityID')) {
-				$securityID = Session::get('SecurityID');
-			} else {
-				$securityID = rand();
-				Session::set('SecurityID', $securityID);
-			}
-			
-			$securityField = new HiddenField('SecurityID', '', $securityID);
-			$securityField->setForm($this);
-			$extraFields->push($securityField);
-			$this->securityTokenAdded = true;
-		}
+		$token = $this->getSecurityToken();
+		$tokenField = $token->updateFieldSet($this->fields);
+		if($tokenField) $tokenField->setForm($this);
+		$this->securityTokenAdded = true;
 		
 		// add the "real" HTTP method if necessary (for PUT, DELETE and HEAD)
 		if($this->FormMethod() != $this->FormHttpMethod()) {
@@ -858,7 +877,11 @@ class Form extends RequestHandler {
 	 * Processing that occurs before a form is executed.
 	 * This includes form validation, if it fails, we redirect back
 	 * to the form with appropriate error messages.
-	 * Triggered through {@link httpSubmission()} which is triggered
+	 * Triggered through {@link httpSubmission()}.
+	 * Note that CSRF protection takes place in {@link httpSubmission()},
+	 * if it fails the form data will never reach this method.
+	 * 
+	 * @return boolean
 	 */
 	 function validate(){
 		if($this->validator){
@@ -1166,34 +1189,62 @@ class Form extends RequestHandler {
 	}
 	
 	/**
-	 * Disable the requirement of a SecurityID in the Form. This security protects
+	 * Disable the requirement of a security token on this form instance. This security protects
 	 * against CSRF attacks, but you should disable this if you don't want to tie 
 	 * a form to a session - eg a search form.
+	 * 
+	 * Check for token state with {@link getSecurityToken()} and {@link SecurityToken->isEnabled()}.
 	 */
 	function disableSecurityToken() {
-		$this->security = false;
+		$this->securityToken = new NullSecurityToken();
 	}
 	
-	
-	private static $default_security = true;
+	/**
+	 * Enable {@link SecurityToken} protection for this form instance.
+	 * 
+	 * Check for token state with {@link getSecurityToken()} and {@link SecurityToken->isEnabled()}.
+	 */
+	function enableSecurityToken() {
+		$this->securityToken = new SecurityToken();
+	}
 	
 	/**
-	 * Disable security tokens for every form on this site.
+	 * Disable security tokens for every form.
+	 * Note that this doesn't apply to {@link SecurityToken}
+	 * instances outside of the Form class, nor applies
+	 * to existing form instances.
+	 * 
+	 * See {@link enable_all_security_tokens()}.
+	 * 
+	 * @deprecated 2.5 Use SecurityToken::disable()
 	 */
 	static function disable_all_security_tokens() {
-		self::$default_security = false;
+		SecurityToken::disable();
 	}
 	
 	/**
-	 * Returns true if security is enabled - that is if the SecurityID
+	 * Returns true if security is enabled - that is if the security token
 	 * should be included and checked on this form.
+	 * 
+	 * @deprecated 2.5 Use Form->getSecurityToken()->isEnabled()
 	 *
 	 * @return bool
 	 */
 	function securityTokenEnabled() {
-		return $this->security;
+		return $this->securityToken->isEnabled();
 	}
-
+	
+	/**
+	 * Returns the security token for this form (if any exists).
+	 * Doesn't check for {@link securityTokenEnabled()}.
+	 * Use {@link SecurityToken::inst()} to get a global token.
+	 * 
+	 * @return SecurityToken|null
+	 */
+	function getSecurityToken() {
+		return $this->securityToken;
+	}
+		
 	/**
 	 * Returns the name of a field, if that's the only field that the current controller is interested in.
 	 * It checks for a call to the callfieldmethod action.

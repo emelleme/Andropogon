@@ -1,7 +1,7 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/images
 http://svn.silverstripe.com
 
@@ -39,19 +39,6 @@ file
 sminnee
 has-props
 
-spacer.gif
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-22ba9d43aa1d26928512e501f6a029a5
-2006-02-03T05:01:57.000000Z
-22081
-sminnee
-has-props
-
 drag.gif
 file
 
@@ -62,6 +49,19 @@ file
 08729abb830c8a54aa0577937b0e95f2
 2006-03-01T04:05:11.000000Z
 22154
+sminnee
+has-props
+
+spacer.gif
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+22ba9d43aa1d26928512e501f6a029a5
+2006-02-03T05:01:57.000000Z
+22081
 sminnee
 has-props
 
@@ -128,19 +128,6 @@ c0367d221fe3923b006d9d83796ff3c2
 44566
 ischommer
 
-lock2.png
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-c1dfab7f8c6409f174314934a0dc170b
-2006-08-08T02:05:30.000000Z
-22672
-tcopeland
-has-props
-
 NewOnStage.png
 file
 
@@ -152,6 +139,19 @@ file
 2007-11-05T05:01:03.038701Z
 44265
 sharvey
+has-props
+
+lock2.png
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+c1dfab7f8c6409f174314934a0dc170b
+2006-08-08T02:05:30.000000Z
+22672
+tcopeland
 has-props
 
 TrashedOnStage.png

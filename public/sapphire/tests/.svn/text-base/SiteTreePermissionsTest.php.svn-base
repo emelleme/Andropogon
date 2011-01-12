@@ -34,6 +34,39 @@ class SiteTreePermissionsTest extends FunctionalTest {
 		$this->autoFollowRedirection = false;
 	}
 
+	
+	function testAccessingStageWithBlankStage() {
+		$this->useDraftSite(false);
+		$this->autoFollowRedirection = false;
+		
+		$page = $this->objFromFixture('Page', 'draftOnlyPage');
+
+		if($member = Member::currentUser()) {
+			$member->logOut();
+		}
+		
+		$response = $this->get($page->URLSegment . '?stage=Live');
+		$this->assertEquals($response->getStatusCode(), '404');
+		
+		$response = $this->get($page->URLSegment . '?stage=');
+		$this->assertEquals($response->getStatusCode(), '404');
+		
+		// should be prompted for a login
+		$response = $this->get($page->URLSegment . '?stage=Stage');
+		$this->assertEquals($response->getStatusCode(), '302');
+		
+		$this->logInWithPermission('ADMIN');
+		
+		$response = $this->get($page->URLSegment . '?stage=Live');
+		$this->assertEquals($response->getStatusCode(), '404');
+		
+		$response = $this->get($page->URLSegment . '?stage=Stage');
+		$this->assertEquals($response->getStatusCode(), '200');
+		
+		$response = $this->get($page->URLSegment . '?stage=');
+		$this->assertEquals($response->getStatusCode(), '404');
+	}
+	
 	function testPermissionCheckingWorksOnDeletedPages() {
 		// Set up fixture - a published page deleted from draft
 		$this->logInWithPermission("ADMIN");
@@ -335,6 +368,7 @@ class SiteTreePermissionsTest extends FunctionalTest {
 
 		// Get the live version of the page
 		$page = Versioned::get_one_by_stage("SiteTree", "Live", "\"SiteTree\".\"ID\" = $pageID");
+		$this->assertTrue(is_object($page), 'Versioned::get_one_by_stage() is returning an object');
 
 		// subadmin users
 		$subadminuser = $this->objFromFixture('Member', 'subadmin');

@@ -79,20 +79,85 @@
  */
 
 class Session {
-	
+
 	/**
 	 * @var $timeout Set session timeout
 	 */
-	static protected $timeout = 0;
+	protected static $timeout = 0;
 	
-	static protected $session_ips = array();
-	
+	protected static $session_ips = array();
+
+	protected static $cookie_domain;
+
+	protected static $cookie_path;
+
+	protected static $cookie_secure = false;
+
 	/**
 	 * Session data
 	 */
 	protected $data = array();
-	protected $changedData = array();
 	
+	protected $changedData = array();
+
+	/**
+	 * Cookie domain, for example 'www.php.net'.
+	 * 
+	 * To make cookies visible on all subdomains then the domain
+	 * must be prefixed with a dot like '.php.net'.
+	 * 
+	 * @param string $domain The domain to set
+	 */
+	public static function set_cookie_domain($domain) {
+		self::$cookie_domain = $domain;
+	}
+
+	/**
+	 * Get the cookie domain.
+	 * @return string
+	 */
+	public static function get_cookie_domain() {
+		return self::$cookie_domain;
+	}
+
+	/**
+	 * Path to set on the domain where the session cookie will work.
+	 * Use a single slash ('/') for all paths on the domain.
+	 *
+	 * @param string $path The path to set
+	 */
+	public static function set_cookie_path($path) {
+		self::$cookie_path = $path;
+	}
+
+	/**
+	 * Get the path on the domain where the session cookie will work.
+	 * @return string
+	 */
+	public static function get_cookie_path() {
+		if(self::$cookie_path) {
+			return self::$cookie_path;
+		} else {
+			return Director::baseURL();
+		}
+	}
+
+	/**
+	 * Secure cookie, tells the browser to only send it over SSL.
+	 * @param boolean $secure
+	 */
+	public static function set_cookie_secure($secure) {
+		self::$cookie_secure = (bool) $secure;
+	}
+
+	/**
+	 * Get if the cookie is secure
+	 * @return boolean
+	 */
+	public static function get_cookie_secure() {
+		return (bool) self::$cookie_secure;
+	}
+
 	/**
 	 * Create a new session object, with the given starting data
 	 *
@@ -141,7 +206,7 @@ class Session {
 	 * Add a value to a specific key in the session array
 	 */
 	public static function add_to_array($name, $val) {
-		return Controller::curr()->getSession()->inst_addToArray($name, $val);
+		return self::current_session()->inst_addToArray($name, $val);
 	}
 	
 	/**
@@ -151,7 +216,7 @@ class Session {
 	 * @param string $val Value
 	 */
 	public static function set($name, $val) {
-		return Controller::curr()->getSession()->inst_set($name, $val);
+		return self::current_session()->inst_set($name, $val);
 	}
 	
 	/**
@@ -160,7 +225,7 @@ class Session {
 	 * @param string $name Key to lookup
 	 */
 	public static function get($name) {
-		return Controller::curr()->getSession()->inst_get($name);
+		return self::current_session()->inst_get($name);
 	}
 	
 	/**
@@ -169,7 +234,7 @@ class Session {
 	 * @return Array
 	 */
 	public static function get_all() {
-		return Controller::curr()->getSession()->inst_getAll();
+		return self::current_session()->inst_getAll();
 	}
 	
 	/**
@@ -187,14 +252,17 @@ class Session {
 	 * @param string $name Key to lookup
 	 */
 	public static function clear($name) {
-		return Controller::curr()->getSession()->inst_clear($name);
+		return self::current_session()->inst_clear($name);
 	}
 	
 	/**
 	 * Clear all the values
 	 */
 	public static function clear_all() {
-		return Controller::curr()->getSession()->inst_clearAll();
+		$ret = self::current_session()->inst_clearAll();
+		self::$default_session = null;
+		
+		return $ret;
 	}
 	
 	/**
@@ -210,7 +278,18 @@ class Session {
 	 * Save all the values in our session to $_SESSION
 	 */
 	public static function save() {
-		return Controller::curr()->getSession()->inst_save();
+		return self::current_session()->inst_save();
+	}
+	
+	protected static $default_session = null;
+	
+	protected static function current_session() {
+		if(Controller::has_curr()) {
+			return Controller::curr()->getSession();
+		} else {
+			if(!self::$default_session) self::$default_session = new Session(isset($_SESSION) ? $_SESSION : array());
+			return self::$default_session;
+		}
 	}
 
 	public function inst_set($name, $val) {
@@ -348,9 +427,17 @@ class Session {
 	 */
 	public static function start($sid = null) {
 		self::load_config();
-		
+		$path = self::get_cookie_path();
+		$domain = self::get_cookie_domain();
+		$secure = self::get_cookie_secure();
+
 		if(!session_id() && !headers_sent()) {
-			session_set_cookie_params(self::$timeout, Director::baseURL());
+			if($domain) {
+				session_set_cookie_params(self::$timeout, $path, $domain, $secure /* secure */, true /* httponly */);
+			} else {
+				session_set_cookie_params(self::$timeout, $path, null, $secure /* secure */, true /* httponly */);
+			}
+
 			// @ is to supress win32 warnings/notices when session wasn't cleaned up properly
 			// There's nothing we can do about this, because it's an operating system function!
 			if($sid) session_id($sid);

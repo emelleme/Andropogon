@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/javascript
 http://svn.silverstripe.com
 
 
 
-2010-07-22T22:20:17.746198Z
-108351
-muzdowski
+2010-11-13T01:31:44.917932Z
+113690
+ischommer
 
 
 svn:special svn:externals svn:needs-lock
@@ -112,11 +112,11 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-9f7d875fa11dac240de1a73e68b9e150
-2009-11-26T03:36:53.602054Z
-93580
-ischommer
+2011-01-12T18:39:40.000000Z
+1d2ce1b9c6cd42647f0d4dfa94ae2b1c
+2010-08-10T00:14:21.247179Z
+109105
+sminnee
 has-props
 
 HtmlEditorField.js
@@ -199,6 +199,18 @@ file
 sminnee
 has-props
 
+jquery_improvements.js
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+159dd9f90d466b70bb8273196b2d2b43
+2009-11-30T01:00:47.624551Z
+93949
+ischommer
+
 TableListField.js
 file
 
@@ -211,18 +223,6 @@ file
 105266
 ischommer
 has-props
-
-jquery_improvements.js
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-159dd9f90d466b70bb8273196b2d2b43
-2009-11-30T01:00:47.624551Z
-93949
-ischommer
 
 TableField.js
 file
@@ -302,18 +302,8 @@ f73f1bb759020fd482d9911dc3e02c09
 sminnee
 has-props
 
-loader.js
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-3bb64ef39c2d29a486c1b1b9a04495e9
-2009-11-26T03:36:53.602054Z
-93580
-ischommer
-has-props
+lang
+dir
 
 SilverStripeNavigator.js
 file
@@ -327,8 +317,18 @@ d1f4b3a7097773d8161ba07c63c8fcca
 100883
 ischommer
 
-lang
-dir
+loader.js
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+3bb64ef39c2d29a486c1b1b9a04495e9
+2009-11-26T03:36:53.602054Z
+93580
+ischommer
+has-props
 
 i18nx.js
 file
@@ -356,19 +356,6 @@ file
 ischommer
 has-props
 
-i18n.js
-file
-
-
-
-
-2010-05-30T18:49:13.000000Z
-2200605c1d757da65129d49a5107fb31
-2009-06-17T23:14:40.674057Z
-79478
-sminnee
-has-props
-
 tiny_mce_improvements.js
 file
 
@@ -380,6 +367,19 @@ d910e24d379ba4766bf9f9fa5474ee45
 2010-03-31T06:37:30.897218Z
 101975
 ischommer
+has-props
+
+i18n.js
+file
+
+
+
+
+2010-05-30T18:49:13.000000Z
+2200605c1d757da65129d49a5107fb31
+2009-06-17T23:14:40.674057Z
+79478
+sminnee
 has-props
 
 ComplexTableField.js
@@ -401,11 +401,11 @@ file
 
 
 
-2010-05-30T18:49:13.000000Z
-f4f98d1cd0d34a05f4ab367efbe6c962
-2009-03-10T22:17:26.688404Z
-72811
-sminnee
+2011-01-12T18:39:40.000000Z
+7a2e6fecb64a0dd1b7e870838c6d8ca7
+2010-10-11T19:46:22.321672Z
+111880
+jbarrois
 has-props
 
 ConfirmedPasswordField.js

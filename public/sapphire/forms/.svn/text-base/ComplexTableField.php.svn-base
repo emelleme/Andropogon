@@ -749,7 +749,11 @@ class ComplexTableField_ItemRequest extends TableListField_ItemRequest {
 		return $this->renderWith($this->ctf->templatePopup);
 	}
 
-	function delete() {
+	function delete($request) {
+		// Protect against CSRF on destructive action
+		$token = $this->ctf->getForm()->getSecurityToken();
+		if(!$token->checkRequest($request)) return $this->httpError(400);
+		
 		if($this->ctf->Can('delete') !== true) {
 			return false;
 		}
@@ -1052,13 +1056,15 @@ class ComplexTableField_Popup extends Form {
 			$actions->push(
 				$saveAction = new FormAction(
 					"saveComplexTableField", 
-					_t('CMSMain.SAVE')
+					_t('CMSMain.SAVE', 'Save')
 				)
 			);	
 			$saveAction->addExtraClass('save');
 		}
 		
 		parent::__construct($controller, $name, $fields, $actions, $validator);
+		
+		if(!$this->dataObject->canEdit()) $this->makeReadonly();
 	}
 
 	function forTemplate() {

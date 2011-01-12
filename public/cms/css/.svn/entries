@@ -1,7 +1,7 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/cms/branches/2.4/css
 http://svn.silverstripe.com
 
@@ -172,19 +172,6 @@ file
 sharvey
 has-props
 
-silverstripe.tabs.css
-file
-
-
-
-
-2010-05-30T18:49:22.000000Z
-ff8ad6f9ea8743db48011320df0f2d73
-2009-11-26T05:08:34.375189Z
-93612
-ischommer
-has-props
-
 WidgetAreaEditor.css
 file
 
@@ -196,6 +183,19 @@ file
 2010-02-03T02:28:57.757907Z
 98032
 wrossiter
+has-props
+
+silverstripe.tabs.css
+file
+
+
+
+
+2010-05-30T18:49:22.000000Z
+ff8ad6f9ea8743db48011320df0f2d73
+2009-11-26T05:08:34.375189Z
+93612
+ischommer
 has-props
 
 ReportAdmin.css

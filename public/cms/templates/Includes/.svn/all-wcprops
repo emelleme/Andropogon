@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/!svn/ver/108442/open/modules/cms/branches/2.4/templates/Includes
+/!svn/ver/113282/open/modules/cms/branches/2.4/templates/Includes
 END
 AssetTableField.ss
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/!svn/ver/105273/open/modules/cms/branches/2.4/templates/Includes/AssetTableField.ss
+/!svn/ver/113282/open/modules/cms/branches/2.4/templates/Includes/AssetTableField.ss
 END
 SubscribeSubmission.ss
 K 25
@@ -25,13 +25,13 @@ CMSMain_left.ss
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/!svn/ver/108442/open/modules/cms/branches/2.4/templates/Includes/CMSMain_left.ss
+/!svn/ver/113282/open/modules/cms/branches/2.4/templates/Includes/CMSMain_left.ss
 END
 AssetAdmin_left.ss
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/AssetAdmin_left.ss
+V 84
+/!svn/ver/113282/open/modules/cms/branches/2.4/templates/Includes/AssetAdmin_left.ss
 END
 LeftAndMain_rightbottom.ss
 K 25
@@ -45,23 +45,17 @@ svn:wc:ra_dav:version-url
 V 84
 /!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/ModelAdmin_right.ss
 END
-CommentAdmin_right.ss
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/CommentAdmin_right.ss
-END
 Editor_toolbar.ss
 K 25
 svn:wc:ra_dav:version-url
 V 82
 /!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/Editor_toolbar.ss
 END
-ModelAdmin.ss
+CommentAdmin_right.ss
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/ModelAdmin.ss
+V 86
+/!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/CommentAdmin_right.ss
 END
 CMSMain_rightbottom.ss
 K 25
@@ -69,11 +63,11 @@ svn:wc:ra_dav:version-url
 V 87
 /!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/CMSMain_rightbottom.ss
 END
-MemberList_Table.ss
+ModelAdmin.ss
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/MemberList_Table.ss
+V 78
+/!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/ModelAdmin.ss
 END
 SecurityAdmin_right.ss
 K 25
@@ -81,17 +75,17 @@ svn:wc:ra_dav:version-url
 V 87
 /!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/SecurityAdmin_right.ss
 END
-ModelAdmin_ImportSpec.ss
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/ModelAdmin_ImportSpec.ss
-END
 CommentTableField.ss
 K 25
 svn:wc:ra_dav:version-url
 V 86
 /!svn/ver/105868/open/modules/cms/branches/2.4/templates/Includes/CommentTableField.ss
+END
+ModelAdmin_ImportSpec.ss
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/ModelAdmin_ImportSpec.ss
 END
 CommentAdmin_SiteTree.ss
 K 25
@@ -110,12 +104,6 @@ K 25
 svn:wc:ra_dav:version-url
 V 85
 /!svn/ver/105665/open/modules/cms/branches/2.4/templates/Includes/MemberTableField.ss
-END
-MemberList_PageControls.ss
-K 25
-svn:wc:ra_dav:version-url
-V 91
-/!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/MemberList_PageControls.ss
 END
 ModelAdmin_left.ss
 K 25
@@ -162,6 +150,6 @@ END
 SecurityAdmin_left.ss
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/!svn/ver/90860/open/modules/cms/branches/2.4/templates/Includes/SecurityAdmin_left.ss
+V 87
+/!svn/ver/113282/open/modules/cms/branches/2.4/templates/Includes/SecurityAdmin_left.ss
 END

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/!svn/ver/107878/open/modules/sapphire/branches/2.4/lang
+/!svn/ver/111843/open/modules/sapphire/branches/2.4/lang
 END
 nb_NO.php
 K 25
@@ -153,17 +153,17 @@ svn:wc:ra_dav:version-url
 V 66
 /!svn/ver/103837/open/modules/sapphire/branches/2.4/lang/ca_AD.php
 END
-sr_RS.php
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/!svn/ver/103837/open/modules/sapphire/branches/2.4/lang/sr_RS.php
-END
 _manifest_exclude
 K 25
 svn:wc:ra_dav:version-url
 V 73
 /!svn/ver/90859/open/modules/sapphire/branches/2.4/lang/_manifest_exclude
+END
+sr_RS.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/103837/open/modules/sapphire/branches/2.4/lang/sr_RS.php
 END
 tr_TR.php
 K 25
@@ -217,7 +217,7 @@ en_US.php
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/!svn/ver/107789/open/modules/sapphire/branches/2.4/lang/en_US.php
+/!svn/ver/111843/open/modules/sapphire/branches/2.4/lang/en_US.php
 END
 lc_XX.php
 K 25

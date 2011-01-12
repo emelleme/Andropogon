@@ -67,9 +67,16 @@ class FunctionalTest extends SapphireTest {
 		if($this->stat('use_draft_site')) {
 			$this->useDraftSite();
 		}
+        
+        // Unprotect the site, tests are running with the assumption it's off. They will enable it on a case-by-case basis.
+        BasicAuth::protect_entire_site(false);
+
+		SecurityToken::disable();
 	}
 
 	function tearDown() {
+		SecurityToken::enable();
+		
 		parent::tearDown();
 		unset($this->mainSession);
 	}
@@ -276,10 +283,18 @@ class FunctionalTest extends SapphireTest {
 	/**
 	 * Use the draft (stage) site for testing.
 	 * This is helpful if you're not testing publication functionality and don't want "stage management" cluttering your test.
+	 *
+	 * @param bool toggle the use of the draft site
 	 */
-	function useDraftSite() {
-		$this->session()->inst_set('readingMode', 'Stage.Stage');
-		$this->session()->inst_set('unsecuredDraftSite', true);
+	function useDraftSite($enabled = true) {
+		if($enabled) {
+			$this->session()->inst_set('readingMode', 'Stage.Stage');
+			$this->session()->inst_set('unsecuredDraftSite', true);
+		}
+		else {
+			$this->session()->inst_set('readingMode', 'Stage.Live');
+			$this->session()->inst_set('unsecuredDraftSite', false);			
+		}
 	}
 
 	/**

@@ -1,7 +1,7 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/thirdparty/calendar/lang
 http://svn.silverstripe.com
 
@@ -208,19 +208,6 @@ file
 sminnee
 has-props
 
-calendar-ru.js
-file
-
-
-
-
-2010-05-30T18:49:12.000000Z
-34021fbb43c5d6b7b08387ab48f8d0d0
-2006-02-20T01:35:17.000000Z
-17349
-sminnee
-has-props
-
 calendar-af.js
 file
 
@@ -229,6 +216,19 @@ file
 
 2010-05-30T18:49:12.000000Z
 65fc5963bf1f044c7f0d89be381cb87a
+2006-02-20T01:35:17.000000Z
+17349
+sminnee
+has-props
+
+calendar-ru.js
+file
+
+
+
+
+2010-05-30T18:49:12.000000Z
+34021fbb43c5d6b7b08387ab48f8d0d0
 2006-02-20T01:35:17.000000Z
 17349
 sminnee
@@ -273,19 +273,6 @@ file
 sminnee
 has-props
 
-calendar-cs-win.js
-file
-
-
-
-
-2010-05-30T18:49:12.000000Z
-1ac73927c6165670dbfa903ca661258f
-2006-02-20T01:35:17.000000Z
-17349
-sminnee
-has-props
-
 calendar-el.js
 file
 
@@ -294,6 +281,19 @@ file
 
 2010-05-30T18:49:12.000000Z
 5a13327a095028b18d6678bba1c3d005
+2006-02-20T01:35:17.000000Z
+17349
+sminnee
+has-props
+
+calendar-cs-win.js
+file
+
+
+
+
+2010-05-30T18:49:12.000000Z
+1ac73927c6165670dbfa903ca661258f
 2006-02-20T01:35:17.000000Z
 17349
 sminnee
@@ -312,19 +312,6 @@ file
 sminnee
 has-props
 
-calendar-lt-utf8.js
-file
-
-
-
-
-2010-05-30T18:49:12.000000Z
-0a5fea2b4f03bca80b2e6b33be34077f
-2006-02-20T01:35:17.000000Z
-17349
-sminnee
-has-props
-
 calendar-br.js
 file
 
@@ -333,6 +320,19 @@ file
 
 2010-05-30T18:49:12.000000Z
 d8a9252d505c8f23d27d9b811bb61cc5
+2006-02-20T01:35:17.000000Z
+17349
+sminnee
+has-props
+
+calendar-lt-utf8.js
+file
+
+
+
+
+2010-05-30T18:49:12.000000Z
+0a5fea2b4f03bca80b2e6b33be34077f
 2006-02-20T01:35:17.000000Z
 17349
 sminnee
@@ -351,14 +351,14 @@ file
 sminnee
 has-props
 
-calendar-nl.js
+calendar-hr.js
 file
 
 
 
 
 2010-05-30T18:49:12.000000Z
-f0e854535207a29d8f931a6fc1da652d
+921e18e1c60ba3425fbc6eb2f12984f6
 2006-02-20T01:35:17.000000Z
 17349
 sminnee
@@ -377,14 +377,14 @@ b47ddea3200306ace5d9493ef98eca8e
 sminnee
 has-props
 
-calendar-hr.js
+calendar-nl.js
 file
 
 
 
 
 2010-05-30T18:49:12.000000Z
-921e18e1c60ba3425fbc6eb2f12984f6
+f0e854535207a29d8f931a6fc1da652d
 2006-02-20T01:35:17.000000Z
 17349
 sminnee

@@ -56,10 +56,10 @@ class Group extends DataObject {
 	public function getCMSFields() {
 		$fields = new FieldSet(
 			new TabSet("Root",
-				new Tab(_t('SecurityAdmin.MEMBERS', 'Members'),
+				new Tab('Members', _t('SecurityAdmin.MEMBERS', 'Members'),
 					new TextField("Title", $this->fieldLabel('Title')),
 					$memberList = new MemberTableField(
-						$this,
+						(Controller::has_curr()) ? Controller::curr() : new Controller(),
 						"Members",
 						$this,
 						null,
@@ -67,7 +67,7 @@ class Group extends DataObject {
 					)
 				),
 
-				$permissionsTab = new Tab(_t('SecurityAdmin.PERMISSIONS', 'Permissions'),
+				$permissionsTab = new Tab('Permissions', _t('SecurityAdmin.PERMISSIONS', 'Permissions'),
 					new PermissionCheckboxSetField(
 						'Permissions',
 						false,
@@ -77,7 +77,7 @@ class Group extends DataObject {
 					)
 				),
 
-				new Tab(_t('Security.IPADDRESSES', 'IP Addresses'),
+				new Tab('IPAddresses', _t('Security.IPADDRESSES', 'IP Addresses'),
 					new LiteralField("", _t('SecurityAdmin.IPADDRESSESHELP',"<p>You can restrict this group to a particular 
 						IP address range (one range per line). <br />Ranges can be in any of the following forms: <br />
 						203.96.152.12<br />
@@ -144,7 +144,6 @@ class Group extends DataObject {
 			$rolesField->setDisabledItems($inheritedRoles->column('ID'));
 		} 
 		
-		$memberList->setController($this);
 		$memberList->setPermissions(array('edit', 'delete', 'export', 'add', 'inlineadd'));
 		$memberList->setParentClass('Group');
 		$memberList->setPopupCaption(_t('SecurityAdmin.VIEWUSER', 'View User'));
@@ -241,7 +240,7 @@ class Group extends DataObject {
 			$blankGroup->Title = $blank;
 			$blankGroup->ID = 0;
 
-			$ret->getItems()->shift($blankGroup);
+			$ret->getItems()->unshift($blankGroup);
 		}
 		return $ret;
 	}

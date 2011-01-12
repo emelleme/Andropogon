@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4
 http://svn.silverstripe.com
 
 
 
-2010-08-05T05:56:05.899651Z
-108961
-apiening
+2011-01-11T23:10:36.113384Z
+115443
+sharvey
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -28,6 +28,18 @@ svn:special svn:externals svn:needs-lock
 
 parsers
 dir
+
+web.config
+file
+
+
+
+
+2011-01-12T18:39:41.000000Z
+24fc439c49892c247ab09c51d99d6c14
+2010-12-09T22:54:18.340244Z
+114774
+ischommer
 
 profiler
 dir
@@ -63,11 +75,11 @@ file
 
 
 
-2010-05-30T18:49:15.000000Z
-309df28345d486b65b680846fa00e7a7
-2010-05-12T12:33:31.917114Z
-104705
-sharvey
+2011-01-12T18:39:41.000000Z
+7a430d88f39304bd90706b51f85cf3d4
+2010-08-19T09:34:25.854420Z
+109787
+apiening
 
 cli-script.php
 file
@@ -116,10 +128,10 @@ file
 
 
 
-2010-08-06T02:07:00.000000Z
-aeef5bec0d020a58ea607edeb1d89f51
-2010-07-20T04:49:30.640007Z
-108207
+2011-01-12T18:39:41.000000Z
+231af57b9a009b8adbe1888372d32c8d
+2010-12-09T22:54:18.340244Z
+114774
 ischommer
 
 Makefile
@@ -140,21 +152,21 @@ dir
 lang
 dir
 
+integration
+dir
+
 sake
 file
 
 
 
 
-2010-05-30T18:49:15.000000Z
-2f4232ad39427bc7b6ee9b01b7b70241
-2010-05-12T05:28:10.455033Z
-104668
-sminnee
+2011-01-12T18:39:41.000000Z
+c151dbf946b73395fa4d1c10e5e60f3e
+2010-10-03T10:27:14.670722Z
+111495
+ischommer
 has-props
-
-integration
-dir
 
 filesystem
 dir
@@ -171,6 +183,18 @@ dir
 templates
 dir
 
+static-main.php
+file
+
+
+
+
+2010-05-30T18:49:15.000000Z
+0bc3810d83052ee04323a14de297e6bb
+2010-05-03T22:48:59.045333Z
+103961
+ischommer
+
 main.php5
 file
 
@@ -183,18 +207,6 @@ file
 73509
 ischommer
 has-props
-
-static-main.php
-file
-
-
-
-
-2010-05-30T18:49:15.000000Z
-0bc3810d83052ee04323a14de297e6bb
-2010-05-03T22:48:59.045333Z
-103961
-ischommer
 
 silverstripe_version
 file

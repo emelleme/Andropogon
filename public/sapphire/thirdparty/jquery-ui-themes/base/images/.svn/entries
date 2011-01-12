@@ -1,7 +1,7 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/thirdparty/jquery-ui-themes/base/images
 http://svn.silverstripe.com
 
@@ -156,19 +156,6 @@ faf6f5dc44e713178784c1fb053990aa
 ischommer
 has-props
 
-ui-bg_glass_75_dadada_1x400.png
-file
-
-
-
-
-2010-05-30T18:49:12.000000Z
-c12c6510dad3ebfa64c8a30e959a2469
-2010-03-11T02:29:07.321415Z
-100842
-ischommer
-has-props
-
 ui-bg_glass_55_fbf9ee_1x400.png
 file
 
@@ -177,6 +164,19 @@ file
 
 2010-05-30T18:49:12.000000Z
 f8f4558e0b92ff2cd6136781533902ec
+2010-03-11T02:29:07.321415Z
+100842
+ischommer
+has-props
+
+ui-bg_glass_75_dadada_1x400.png
+file
+
+
+
+
+2010-05-30T18:49:12.000000Z
+c12c6510dad3ebfa64c8a30e959a2469
 2010-03-11T02:29:07.321415Z
 100842
 ischommer

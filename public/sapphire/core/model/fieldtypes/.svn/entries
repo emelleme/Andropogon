@@ -1,15 +1,15 @@
 8
 
 dir
-109004
+115459
 http://svn.silverstripe.com/open/modules/sapphire/branches/2.4/core/model/fieldtypes
 http://svn.silverstripe.com
 
 
 
-2010-07-02T03:01:02.121052Z
-107423
-wrossiter
+2011-01-11T23:10:36.113384Z
+115443
+sharvey
 
 
 svn:special svn:externals svn:needs-lock
@@ -39,19 +39,6 @@ file
 ischommer
 has-props
 
-Int.php
-file
-
-
-
-
-2010-05-30T18:49:07.000000Z
-39cbbbfdaad396ea2b5f5aced65b3e8d
-2010-05-05T06:50:54.020028Z
-104157
-ischommer
-has-props
-
 Currency.php
 file
 
@@ -65,14 +52,14 @@ file
 ischommer
 has-props
 
-Datetime.php
+Int.php
 file
 
 
 
 
 2010-05-30T18:49:07.000000Z
-fbb6680a776b9ef6296981744089831d
+39cbbbfdaad396ea2b5f5aced65b3e8d
 2010-05-05T06:50:54.020028Z
 104157
 ischommer
@@ -91,17 +78,17 @@ file
 sminnee
 has-props
 
-Decimal.php
+Datetime.php
 file
 
 
 
 
-2010-05-30T18:49:07.000000Z
-9861a85e44817cb69e92ea5af8dc58ae
-2010-03-09T02:14:25.789724Z
-100686
-gmunn
+2011-01-12T18:39:32.000000Z
+ea29aa361e99ad9c56d30de34d422cc4
+2010-10-07T05:46:24.869795Z
+111787
+ischommer
 has-props
 
 Time.php
@@ -115,6 +102,19 @@ file
 2010-05-05T06:50:54.020028Z
 104157
 ischommer
+has-props
+
+Decimal.php
+file
+
+
+
+
+2010-05-30T18:49:07.000000Z
+9861a85e44817cb69e92ea5af8dc58ae
+2010-03-09T02:14:25.789724Z
+100686
+gmunn
 has-props
 
 Year.php
@@ -156,19 +156,6 @@ file
 ischommer
 has-props
 
-Float.php
-file
-
-
-
-
-2010-05-30T18:49:07.000000Z
-6bd47a89c16cd77b39c31af360b5c967
-2010-05-05T06:50:54.020028Z
-104157
-ischommer
-has-props
-
 DBLocale.php
 file
 
@@ -179,6 +166,19 @@ file
 a57640c8239d5eff0388af58ea472133
 2009-11-27T01:48:11.825735Z
 93771
+ischommer
+has-props
+
+Float.php
+file
+
+
+
+
+2010-05-30T18:49:07.000000Z
+6bd47a89c16cd77b39c31af360b5c967
+2010-05-05T06:50:54.020028Z
+104157
 ischommer
 has-props
 
@@ -195,6 +195,18 @@ e839d48693855da049d997642c29dc19
 ischommer
 has-props
 
+StringField.php
+file
+
+
+
+
+2011-01-12T18:39:32.000000Z
+cdfc7fcf3a73af73f4e49c02d3d70801
+2010-08-09T04:36:34.293961Z
+109081
+sharvey
+
 Double.php
 file
 
@@ -207,18 +219,6 @@ file
 102460
 sharvey
 has-props
-
-StringField.php
-file
-
-
-
-
-2010-05-30T18:49:07.000000Z
-3b7a349c5f9fa0ffa5b6dcc8b3373747
-2010-04-23T01:04:47.270752Z
-103391
-ischommer
 
 HTMLVarchar.php
 file
@@ -252,11 +252,11 @@ file
 
 
 
-2010-05-30T18:49:07.000000Z
-aff5a25bc17e2f865ea4d6970efac8da
-2010-05-16T02:39:38.499097Z
-104935
-wrossiter
+2011-01-12T18:39:32.000000Z
+76c506012fa29f1c4c5cb96f60e54055
+2011-01-11T23:10:36.113384Z
+115443
+sharvey
 has-props
 
 Percentage.php
