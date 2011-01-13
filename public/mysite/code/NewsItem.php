@@ -13,7 +13,8 @@ class NewsItem extends Page
 	);
  
 	static $has_one = array (
-		'NewsItemImage' => 'Image'
+		'NewsItemImage' => 'Image',
+		'HomePage' => 'HomePage'
 	);
 	
 	public function onBeforeWrite(){
