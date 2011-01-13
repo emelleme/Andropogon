@@ -7,6 +7,7 @@ class HomePage extends Page {
 	public static $has_many = array(
 		'NewsItems' => 'NewsItem'
 	);
+	static $allowed_children = array('*NewsItemPage');
 	
 	public function getCMSFields() {
 	$fields = parent::getCMSFields();
