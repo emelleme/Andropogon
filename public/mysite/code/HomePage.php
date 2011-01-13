@@ -5,6 +5,7 @@ class HomePage extends Page {
 	);
 
 	public static $has_many = array(
+		'NewsItems' => 'NewsItem'
 	);
 	
 	public function getCMSFields() {
