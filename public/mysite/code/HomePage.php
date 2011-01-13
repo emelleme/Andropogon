@@ -13,7 +13,7 @@ class HomePage extends Page {
 	$fields = parent::getCMSFields();
 	$fields->removeFieldFromTab("Root.Content", "ImageGallery");
 	
-	 $fields->addFieldToTab("Root.Content.NewsItems", new ImageDataObjectManager(
+	 /*$fields->addFieldToTab("Root.Content.NewsItems", new ImageDataObjectManager(
 			$this,
 			'NewsItems',
 			'NewsItem',
@@ -21,7 +21,7 @@ class HomePage extends Page {
 			array('Title' => 'Title','Created'=>'Date','NewsContent' => 'NewsContent'),
 			'getCMSFields_forPopup'
 		));
-	
+	*/
 	return $fields;
   }
 
