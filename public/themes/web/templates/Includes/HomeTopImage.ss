@@ -1,33 +1,27 @@
 <div class="slider">
 	<div class="items">
-		<% if NewsItems %>
-			<% control NewsItems %>
+		<% if URLSegment != home %>
+		
+			<% control TopImages %>
 				<% if VideoEnabled %>
 					<div class="top-image-video">
-					<img src="$NewsImage.URL" rel="#video_$ID" />
+					<img src="$TopImage.URL" rel="#video_$ID" />
 				<% else %>
 					<div>
-					<img src="$NewsImage.URL" />
-				
+					<img src="$TopImage.URL" />
+					
 				<% end_if %>
-			</div>
+				<span id="caption"><p>$Caption</p></span>
+				</div>
 			<% end_control %>
 		<% else %>
 		
-		<% control Page(approach) %>
+		<% control Page(home) %>
 			<% control AllChildren %>
 			<div>
-				<% control TopImages %>
-					<% if VideoEnabled %>
-						<div class="top-image-video">
-						<img src="$TopImage.URL" rel="#video_$ID" />
-					<% else %>
-						<div>
-						<img src="$TopImage.URL" />
-					
-					<% end_if %>
+					<div class="top-image-video">
+						<img src="$NewsItemImage.URL" rel="#video_$ID" />
 					</div>
-				<% end_control %>
 			</div>
 			<% end_control %>
 		<% end_control %>

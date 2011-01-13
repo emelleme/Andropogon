@@ -19,10 +19,11 @@
 		</div>
 	<% end_control %>
 	<% else %>
-	<% control Page(approach) %>
+	<% control Page(home) %>
 	<% control AllChildren %>
 		<div>
 			<h2>$Title</h2>
+			<span>$Date.NiceUS </span>
 			<div class="newscontent">$Content</div>
 		</div>
 	<% end_control %>

@@ -5,14 +5,13 @@ class HomePage extends Page {
 	);
 
 	public static $has_many = array(
-		'NewsItems' => 'NewsItem'
 	);
 	
 	public function getCMSFields() {
 	$fields = parent::getCMSFields();
 	$fields->removeFieldFromTab("Root.Content", "ImageGallery");
 	
-	$fields->addFieldToTab("Root.Content.NewsItems", new ImageDataObjectManager(
+	/* $fields->addFieldToTab("Root.Content.NewsItems", new ImageDataObjectManager(
 			$this,
 			'NewsItems',
 			'NewsItem',
@@ -20,6 +19,7 @@ class HomePage extends Page {
 			array('Title' => 'Title','Created'=>'Date','NewsContent' => 'NewsContent'),
 			'getCMSFields_forPopup'
 		));
+	*/
 	return $fields;
   }
 
@@ -61,8 +61,8 @@ class HomePage_Controller extends Page_Controller {
 	}
 	
 	public function newsItems(){
-	$a = DataObject::get('NewsItem','HomePageID ='.$this->ID,'Date Desc');
-	return $a;
+	//$a = DataObject::get('SiteTree',"ClassName = 'NewsItem'",'Date Desc');
+	//return $a;
 	}
 	
 	public function getTopImage(){

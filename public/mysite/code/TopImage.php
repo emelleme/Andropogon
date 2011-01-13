@@ -11,7 +11,8 @@ class TopImage extends DataObject{
 	
 	static $has_one = array(
 		'TopImage' => 'Image',
-		'Page' => 'Page'
+		'Page' => 'Page',
+		'NewsItem' => 'NewsItem'
 	);
 	
 	public function onBeforeWrite(){
