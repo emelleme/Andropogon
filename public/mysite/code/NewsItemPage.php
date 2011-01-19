@@ -38,6 +38,7 @@ class NewsItemPage extends Page
 		
 		$fields->addFieldToTab("Root.Content.Main",new DateField('Date','Date (e.g. 12/24/2012)'),'MenuTitle');
 		$fields->removeFieldFromTab("Root.Content", "ImageGallery");
+		$fields->removeFieldFromTab("Root.Content", "MenuTitle");
 		$fields->addFieldToTab("Root.Content.TopImage",new FileUploadField('NewsItemImage', 'Top Image'));
 		return $fields;
 	}
