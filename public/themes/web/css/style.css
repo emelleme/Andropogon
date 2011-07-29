@@ -12,6 +12,7 @@ ul { list-style: none; padding: 5px; }
 a {letter-spacing:.11em;color:#CBC3CA;font-weight:bold;}
 a:hover{color:#706570;text-decoration:none;}
 
+img, div, a, ul, li { behavior: url(../images/iepngfix.htc) }
 
 html { padding:0; margin:0;}
 
@@ -197,12 +198,18 @@ div.newscontent{font:10pt; padding:0px 0px; margin:0;font-family:'Gill Sans W01 
 /********** footer **********/
 .footer { margin:0; padding:10px 0 0 0; border-top:0px solid; }
 .footer_resize { margin:0 auto; padding:10px 0; width:980px;}
-.footer ul { margin:0; padding:0px 0px 0px 0px; list-style:none; float:left;}
-.footer img { display:inline; margin:0px 10px; padding:0;}
+.footer ul { margin:0; padding:0px 0px 0px 0px; width: 270px; 
+list-style:none; float:left;}
+.footer img { display:inline; margin:0px 5px; padding:0;}
 .footer ul li { margin:0; float:left;}
 .footer p { margin:0; float:right; font:normal 14pt; line-height:1.8em;}
-.footer a { border-right:1px solid;padding-right:10px;padding-left:10px; font:10pt; text-decoration:none; line-height:1.8em;letter-spacing:.11em;}
-.footer span {padding-right:10px;padding-left:10px; font:10pt; text-decoration:none; line-height:1.8em;letter-spacing:.11em;}
+.footer a.menulink { border-right:1px solid;padding-right:10px;padding-left:10px; font:10pt; text-decoration:none; line-height:1.8em;letter-spacing:.11em;}
+
+li.tumblr, li.fbook {padding-right:10px;}
+li.tumblr a {display:block;position:relative;}
+li.tumblr a .rollover {display:block;position:absolute;top:0;left:0;margin-left:5px;width:24px;height:24px;background:url(../images/tumblr.gif);}
+li.fbook a {display:block;position:relative;}
+li.fbook a .rollover {display:block;position:absolute;top:0;left:0;margin-left:5px;width:24px;height:24px;background:url(../images/facebook.gif);}
 
 p.clr, .clr { clear:both; padding:0; margin:0; background:none;}
 li.bg, .bg { clear:both; border-top:1px solid #e2e2e2; padding:0; margin:10px 0; background:none; line-height:0;}

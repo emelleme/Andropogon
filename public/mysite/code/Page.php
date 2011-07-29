@@ -91,7 +91,7 @@ SSViewer::set_theme('web');
 	}
 	
 	public function TopImages(){
-		$d = DataObject::get('TopImage', "PageID =".$this->ID, "TopImageID ASC");
+		$d = DataObject::get('TopImage', "PageID =".$this->ID, "LastEdited ASC");
 		return $d;
 	}
 	public function TopImageCount(){

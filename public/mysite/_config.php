@@ -9,7 +9,7 @@ $databaseConfig = array(
 	"server" => 'localhost', 
 	"username" => 'root', 
 	"password" => 'Andr0p0g0n', 
-	"database" => 'SS_andropogon_dev',
+	"database" => 'Andropogon_dev',
 	"path" => '',
 );
 
