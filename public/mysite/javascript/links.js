@@ -25,11 +25,5 @@ $(document).ready(function() {
 	
 	//Social Icons Hover Action
 	$(".rollover").css({'opacity':'0'});
-	$('.tumblr a, .fbook a').hover(
-		function() {
-			$(this).find('.rollover').stop().fadeTo(800, 1);
-		},
-		function() {
-			$(this).find('.rollover').stop().fadeTo(800, 0);
-	});
+	
 });
