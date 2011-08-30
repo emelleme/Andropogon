@@ -207,10 +207,18 @@ list-style:none; float:left;}
 
 li.tumblr {position: relative;width:50px;padding-right:0px;padding-left:5px;}
 li.fbook {position:relative; left:-30px;padding-left: 0px;}
+li.linkedin {position:relative; left:-35px;padding-left: 0px;}
+li.twitter {position:relative; left:-40px;padding-left: 0px;}
 li.tumblr a {display:block;position:relative;}
 li.tumblr a .rollover {display:block;position:absolute;top:0;left:0;margin-left:5px;width:16px;height:16px;background:url(../images/tumblr.gif);}
 li.fbook a {display:block;position:relative;}
 li.fbook a .rollover {display:block;position:absolute;top:0;left:0;margin-left:5px;width:16px;height:16px;background:url(../images/facebook.gif);}
+
+li.linkedin a {display:block;position:relative;}
+li.linkedin a .rollover {display:block;position:absolute;top:0;left:0;margin-left:10px;width:16px;height:16px;background:url(../images/linkedin.gif);}
+
+li.linkedin a {display:block;position:relative;}
+li.linkedin a .rollover {display:block;position:absolute;top:0;left:0;margin-left:10px;width:16px;height:16px;background:url(../images/twitter.gif);}
 
 p.clr, .clr { clear:both; padding:0; margin:0; background:none;}
 li.bg, .bg { clear:both; border-top:1px solid #e2e2e2; padding:0; margin:10px 0; background:none; line-height:0;}
