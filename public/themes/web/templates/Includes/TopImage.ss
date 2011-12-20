@@ -14,23 +14,21 @@
 					<img src="$TopImage.URL" rel="#video_$ID" />
 				<% else %>
 					<div>
-					<img src="$TopImage.URL" />
+					<img id="topImage" src="$TopImage.URL" />
 					
 				<% end_if %>
 				<span id="caption"><p>$Caption</p></span>
 				</div>
 			<% end_control %>
 		<% else %>
-			<% control TopImage %>
 				<% if VideoEnabled %>
 					<div class="top-image-video">
-					<img src="$TopImage.URL" rel="#video_$ID" />
+					<img src="$NewsItemImage.URL" rel="#video_$ID" />
 				<% else %>
 					<div>
-					<img src="$TopImage.URL" />
+					<img id="topImage" src="$NewsItemImage.URL" />
 					
 				<% end_if %>
-			<% end_control %>
 			
 		<% end_if %>
 	</div>

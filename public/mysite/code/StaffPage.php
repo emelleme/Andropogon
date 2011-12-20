@@ -12,7 +12,7 @@ class StaffPage extends Page {
 	
 	public function getCMSFields() {
 	$fields = parent::getCMSFields();
-	$fields->removeFieldFromTab("Root.Content", "ImageGallery");
+	//$fields->removeFieldFromTab("Root.Content", "ImageGallery");
 	return $fields;
   }
 

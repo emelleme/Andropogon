@@ -9,7 +9,7 @@ $databaseConfig = array(
 	"server" => 'localhost', 
 	"username" => 'root', 
 	"password" => 'Andr0p0g0n', 
-	"database" => 'Andropogon_dev',
+	"database" => 'Andropogon_live',
 	"path" => '',
 );
 
@@ -22,7 +22,7 @@ Director::set_dev_servers(array(
 	'127.0.0.1'
 ));
 
-Director::set_environment_type("dev");
+Director::set_environment_type("live");
 MySQLDatabase::set_connection_charset('utf8');
 
 // This line set's the current theme. More themes can be

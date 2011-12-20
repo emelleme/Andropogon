@@ -205,6 +205,7 @@ list-style:none; float:left;}
 .footer p { margin:0; float:right; font:normal 14pt; line-height:1.8em;}
 .footer a.menulink { border-right:1px solid;padding-right:10px;padding-left:10px; font:10px; text-decoration:none; line-height:1.8em;letter-spacing:.11em;}
 
+.employee{ text-transform: lowercase;}
 li.tumblr {position: relative;width:50px;padding-right:0px;padding-left:5px;}
 li.fbook {position:relative; left:-30px;padding-left: 0px;}
 li.linkedin {position:relative; left:-35px;padding-left: 0px;}

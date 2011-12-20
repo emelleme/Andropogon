@@ -31,7 +31,13 @@
 			  	
 				<a id="$URLSegment" class="$LinkingMode" href="$URLSegment">$MenuTitle</a>
 					<% if URLSegment = staff %>
-						<p></p>
+					<% if LinkingMode = current %>
+						<ul style="margin-left: 220px;width:35em">
+						<% control Children %>
+						<li style="width:10em"><a href="$URLSegment" name="$Title" title="$Position" <% control TopImages %> rel="$TopImage.URL" <% end_control %> class="employee">$Title</a></li>
+						<% end_control %>
+					</ul>
+					<% end_if %>
 					<% else %>
 				  		<ul>
 							<li id="page_$ID" class ="$LinkingMode">
